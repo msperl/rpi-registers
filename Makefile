@@ -7,7 +7,7 @@ clean:
 
 html: rpi-registers.html
 rpi-registers.html:: #defined.txt
-	perl defined2html.pl defined.txt > rpi-registers.html
+	perl defined2html+md.pl defined.txt > rpi-registers.html
 
 defined.txt:: testenv
 	( \

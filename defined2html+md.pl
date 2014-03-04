@@ -92,7 +92,7 @@ sub toHTML {
 	    ."    <th>width</th>\n"
 	    ."  </tr>\n";
 	my @regssorted = sort
-	    {$d->{$s}->{$a}->{addr} cmp $d->{$s}->{$a}->{addr}}
+	    { hex($d->{$s}->{$a}->{addr}) <=> hex($d->{$s}->{$b}->{addr}) }
 	    keys %{$d->{$s}};
 
 	my $m="";
