@@ -23,7 +23,14 @@ sub parseDefined {
 	delete $defs{$s};
 	$s =~s/_BASE(_REG)?$//;
 
-	my $sec = $sections->{$s} = {base=>$base};
+	my $sec = $sections->{$s} = {
+	    base=>$base,
+	    id=>$defs{$s."_APB_ID"},
+	    passwd=>$defs{$s."_PASSWORD"},
+	};
+	delete $defs{$s."_APB_ID"};
+	delete $defs{$s."_PASSWORD"};
+
 	# map the defines to the section
 	map {
 	    $sec->{defs}->{$_}=$defs{$_};
@@ -37,7 +44,7 @@ sub parseDefined {
 	    my $a=$sec->{defs}->{$_};
 	    $a =~s/:(RO|RW)$//;
 	    my $t=$1;
-	    my $reg = $sec->{regs}->{$n} = {
+	    $sec->{regs}->{$n} = {
 		name => $n,
 		addr => $a,
 		type => $t,
@@ -52,6 +59,7 @@ sub parseDefined {
 	    delete $sec->{defs}->{$n."_MASK"};
 	    delete $sec->{defs}->{$n."_CLR"};
 	    # and map the bits to the registers
+	    my $reg = $sec->{regs}->{$n};
 	    map {
 		my $n=$_;
 		$n =~ s/_BITS$//;
@@ -74,8 +82,16 @@ sub parseDefined {
 		delete $sec->{defs}->{$n."_MSB"};
 	    } grep (/^${s}_(.*)_BITS$/,keys %{$sec->{defs}});
 	} grep(/^${s}_(.*)_REG$/,keys %{$sec->{defs}});
-
     }
+    # map everything else to unhandled
+    my @unk=keys %defs;
+    if ($#unk>-1) {
+	$sections->{"000Unhandled"}={
+	    name=>"Unhandled",
+	    defs=>\%defs,
+	};
+    }
+
     return $sections;
 }
 
@@ -93,8 +109,17 @@ sub toHTML {
     # and now the sections
     foreach my $s (sort keys %{$d}) {
 	print "<hr/>\n<h1><a name=\"".$s."\">".$s
-	    ." (".$d->{$s}->{base}.")"
 	    ."</a></h1><br/>\n";
+	print "<h3>Info</h3>\n";
+	print "<table border=\"1\">\n";
+	for my $k ("base","id","password") {
+	    if ($d->{$s}->{$k}) {
+		print "  <tr><th>$k</th><td>".$d->{$s}->{$k}."</td></tr>\n";
+	    }
+	}
+	print "</table>\n";
+
+	print "<h3>Registers</h3>\n";
 	print "<table border=\"1\">\n"
 	    ."  <tr>\n"
 	    ."    <th>register name</th>\n"
