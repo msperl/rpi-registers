@@ -28,7 +28,7 @@
 
 | define | value |
 | --- | --- |
-| PWM_DMA | PWM_DMA |
+| PWM_DMA | UNKNOWN |
 
 ##Register info
 

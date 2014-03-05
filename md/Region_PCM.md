@@ -24,8 +24,8 @@
 
 | define | value |
 | --- | --- |
-| PCM_RX_DMA | PCM_RX_DMA |
-| PCM_TX_DMA | PCM_TX_DMA |
+| PCM_RX_DMA | UNKNOWN |
+| PCM_TX_DMA | UNKNOWN |
 
 ##Register info
 

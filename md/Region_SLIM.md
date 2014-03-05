@@ -93,10 +93,10 @@
 
 | define | value |
 | --- | --- |
-| SLIM_CRX_DMA | SLIM_CRX_DMA |
-| SLIM_CTX_DMA | SLIM_CTX_DMA |
-| SLIM_DRX_DMA | SLIM_DRX_DMA |
-| SLIM_DTX_DMA | SLIM_DTX_DMA |
+| SLIM_CRX_DMA | UNKNOWN |
+| SLIM_CTX_DMA | UNKNOWN |
+| SLIM_DRX_DMA | UNKNOWN |
+| SLIM_DTX_DMA | UNKNOWN |
 
 ##Register info
 

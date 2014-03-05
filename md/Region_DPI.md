@@ -17,7 +17,7 @@
 
 | define | value |
 | --- | --- |
-| DPI_DPIC | DPI_DPIC |
+| DPI_DPIC | UNKNOWN |
 
 ##Register info
 

@@ -97,6 +97,7 @@ sub parseDefined {
     if ($#unk>-1) {
 	$sections->{"000Unhandled"}={
 	    name=>"Unhandled",
+	    base=>"NA",
 	    defs=>\%defs,
 	};
     }
@@ -111,14 +112,14 @@ sub toHTML {
     # now the index
     print "<h1>Index</h1>\n<ul>\n";
     foreach my $k (sort keys %{$d}) {
-	print "  <li><a href=\"#$k\">".$d->{$k}->{base}
+	print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
 	."(".$d->{$k}->{base}.")</a></li>\n";
     }
     print "</ul>\n";
 
     # and now the sections
     foreach my $s (sort keys %{$d}) {
-	print "<hr/>\n<h1><a name=\"".$d->{$s}->{name}."\">".$s
+	print "<hr/>\n<h1><a name=\"".$d->{$s}->{name}."\">".$d->{$s}->{name}
 	    ."</a></h1><br/>\n";
 	print "<h3>Info</h3>\n";
 	print "<table border=\"1\">\n";
@@ -171,6 +172,9 @@ sub toHTML {
 		."    <th>value</th>\n"
 		."  </tr>\n";
 	    foreach my $n (@k) {
+		if ($n eq $defs->{$n}) {
+		    $defs->{$n}="UNKNOWN";
+		}
 		print "  <tr>\n"
 		    ."    <td>".$n."</td>\n"
 		    ."    <td>".$defs->{$n}."</td>\n"
@@ -273,7 +277,11 @@ sub toMD {
 	    print FH "| define | value |\n";
 	    print FH "| --- | --- |\n";
 	    foreach my $n (@k) {
-		print FH "| ".$n." | ".$defs->{$n}." |\n";
+		if ($n eq $defs->{$n}) {
+		    print FH "| ".$n." | UNKNOWN |\n";
+		} else {
+		    print FH "| ".$n." | ".$defs->{$n}." |\n";
+		}
 	    }
 	}
 

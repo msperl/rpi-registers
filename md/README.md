@@ -2,7 +2,7 @@
 
 | Region | Base |
 | --- | --- |
-| [Unhandled](Region_Unhandled.md) |  |
+| [Unhandled](Region_Unhandled.md) | NA |
 | [A2W](Region_A2W.md) | 0x7e102000 |
 | [APERF0](Region_APERF0.md) | 0x7e009800 |
 | [APERF1](Region_APERF1.md) | 0x7ee08000 |
