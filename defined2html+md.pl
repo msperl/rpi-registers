@@ -211,9 +211,104 @@ sub toHTML {
 }
 sub toMD {
     my ($d)=@_;
+    # first create the region markdown
+    open(FH,">","rpi-registers.md");
+    print FH "#Register Regions\n\n";
+
+    print FH "| Region | Base |\n| --- | --- |\n";
+    foreach my $k (sort keys %{$d}) {
+	print FH "| [".$k."](Region_".$k.".md) | ".$d->{$k}->{base}." |\n";
+    }
+    close(FH);
+
+    # and now the sections
+    foreach my $s (sort keys %{$d}) {
+	open(FH,">","Region_$s.md");
+	print FH "# Register Region: $s\n\n";
+
+	print FH "\n##Info\n";
+	print FH "| Name | value |\n| --- | --- |\n";
+	for my $k ("base","id","password") {
+	    if ($d->{$s}->{$k}) {
+		print FH "| ".$k." | ".$d->{$s}->{$k}." |\n";
+	    }
+	}
+
+	print FH "\n##Registers\n\n";
+
+	print FH "| register name | address | type | width | mask | reset |\n";
+	print FH "| --- | --- | --- | --- | --- | --- |\n";
+	my $regs=$d->{$s}->{regs};
+	my @regssorted = sort
+	    { hex($regs->{$a}->{addr}) <=> hex($regs->{$b}->{addr}) }
+	    keys %{$regs};
+
+	foreach my $k (@regssorted) {
+	    my $r = $regs->{$k};
+	    if (exists $r->{bits}) {
+		print FH "| [".$r->{name}."](#".lc($k).")";
+	    } else {
+		print FH "| ".$r->{name};
+	    }
+	    print FH " | ".$r->{addr}
+	    ." | ".$r->{type}
+	    ." | ".$r->{width}
+	    ." | ".$r->{mask}
+	    ." | ".$r->{reset}
+	    ." |\n";
+	}
+
+	my @k=sort keys %{$d->{$s}->{defs}};
+	if ($#k > -1) {
+	    my $defs=$d->{$s}->{defs};
+	    print FH "\n##Unsupported defines\n\n";
+
+	    print FH "| define | value |\n";
+	    print FH "| --- | --- |\n";
+	    foreach my $n (@k) {
+		print FH "| ".$n." | ".$defs->{$n}." |\n";
+	    }
+	}
+
+	print FH "\n##Register info\n\n";
+	foreach my $k (@regssorted) {
+	    my $r = $regs->{$k};
+	    if (exists $r->{bits}) {
+		my $bits=$r->{bits};
+		#create register map
+		print FH "\n###$r->{name}\n Address: ".$r->{addr}."\n\n";
+
+		print FH "| field_name | start_bit | end_bit | set | clear | reset |\n";
+		print FH "| --- | --- | --- | --- | --- | --- |\n";
+
+		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
+			       keys %{$bits}) {
+		    my $f=$bits->{$b};
+		    print FH "| ".$f->{name}
+		    ." | ".$f->{lsb}
+		    ." | ".$f->{msb}
+		    ." | ".$f->{set}
+		    ." | ".$f->{clear}
+		    ." | ".$f->{reset}
+		    ." |\n";
+		}
+	    }
+	}
+	close(FH);
+    }
 }
 
-
+if ($#ARGV <1) {
+    print STDERR "Usage: $0 [-h|-m] <defined.txt>\n";
+    exit(1);
+}
+my $type=shift(@ARGV);
 my $d=parseDefined();
-toHTML($d);
-toMD($d);
+if ($type eq "-h") {
+    toHTML($d);
+} elsif ($type eq "-m") {
+    toMD($d);
+} else {
+    print STDERR "$0: unsupported option $type\n";
+    exit(2)
+}
