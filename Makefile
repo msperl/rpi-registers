@@ -1,5 +1,5 @@
 help:
-	@echo "Usage: make BCRMBASE=<base of exploded brcm_adndorid.tar> <target>"
+	@echo "Usage: make BCRMBASE=<base of exploded brcm_android.tar> <target>"
 	@echo "Targets: html md"
 
 clean:
