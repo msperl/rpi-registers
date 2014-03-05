@@ -209,10 +209,11 @@ sub toHTML {
 	}
     }
 }
+
 sub toMD {
     my ($d)=@_;
     # first create the region markdown
-    open(FH,">","rpi-registers.md");
+    open(FH,">","md/README.md");
     print FH "#Register Regions\n\n";
 
     print FH "| Region | Base |\n| --- | --- |\n";
@@ -223,7 +224,7 @@ sub toMD {
 
     # and now the sections
     foreach my $s (sort keys %{$d}) {
-	open(FH,">","Region_$s.md");
+	open(FH,">","md/Region_$s.md");
 	print FH "# Register Region: $s\n\n";
 
 	print FH "\n##Info\n";

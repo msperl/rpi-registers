@@ -9,8 +9,10 @@ html: testenv rpi-registers.html
 rpi-registers.html: defined2html+md.pl defined.txt
 	perl defined2html+md.pl -h defined.txt > rpi-registers.html
 
-md: testenv rpi-registers.md
-rpi-registers.md: defined2html+md.pl defined.txt
+md: testenv md/README.md
+
+md/README.md: defined2html+md.pl defined.txt
+	mkdir -p md
 	perl defined2html+md.pl -m defined.txt
 
 defined.txt:
