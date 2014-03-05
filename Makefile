@@ -3,7 +3,9 @@ help:
 	@echo "Targets: html md"
 
 clean:
-	rm -f rpi-registers.html
+	rm -f rpi-registers.html  defined.txt md/*md
+
+all: html md
 
 html: testenv rpi-registers.html
 rpi-registers.html: defined2html+md.pl defined.txt
@@ -15,13 +17,14 @@ md/README.md: defined2html+md.pl defined.txt
 	mkdir -p md
 	perl defined2html+md.pl -m defined.txt
 
-defined.txt:
+defined.txt: Makefile
 	( \
 	cd $(BCRMBASE)/brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip; \
-	echo '#include "register_map.h"' \
+	(echo '#include "register_map.h"'; echo '#include "register_map_macros.h"')\
 	| gcc -E -nostdinc -fno-builtin -I. -w -P -dM -x none - \
 	| grep -v "#define __" \
 	| awk '{ if ($$2) print "X_"$$2,$$2;}' \
+	| awk '{t=index($$2,"(");if(t){print "X_"substr($$2,1,t-1),"MACRO";}else{print}}'\
 	| (echo '#include "register_map.h"'; \
 	   echo '#define HW_REGISTER_RW(...) `printf "0x%08x:RW" $$[__VA_ARGS__]`';\
 	   echo '#define HW_REGISTER_RO(...) `printf "0x%08x:RO" $$[__VA_ARGS__]`';\

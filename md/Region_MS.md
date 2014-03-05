@@ -62,6 +62,12 @@
 | [MS_VPUSEMA_1](#ms_vpusema_1) | 0x7e0000c4 | RW |  |  |  |
 | [MS_VPU_STAT](#ms_vpu_stat) | 0x7e0000c8 | RO | 24 | 0x00ff00ff |  |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| MS_DMA | MS_DMA |
+
 ##Register info
 
 

@@ -48,6 +48,17 @@
 | SCALER_DISPSLAVE2 | 0x7e4000d0 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPGAMDAT | 0x7e4000e0 | RW | 32 | 0xffffffff |  |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| SCALER_0_DMA | SCALER_0_DMA |
+| SCALER_1_DMA | SCALER_1_DMA |
+| SCALER_2_DMA | SCALER_2_DMA |
+| SCALER_COB_FIFO_SIZE | SCALER_COB_FIFO_SIZE |
+| SCALER_CONTEXT_MEM_SIZE | SCALER_CONTEXT_MEM_SIZE |
+| SCALER_LINE_BUFFER_MEM_SIZE | SCALER_LINE_BUFFER_MEM_SIZE |
+
 ##Register info
 
 

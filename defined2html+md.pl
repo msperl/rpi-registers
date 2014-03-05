@@ -22,10 +22,15 @@ sub parseDefined {
     # remap regs to sections
     foreach my $s (grep(/_BASE(_REG)?$/,keys %defs)) {
 	my $base=$defs{$s};
+	# skip if it is not really a base with the corresponding address
+	if (not $base =~/0x[0-9a-f]/) {
+	    next;
+	}
 	delete $defs{$s};
 	$s =~s/_BASE(_REG)?$//;
 
 	my $sec = $sections->{$s} = {
+	    name=>$s,
 	    base=>$base,
 	    id=>$defs{$s."_APB_ID"},
 	    password=>$defs{$s."_PASSWORD"},
@@ -106,13 +111,14 @@ sub toHTML {
     # now the index
     print "<h1>Index</h1>\n<ul>\n";
     foreach my $k (sort keys %{$d}) {
-	print "  <li><a href=\"#$k\">$k (".$d->{$k}->{base}.")</a></li>\n";
+	print "  <li><a href=\"#$k\">".$d->{$k}->{base}
+	."(".$d->{$k}->{base}.")</a></li>\n";
     }
     print "</ul>\n";
 
     # and now the sections
     foreach my $s (sort keys %{$d}) {
-	print "<hr/>\n<h1><a name=\"".$s."\">".$s
+	print "<hr/>\n<h1><a name=\"".$d->{$s}->{name}."\">".$s
 	    ."</a></h1><br/>\n";
 	print "<h3>Info</h3>\n";
 	print "<table border=\"1\">\n";
@@ -218,14 +224,14 @@ sub toMD {
 
     print FH "| Region | Base |\n| --- | --- |\n";
     foreach my $k (sort keys %{$d}) {
-	print FH "| [".$k."](Region_".$k.".md) | ".$d->{$k}->{base}." |\n";
+	print FH "| [".$d->{$k}->{name}."](Region_".$d->{$k}->{name}.".md) | ".$d->{$k}->{base}." |\n";
     }
     close(FH);
 
     # and now the sections
     foreach my $s (sort keys %{$d}) {
-	open(FH,">","md/Region_$s.md");
-	print FH "# Register Region: $s\n\n";
+	open(FH,">","md/Region_".$d->{$s}->{name}.".md");
+	print FH "# Register Region: ".$d->{$s}->{name}."\n\n";
 
 	print FH "\n##Info\n";
 	print FH "| Name | value |\n| --- | --- |\n";

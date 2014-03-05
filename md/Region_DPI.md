@@ -13,5 +13,11 @@
 | --- | --- | --- | --- | --- | --- |
 | DPI_C | 0x7e208000 | RW | 16 | 0x0000ffff | 0x00003000 |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| DPI_DPIC | DPI_DPIC |
+
 ##Register info
 

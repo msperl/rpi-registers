@@ -16,6 +16,13 @@
 | [SPI_DLEN](#spi_dlen) | 0x7e20400c | RW | 16 | 0x0000ffff | 0000000000 |
 | [SPI_LTOH](#spi_ltoh) | 0x7e204010 | RW | 4 | 0x0000000f | 0x00000001 |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| SPI_RX_DMA | SPI_RX_DMA |
+| SPI_TX_DMA | SPI_TX_DMA |
+
 ##Register info
 
 

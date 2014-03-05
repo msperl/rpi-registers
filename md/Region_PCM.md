@@ -20,6 +20,13 @@
 | [PCM_INTSTC_A](#pcm_intstc_a) | 0x7e20301c | RW | 4 | 0x0000000f | 0000000000 |
 | [PCM_GRAY](#pcm_gray) | 0x7e203020 | RW | 22 | 0x003ffff7 | 0000000000 |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| PCM_RX_DMA | PCM_RX_DMA |
+| PCM_TX_DMA | PCM_TX_DMA |
+
 ##Register info
 
 

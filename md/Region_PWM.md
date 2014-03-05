@@ -24,6 +24,12 @@
 | PWM_RNG4 | 0x7e20c040 | RW | 0 | 0000000000 | 0x00000020 |
 | PWM_DAT4 | 0x7e20c044 | RW | 0 | 0000000000 | 0000000000 |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| PWM_DMA | PWM_DMA |
+
 ##Register info
 
 

@@ -89,5 +89,14 @@
 | SLIM_DCC9_STAT | 0x7e21032c | RW | 32 | 0xc0ff00c7 | 0000000000 |
 | SLIM_DCC9_PROT | 0x7e210330 | RW | 32 | 0xc001ffff | 0x000093a0 |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| SLIM_CRX_DMA | SLIM_CRX_DMA |
+| SLIM_CTX_DMA | SLIM_CTX_DMA |
+| SLIM_DRX_DMA | SLIM_DRX_DMA |
+| SLIM_DTX_DMA | SLIM_DTX_DMA |
+
 ##Register info
 
