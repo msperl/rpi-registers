@@ -45,6 +45,7 @@ sub parseDefined {
 	    $n =~ /^${s}_(.*)/;
 	    my $a=$sec->{defs}->{$_};
 	    $a =~s/:(RO|RW)$//;
+	    my $reset = $sec->{defs}->{$n."_RESET"};
 	    my $t=$1;
 	    $sec->{regs}->{$n} = {
 		name => $n,
@@ -71,6 +72,13 @@ sub parseDefined {
 		    set => $sec->{defs}->{$n."_SET"},
 		    clear => $sec->{defs}->{$n."_CLR"},
 		};
+		if (defined $reset) {
+		    my $s = hex($sec->{defs}->{$n."_SET"});
+		    my $r = hex($reset) & $s;
+		    $r = $r >> $sec->{defs}->{$n."_LSB"};
+		    $reg->{bits}->{$n}->{reset} = sprintf ("0x%x",$r);
+		}
+
 		delete $sec->{defs}->{$n."_BITS"};
 		delete $sec->{defs}->{$n."_SET"};
 		delete $sec->{defs}->{$n."_CLR"};
@@ -181,6 +189,7 @@ sub toHTML {
 		    ."    <th>end_bit</th>\n"
 		    ."    <th>set</th>\n"
 		    ."    <th>clear</th>\n"
+		    ."    <th>reset</th>\n"
 		    ."  </tr>\n";
 		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
 			       keys %{$bits}) {
@@ -192,6 +201,7 @@ sub toHTML {
 			."    <td>".$f->{msb}."</td>\n"
 			."    <td>".$f->{set}."</td>\n"
 			."    <td>".$f->{clear}."</td>\n"
+			."    <td>".$f->{reset}."</td>\n"
 			."  </tr>\n";
 		}
 		print "</table>\n";

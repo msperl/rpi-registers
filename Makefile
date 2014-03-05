@@ -5,11 +5,11 @@ help:
 clean:
 	rm -f rpi-registers.html
 
-html: rpi-registers.html
-rpi-registers.html:: #defined.txt
+html: testenv rpi-registers.html
+rpi-registers.html: defined2html+md.pl defined.txt
 	perl defined2html+md.pl defined.txt > rpi-registers.html
 
-defined.txt:: testenv
+defined.txt:
 	( \
 	cd $(BCRMBASE)/brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip; \
 	echo '#include "register_map.h"' \
