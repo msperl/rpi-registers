@@ -1,73 +1,82 @@
 #! /usr/bin/perl
 use strict;
 use Data::Dumper;
-# read the defines
-my %def;
-my %regs;
-my %bits;
-my %str;
-my @sections;
 
 
 sub parseDefined {
-    while(my $l=<>) {
+    # read the defines
+    my %defs;
+    my $sections;
+
+    while(my $l = <>) {
 	chomp($l);
-	my ($k,$v)=split(/\s+/,$l,2);
-	$def{$k}=$v;
-	# handle sections
-	if ($k=~s/_BASE$//) {
-	    push (@sections,$k);
+	my ($k,$v) = split(/\s+/,$l,2);
+	if ($v =~/:R[OW]$/) {
+	    $k .= "_REG";
 	}
-	# handle registers
-	if ($l=~/:R[OW]$/) {
-	    # check if we match a section
-	    $regs{$k}=$v;
-	}
-	if ($k=~/^(.*)_BITS$/) {
-	    $bits{$1}=$def{$k};
-	}
+	$defs{$k}=$v;
     }
 
-    # sort the registers
-    my @regssorted=sort {$regs{$a} cmp $regs{$b} } keys %regs;
+    # remap regs to sections
+    foreach my $s (grep(/_BASE(_REG)?$/,keys %defs)) {
+	my $base=$defs{$s};
+	delete $defs{$s};
+	$s =~s/_BASE(_REG)?$//;
 
-    # transpose
-    my $d={};
-    foreach my $s (sort @sections) {
-	# first the generic info
-	foreach my $k (@regssorted) {
-	    if (not $k=~/^${s}_(.*)/) { next; }
-	    my $l=$1;
-	    my $addr=$regs{$k};
-	    $addr=~s/:(RW|RO)$//;
-	    my $type=$1;
-	    $d->{$s}->{$k}={
-		name  => $l,
-		addr  => $addr,
-		type  => $type,
-		width => $def{$k."_WIDTH"}
+	my $sec = $sections->{$s} = {base=>$base};
+	# map the defines to the section
+	map {
+	    $sec->{defs}->{$_}=$defs{$_};
+	    delete $defs{$_};
+	} grep(/^${s}_/,keys %defs);
+	# map the registers to the section
+	map {
+	    my $n=$_;
+	    $n =~ s/_REG$//;
+	    $n =~ /^${s}_(.*)/;
+	    my $a=$sec->{defs}->{$_};
+	    $a =~s/:(RO|RW)$//;
+	    my $t=$1;
+	    my $reg = $sec->{regs}->{$n} = {
+		name => $n,
+		addr => $a,
+		type => $t,
+		width => $sec->{defs}->{$n."_WIDTH"},
+		reset => $sec->{defs}->{$n."_RESET"},
+		mask  => $sec->{defs}->{$n."_MASK"},
+		clear => $sec->{defs}->{$n."_CLR"},
 	    };
-	}
-	# now the regs themselves
-	foreach my $k (@regssorted) {
-	    if (not $k=~/^${s}_(.*)/) { next; }
-	    my $l=$1;
-	    my $addr=$regs{$k};
-	    $addr=~s/:(RW|RO)$//;
-	    my $t;my $c=0;
-	    foreach my $b (sort keys %bits) {
-		if (not $b=~/^${k}_(.*)/) { next; }
-		$t->{$b}={
-		    name => $1,
-		    lsb  => $def{$b."_LSB"},
-		    msb  => $def{$b."_MSB"}
+	    delete $sec->{defs}->{$_};
+	    delete $sec->{defs}->{$n."_WIDTH"};
+	    delete $sec->{defs}->{$n."_RESET"};
+	    delete $sec->{defs}->{$n."_MASK"};
+	    delete $sec->{defs}->{$n."_CLR"};
+	    # and map the bits to the registers
+	    map {
+		my $n=$_;
+		$n =~ s/_BITS$//;
+		$reg->{bits}->{$n}= {
+		    name => $n,
+		    bits => $sec->{defs}->{$n."_BITS"},
+		    lsb => $sec->{defs}->{$n."_LSB"},
+		    msb => $sec->{defs}->{$n."_MSB"},
+		    set => $sec->{defs}->{$n."_SET"},
+		    reset => $sec->{defs}->{$n."_RESET"},
+		    mask => $sec->{defs}->{$n."_MASK"},
+		    clear => $sec->{defs}->{$n."_CLR"},
 		};
-		$c++;
-	    }
-	    if ($c) { $d->{$s}->{$k}->{fields}=$t; }
-	}
+		delete $sec->{defs}->{$n."_BITS"};
+		delete $sec->{defs}->{$n."_SET"};
+		delete $sec->{defs}->{$n."_RESET"};
+		delete $sec->{defs}->{$n."_MASK"};
+		delete $sec->{defs}->{$n."_CLR"};
+		delete $sec->{defs}->{$n."_LSB"};
+		delete $sec->{defs}->{$n."_MSB"};
+	    } grep (/^${s}_(.*)_BITS$/,keys %{$sec->{defs}});
+	} grep(/^${s}_(.*)_REG$/,keys %{$sec->{defs}});
+
     }
-    return $d;
+    return $sections;
 }
 
 sub toHTML {
@@ -77,63 +86,100 @@ sub toHTML {
     # now the index
     print "<h1>Index</h1>\n<ul>\n";
     foreach my $k (sort keys %{$d}) {
-	print "  <li><a href=\"#$k\">$k</a></li>\n";
+	print "  <li><a href=\"#$k\">$k (".$d->{$k}->{base}.")</a></li>\n";
     }
     print "</ul>\n";
 
     # and now the sections
     foreach my $s (sort keys %{$d}) {
-	print "<hr/>\n<h1><a name=\"".$s."\">".$s."</h1><br/>\n";
+	print "<hr/>\n<h1><a name=\"".$s."\">".$s
+	    ." (".$d->{$s}->{base}.")"
+	    ."</a></h1><br/>\n";
 	print "<table border=\"1\">\n"
 	    ."  <tr>\n"
 	    ."    <th>register name</th>\n"
 	    ."    <th>address</th>\n"
 	    ."    <th>type</th>\n"
 	    ."    <th>width</th>\n"
+	    ."    <th>mask</th>\n"
+	    ."    <th>reset</th>\n"
+	    ."    <th>clear</th>\n"
 	    ."  </tr>\n";
+	my $regs=$d->{$s}->{regs};
 	my @regssorted = sort
-	    { hex($d->{$s}->{$a}->{addr}) <=> hex($d->{$s}->{$b}->{addr}) }
-	    keys %{$d->{$s}};
+	    { hex($regs->{$a}->{addr}) <=> hex($regs->{$b}->{addr}) }
+	    keys %{$regs};
 
-	my $m="";
 	foreach my $k (@regssorted) {
-	    my $t=$d->{$s}->{$k};
+	    my $r = $regs->{$k};
 	    print "  <tr>\n";
-	    if (exists $t->{fields}) {
-		print "    <td><a href=\"#".$k."\">".$t->{name}."</a></td>\n";
-
-		$m.= "<h2><a name=\"".$k."\">Register:".$t->{name}."</h2><br/>\n";
-		$m.= "address: ".$t->{addr}."</br>\n";
-		$m.= "<table border=\"1\">\n"
-		    ."  <tr>\n"
-		    ."    <th>field_name</th>\n"
-		    ."    <th>start_bit</th>\n"
-		    ."    <th>end_bit</th>\n"
-		    ."  </tr>\n";
-		my $tf=$t->{fields};
-		foreach my $b (sort {$tf->{$a}->{lsb} <=> $tf->{$b}->{lsb}}
-			       keys %{$tf}) {
-		    my $f=$tf->{$b};
-
-		    $m.="  <tr>\n"
-			."    <td>".$f->{name}."</td>\n"
-			."    <td>".$f->{lsb}."</td>\n"
-			."    <td>".$f->{msb}."</td>\n"
-			."  </tr>\n";
-		}
-		$m.="</table>\n";
+	    if (exists $r->{bits}) {
+		print "    <td><a href=\"#".$k."\">".$r->{name}."</a></td>\n";
 	    } else {
-		print "    <td>".$t->{name}."</td>\n";
+		print "    <td>".$r->{name}."</td>\n";
 	    }
-	    print "    <td>".$t->{addr}."</td>\n"
-		."    <td>".$t->{type}."</td>\n"
-		."    <td>".$t->{width}."</td>\n"
+	    print "    <td>".$r->{addr}."</td>\n"
+		."    <td>".$r->{type}."</td>\n"
+		."    <td>".$r->{width}."</td>\n"
+		."    <td>".$r->{mask}."</td>\n"
+		."    <td>".$r->{reset}."</td>\n"
+		."    <td>".$r->{clear}."</td>\n"
 		."  </tr>\n";
 	}
 	print "</table>\n\n";
 
-	print $m;
+	my @k=sort keys %{$d->{$s}->{defs}};
+	if ($#k > -1) {
+	    my $defs=$d->{$s}->{defs};
+	    print "<h2>Unsupported defines</h2>\n"
+		."<table border=\"1\">\n"
+		."  <tr>\n"
+		."    <th>define</th>\n"
+		."    <th>value</th>\n"
+		."  </tr>\n";
+	    foreach my $n (@k) {
+		print "  <tr>\n"
+		    ."    <td>".$n."</td>\n"
+		    ."    <td>".$defs->{$n}."</td>\n"
+		    ."  </tr>\n";
+	    }
+	    print "</table>\n";
+	}
 
+	# add the extra info
+	foreach my $k (@regssorted) {
+	    my $r = $regs->{$k};
+	    if (exists $r->{bits}) {
+		my $bits=$r->{bits};
+		#create register map
+		print "<h2><a name=\"".$k."\">Register:".$r->{name}
+		." (".$r->{addr}.")"
+		    ."</h2><br/>\n";
+		print "<table border=\"1\">\n"
+		    ."  <tr>\n"
+		    ."    <th>field_name</th>\n"
+		    ."    <th>start_bit</th>\n"
+		    ."    <th>end_bit</th>\n"
+		    ."    <th>mask</th>\n"
+		    ."    <th>set</th>\n"
+		    ."    <th>reset</th>\n"
+		    ."  </tr>\n";
+		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
+			       keys %{$bits}) {
+		    my $f=$bits->{$b};
+
+		    print "  <tr>\n"
+			."    <td>".$f->{name}."</td>\n"
+			."    <td>".$f->{lsb}."</td>\n"
+			."    <td>".$f->{msb}."</td>\n"
+			."    <td>".$f->{mask}."</td>\n"
+			."    <td>".$f->{set}."</td>\n"
+			."    <td>".$f->{reset}."</td>\n"
+			."  </tr>\n";
+		}
+		print "</table>\n";
+	    }
+	}
     }
 }
 sub toMD {
