@@ -295,8 +295,551 @@
 | A2W_PLLB_MULTI | 0x7e102fe0 | RW | 0 | 0000000000 | 0000000000 |
 | A2W_PLLB_ANA_MULTI | 0x7e102ff0 | RW | 0 | 0000000000 | 0000000000 |
 
-##unsupported
-
-
 ##Register info
 
+
+###A2W_PLLA_CTRL - (0x7e102100)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| A2W_PLLA_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| A2W_PLLA_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
+| A2W_PLLA_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+
+###A2W_PLLA_ANA_SSCS - (0x7e102110)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_ANA_SSCS_STEP | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
+| A2W_PLLA_ANA_SSCS_MODE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+
+###A2W_PLLC_CTRL - (0x7e102120)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| A2W_PLLC_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| A2W_PLLC_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
+| A2W_PLLC_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+
+###A2W_PLLC_ANA_SSCS - (0x7e102130)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_ANA_SSCS_STEP | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
+| A2W_PLLC_ANA_SSCS_MODE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+
+###A2W_PLLD_CTRL - (0x7e102140)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| A2W_PLLD_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| A2W_PLLD_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
+| A2W_PLLD_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+
+###A2W_PLLD_ANA_SSCS - (0x7e102150)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_ANA_SSCS_STEP | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
+| A2W_PLLD_ANA_SSCS_MODE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+
+###A2W_PLLH_CTRL - (0x7e102160)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_CTRL_NDIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLH_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| A2W_PLLH_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
+| A2W_PLLH_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+
+###A2W_HDMI_CTL_RCAL - (0x7e102180)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_HDMI_CTL_RCAL_SELAVG | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| A2W_HDMI_CTL_RCAL_SELDIV | 4 | 5 | 0x00000030 | 0xffffffcf | 0x0 |
+| A2W_HDMI_CTL_RCAL_MANR | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x0 |
+| A2W_HDMI_CTL_RCAL_MANREN | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| A2W_HDMI_CTL_RCAL_RSTB | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
+
+###A2W_XOSC_CTRL - (0x7e102190)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_XOSC_CTRL_PLLCEN | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| A2W_XOSC_CTRL_HDMIEN | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+| A2W_XOSC_CTRL_USBEN | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| A2W_XOSC_CTRL_SMPSEN | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| A2W_XOSC_CTRL_DDREN | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| A2W_XOSC_CTRL_PLLDEN | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| A2W_XOSC_CTRL_PLLAEN | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| A2W_XOSC_CTRL_PLLBEN | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
+| A2W_XOSC_CTRL_PLLCOK | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| A2W_XOSC_CTRL_HDMIOK | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
+| A2W_XOSC_CTRL_USBOK | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
+| A2W_XOSC_CTRL_SMPSOK | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
+| A2W_XOSC_CTRL_DDROK | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+| A2W_XOSC_CTRL_PLLDOK | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+| A2W_XOSC_CTRL_PLLAOK | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
+| A2W_XOSC_CTRL_PLLBOK | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
+
+###A2W_SMPS_A_MODE - (0x7e1021a0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_A_MODE_BSTPWMB | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+
+###A2W_SMPS_B_STAT - (0x7e1021b0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_B_STAT_VOLTS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+| A2W_SMPS_B_STAT_BSTPWMB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| A2W_SMPS_B_STAT_POK | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+
+###A2W_SMPS_C_CLK - (0x7e1021c0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_C_CLK_OSCDIV | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| A2W_SMPS_C_CLK_USEOSC | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| A2W_SMPS_C_CLK_TDEN | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+
+###A2W_SMPS_L_SPV - (0x7e1021d0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_L_SPV_VOLTS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+
+###A2W_PLLB_CTRL - (0x7e1021e0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| A2W_PLLB_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| A2W_PLLB_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
+| A2W_PLLB_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+
+###A2W_PLLB_ANA_SSCS - (0x7e1021f0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_ANA_SSCS_STEP | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
+| A2W_PLLB_ANA_SSCS_MODE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+
+###A2W_PLLA_FRAC - (0x7e102200)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_FRAC_FRAC | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
+
+###A2W_PLLA_ANA_SSCL - (0x7e102210)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_ANA_SSCL_LIMIT | 0 | 21 | 0x003fffff | 0xffc00000 | 0x0 |
+
+###A2W_PLLC_FRAC - (0x7e102220)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_FRAC_FRAC | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
+
+###A2W_PLLD_FRAC - (0x7e102240)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_FRAC_FRAC | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
+
+###A2W_PLLH_FRAC - (0x7e102260)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_FRAC_FRAC | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
+
+###A2W_HDMI_CTL_HFEN - (0x7e102280)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_HDMI_CTL_HFEN_HFEN | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+
+###A2W_XOSC_CPR - (0x7e102290)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_XOSC_CPR_DIV | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| A2W_XOSC_CPR_CPR1 | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+
+###A2W_SMPS_A_VOLTS - (0x7e1022a0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_A_VOLTS_VOLTS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+
+###A2W_SMPS_C_CTL - (0x7e1022c0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_C_CTL_CTRLEN | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| A2W_SMPS_C_CTL_UPEN | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+
+###A2W_SMPS_L_SPA - (0x7e1022d0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_L_SPA_ANA | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+
+###A2W_PLLB_FRAC - (0x7e1022e0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_FRAC_FRAC | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
+
+###A2W_PLLB_ANA_SSCL - (0x7e1022f0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_ANA_SSCL_LIMIT | 0 | 21 | 0x003fffff | 0xffc00000 | 0x0 |
+
+###A2W_PLLA_DSI0 - (0x7e102300)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_DSI0_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLA_DSI0_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLA_DSI0_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLA_ANA_KAIP - (0x7e102310)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
+| A2W_PLLA_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| A2W_PLLA_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
+
+###A2W_PLLC_CORE2 - (0x7e102320)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_CORE2_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLC_CORE2_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLC_CORE2_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLC_ANA_KAIP - (0x7e102330)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
+| A2W_PLLC_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| A2W_PLLC_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
+
+###A2W_PLLD_DSI0 - (0x7e102340)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_DSI0_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLD_DSI0_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLD_DSI0_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLD_ANA_KAIP - (0x7e102350)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
+| A2W_PLLD_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| A2W_PLLD_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
+
+###A2W_PLLH_AUX - (0x7e102360)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_AUX_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLH_AUX_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLH_AUX_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLH_ANA_KAIP - (0x7e102370)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
+| A2W_PLLH_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| A2W_PLLH_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
+
+###A2W_XOSC_BIAS - (0x7e102390)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_XOSC_BIAS_BIAS | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x8 |
+| A2W_XOSC_BIAS_HIGHP | 4 | 4 | 0x00000010 | 0xffffffef | 0x1 |
+
+###A2W_SMPS_A_GAIN - (0x7e1023a0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_A_GAIN_DIGGAIN | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+
+###A2W_SMPS_L_SCV - (0x7e1023d0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_L_SCV_VOLTS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+
+###A2W_PLLB_ARM - (0x7e1023e0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_ARM_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLB_ARM_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLB_ARM_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLB_ANA_KAIP - (0x7e1023f0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
+| A2W_PLLB_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| A2W_PLLB_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
+
+###A2W_PLLA_CORE - (0x7e102400)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_CORE_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLA_CORE_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLA_CORE_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLA_ANA_STAT - (0x7e102410)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_ANA_STAT_DATA | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+
+###A2W_PLLC_CORE1 - (0x7e102420)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_CORE1_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLC_CORE1_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLC_CORE1_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLC_ANA_STAT - (0x7e102430)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_ANA_STAT_DATA | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+
+###A2W_PLLD_CORE - (0x7e102440)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_CORE_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLD_CORE_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLD_CORE_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLD_ANA_STAT - (0x7e102450)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_ANA_STAT_DATA | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+
+###A2W_PLLH_RCAL - (0x7e102460)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_RCAL_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLH_RCAL_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLH_RCAL_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_XOSC_PWR - (0x7e102490)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_XOSC_PWR_BYPASS | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| A2W_XOSC_PWR_PWRDN | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+| A2W_XOSC_PWR_RSTB | 2 | 2 | 0x00000004 | 0xfffffffb | 0x1 |
+
+###A2W_SMPS_L_SCA - (0x7e1024d0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_L_SCA_ANA | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+
+###A2W_PLLB_SP0 - (0x7e1024e0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_SP0_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLB_SP0_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLB_SP0_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLB_ANA_STAT - (0x7e1024f0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_ANA_STAT_DATA | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+
+###A2W_PLLA_PER - (0x7e102500)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_PER_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLA_PER_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLA_PER_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLA_ANA_SCTL - (0x7e102510)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_ANA_SCTL_SEL | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+| A2W_PLLA_ANA_SCTL_UPDATE | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| A2W_PLLA_ANA_SCTL_RESET | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+
+###A2W_PLLC_PER - (0x7e102520)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_PER_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLC_PER_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLC_PER_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLC_ANA_SCTL - (0x7e102530)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_ANA_SCTL_SEL | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+| A2W_PLLC_ANA_SCTL_UPDATE | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| A2W_PLLC_ANA_SCTL_RESET | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+
+###A2W_PLLD_PER - (0x7e102540)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_PER_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLD_PER_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLD_PER_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLD_ANA_SCTL - (0x7e102550)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_ANA_SCTL_SEL | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+| A2W_PLLD_ANA_SCTL_UPDATE | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| A2W_PLLD_ANA_SCTL_RESET | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+
+###A2W_PLLH_PIX - (0x7e102560)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_PIX_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLH_PIX_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLH_PIX_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLH_ANA_SCTL - (0x7e102570)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_ANA_SCTL_SEL | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+| A2W_PLLH_ANA_SCTL_UPDATE | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| A2W_PLLH_ANA_SCTL_RESET | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+
+###A2W_SMPS_L_SIV - (0x7e1025d0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_L_SIV_VOLTS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+
+###A2W_PLLB_SP1 - (0x7e1025e0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_SP1_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLB_SP1_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLB_SP1_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLB_ANA_SCTL - (0x7e1025f0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_ANA_SCTL_SEL | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+| A2W_PLLB_ANA_SCTL_UPDATE | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| A2W_PLLB_ANA_SCTL_RESET | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+
+###A2W_PLLA_CCP2 - (0x7e102600)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_CCP2_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLA_CCP2_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLA_CCP2_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLA_ANA_VCO - (0x7e102610)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLA_ANA_VCO_RANGE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+
+###A2W_PLLC_CORE0 - (0x7e102620)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_CORE0_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLC_CORE0_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLC_CORE0_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLC_ANA_VCO - (0x7e102630)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLC_ANA_VCO_RANGE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+
+###A2W_PLLD_DSI1 - (0x7e102640)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_DSI1_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLD_DSI1_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLD_DSI1_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLD_ANA_VCO - (0x7e102650)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLD_ANA_VCO_RANGE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+
+###A2W_PLLH_ANA_STAT - (0x7e102660)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_ANA_STAT_DATA | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+| A2W_PLLH_ANA_STAT_RCALDONE | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| A2W_PLLH_ANA_STAT_RCALCODE | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
+| A2W_PLLH_ANA_STAT_CNTLENB | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
+
+###A2W_PLLH_ANA_VCO - (0x7e102670)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLH_ANA_VCO_RANGE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+
+###A2W_SMPS_L_SIA - (0x7e1026d0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_SMPS_L_SIA_ANA | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+
+###A2W_PLLB_SP2 - (0x7e1026e0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_SP2_DIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| A2W_PLLB_SP2_CHENB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| A2W_PLLB_SP2_BYPEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+
+###A2W_PLLB_ANA_VCO - (0x7e1026f0)
+
+| field_name | start_bit | end_bit | set | clear | reset |
+| --- | --- | --- | --- | --- | --- |
+| A2W_PLLB_ANA_VCO_RANGE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
