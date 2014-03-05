@@ -14,7 +14,9 @@ sub parseDefined {
 	if ($v =~/:R[OW]$/) {
 	    $k .= "_REG";
 	}
-	$defs{$k}=$v;
+	if ($k=~/^[^_]+_/) {
+	    $defs{$k}=$v;
+	}
     }
 
     # remap regs to sections
@@ -26,7 +28,7 @@ sub parseDefined {
 	my $sec = $sections->{$s} = {
 	    base=>$base,
 	    id=>$defs{$s."_APB_ID"},
-	    passwd=>$defs{$s."_PASSWORD"},
+	    password=>$defs{$s."_PASSWORD"},
 	};
 	delete $defs{$s."_APB_ID"};
 	delete $defs{$s."_PASSWORD"};
@@ -80,7 +82,7 @@ sub parseDefined {
 		delete $sec->{defs}->{$n."_CLR"};
 		delete $sec->{defs}->{$n."_LSB"};
 		delete $sec->{defs}->{$n."_MSB"};
-	    } grep (/^${s}_(.*)_BITS$/,keys %{$sec->{defs}});
+	    } grep (/^${n}_(.*)_BITS$/,keys %{$sec->{defs}});
 	} grep(/^${s}_(.*)_REG$/,keys %{$sec->{defs}});
     }
     # map everything else to unhandled
