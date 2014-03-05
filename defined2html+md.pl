@@ -53,13 +53,11 @@ sub parseDefined {
 		width => $sec->{defs}->{$n."_WIDTH"},
 		reset => $sec->{defs}->{$n."_RESET"},
 		mask  => $sec->{defs}->{$n."_MASK"},
-		clear => $sec->{defs}->{$n."_CLR"},
 	    };
 	    delete $sec->{defs}->{$_};
 	    delete $sec->{defs}->{$n."_WIDTH"};
 	    delete $sec->{defs}->{$n."_RESET"};
 	    delete $sec->{defs}->{$n."_MASK"};
-	    delete $sec->{defs}->{$n."_CLR"};
 	    # and map the bits to the registers
 	    my $reg = $sec->{regs}->{$n};
 	    map {
@@ -71,14 +69,10 @@ sub parseDefined {
 		    lsb => $sec->{defs}->{$n."_LSB"},
 		    msb => $sec->{defs}->{$n."_MSB"},
 		    set => $sec->{defs}->{$n."_SET"},
-		    reset => $sec->{defs}->{$n."_RESET"},
-		    mask => $sec->{defs}->{$n."_MASK"},
 		    clear => $sec->{defs}->{$n."_CLR"},
 		};
 		delete $sec->{defs}->{$n."_BITS"};
 		delete $sec->{defs}->{$n."_SET"};
-		delete $sec->{defs}->{$n."_RESET"};
-		delete $sec->{defs}->{$n."_MASK"};
 		delete $sec->{defs}->{$n."_CLR"};
 		delete $sec->{defs}->{$n."_LSB"};
 		delete $sec->{defs}->{$n."_MSB"};
@@ -130,7 +124,6 @@ sub toHTML {
 	    ."    <th>width</th>\n"
 	    ."    <th>mask</th>\n"
 	    ."    <th>reset</th>\n"
-	    ."    <th>clear</th>\n"
 	    ."  </tr>\n";
 	my $regs=$d->{$s}->{regs};
 	my @regssorted = sort
@@ -150,7 +143,6 @@ sub toHTML {
 		."    <td>".$r->{width}."</td>\n"
 		."    <td>".$r->{mask}."</td>\n"
 		."    <td>".$r->{reset}."</td>\n"
-		."    <td>".$r->{clear}."</td>\n"
 		."  </tr>\n";
 	}
 	print "</table>\n\n";
@@ -187,9 +179,8 @@ sub toHTML {
 		    ."    <th>field_name</th>\n"
 		    ."    <th>start_bit</th>\n"
 		    ."    <th>end_bit</th>\n"
-		    ."    <th>mask</th>\n"
 		    ."    <th>set</th>\n"
-		    ."    <th>reset</th>\n"
+		    ."    <th>clear</th>\n"
 		    ."  </tr>\n";
 		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
 			       keys %{$bits}) {
@@ -199,9 +190,8 @@ sub toHTML {
 			."    <td>".$f->{name}."</td>\n"
 			."    <td>".$f->{lsb}."</td>\n"
 			."    <td>".$f->{msb}."</td>\n"
-			."    <td>".$f->{mask}."</td>\n"
 			."    <td>".$f->{set}."</td>\n"
-			."    <td>".$f->{reset}."</td>\n"
+			."    <td>".$f->{clear}."</td>\n"
 			."  </tr>\n";
 		}
 		print "</table>\n";
