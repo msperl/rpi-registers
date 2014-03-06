@@ -341,7 +341,7 @@ sub toMW {
 	print "!Name !! value !! description\n";
 	for my $k ("base","id","password") {
 	    if ($d->{$s}->{$k}) {
-		print "|-\n| ".$k." || ".$d->{$s}->{$k}." ||\n";
+		print "|-\n| ".$k." || <code>".$d->{$s}->{$k}."</code> ||\n";
 	    }
 	}
 	print "|}\n";
@@ -354,9 +354,9 @@ sub toMW {
 	    print "!define !! type !! description\n";
 	    foreach my $n (@k) {
 		if ($n eq $defs->{$n}) {
-		    print "|-\n| ".$n." || UNKNOWN ||\n";
+		    print "|-\n| <code>".$n."</code> || UNKNOWN ||\n";
 		} else {
-		    print "|-\n| ".$n." || ".$defs->{$n}." ||\n";
+		    print "|-\n| <code>".$n."</code> || ".$defs->{$n}." ||\n";
 		}
 	    }
 	    print "|}\n";
@@ -372,15 +372,15 @@ sub toMW {
 	foreach my $k (@regssorted) {
 	    my $r = $regs->{$k};
 	    if (exists $r->{bits}) {
-		print "|-\n| [[#".$r->{name}."|".$r->{name}."]]";
+		print "|-\n| [[#".$r->{name}."|<code>".$r->{name}."</code>]]";
 	    } else {
-		print "|-\n| ".$r->{name};
+		print "|-\n| <code>".$r->{name}."</code>";
 	    }
-	    print " ||align=\"right\"|".$r->{addr}
+	    print " ||align=\"right\"| <code>".$r->{addr}."</code>"
 	    ." ||align=\"center\"| ".$r->{type}
 	    ." ||align=\"right\"| ".$r->{width}
-	    ." ||align=\"right\"| ".$r->{mask}
-	    ." ||align=\"right\"| ".$r->{reset}
+	    ." ||align=\"right\"| <code>".$r->{mask}."</code>"
+	    ." ||align=\"right\"| <code>".$r->{reset}."</code>"
 	    ." ||\n";
 	}
 	print "|}\n";
@@ -395,7 +395,7 @@ sub toMW {
 		print "==== Info ====\n";
 		print "{|class=\"wikitable\"\n";
 		print "!Name !! value !! description\n";
-		print "|-\n| address || ".$d->{$s}->{addr}." ||\n";
+		print "|-\n| address || <code>".$r->{addr}."</code> ||\n";
 		print "|}\n";
 		print "==== Description ====\n";
 		print "TODO\n";
@@ -405,12 +405,12 @@ sub toMW {
 		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
 			       keys %{$bits}) {
 		    my $f=$bits->{$b};
-		    print "|-\n| ".$f->{name}
+		    print "|-\n| <code>".$f->{name}."</code>"
 		    ." || ".$f->{lsb}
 		    ." || ".$f->{msb}
-		    ." || ".$f->{set}
-		    ." || ".$f->{clear}
-		    ." || ".$f->{reset}
+		    ." || align=\"right\"| <code>".$f->{set}."</code>"
+		    ." || align=\"right\"| <code>".$f->{clear}."</code>"
+		    ." || align=\"right\"| <code>".$f->{reset}."</code>"
 		    ." ||\n";
 		}
 		print "|}\n";
