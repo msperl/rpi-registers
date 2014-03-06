@@ -333,10 +333,10 @@ sub toMW {
 
     # now the sections
     foreach my $s (sort keys %{$d}) {
-	print "= ".$d->{$s}->{name}." =\n\n";
-	print "== Description ==\n";
+	print "== ".$d->{$s}->{name}." ==\n\n";
+	print "=== Description ===\n";
 	print "TODO\n";
-	print "== Info ==\n";
+	print "=== Info ===\n";
 	print "{|class=\"wikitable\"\n";
 	print "!Name !! value !! description\n";
 	for my $k ("base","id","password") {
@@ -349,7 +349,7 @@ sub toMW {
 	my @k=sort keys %{$d->{$s}->{defs}};
 	if ($#k > -1) {
 	    my $defs=$d->{$s}->{defs};
-	    print "== unknown defined macro ==\n";
+	    print "=== unknown defined macro ===\n";
 	    print "{|class=\"wikitable\"\n";
 	    print "!define !! type !! description\n";
 	    foreach my $n (@k) {
@@ -366,7 +366,7 @@ sub toMW {
 	my @regssorted = sort
 	    { hex($regs->{$a}->{addr}) <=> hex($regs->{$b}->{addr}) }
 	    keys %{$regs};
-	print "== Registers ==\n";
+	print "=== Registers ===\n";
 	print "{|class=\"wikitable\"\n";
 	print "! name !! address !! type || width || mask || reset || description\n";
 	foreach my $k (@regssorted) {
@@ -385,21 +385,21 @@ sub toMW {
 	}
 	print "|}\n";
 
-	print "== Register details ==\n";
+	print "=== Register details ===\n";
 	foreach my $k (@regssorted) {
 	    my $r = $regs->{$k};
 	    if (exists $r->{bits}) {
 		my $bits=$r->{bits};
 		#create register map
-		print "=== ".$r->{name}." ===\n";
-		print "==== Info ====\n";
+		print "==== ".$r->{name}." ====\n";
+		print "===== Info =====\n";
 		print "{|class=\"wikitable\"\n";
 		print "!Name !! value !! description\n";
 		print "|-\n| address || <code>".$r->{addr}."</code> ||\n";
 		print "|}\n";
-		print "==== Description ====\n";
+		print "===== Description =====\n";
 		print "TODO\n";
-		print "==== bits in register ====\n";
+		print "===== bits in register =====\n";
 		print "{|class=\"wikitable\"\n";
 		print "! field_name !! start_bit !! end_bit !! set !! clear !! reset !! description\n";
 		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
