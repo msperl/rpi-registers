@@ -18,17 +18,6 @@
 | [TXP_PROGRESS](#txp_progress) | 0x7e004010 | RO | 12 | 0x00000fff |  |
 | [TXP_XTRA](#txp_xtra) | 0x7e004018 | RW | 1 | 0x00000001 |  |
 
-##Unsupported defines
-
-| define | value |
-| --- | --- |
-| TXP_CTRL_BWE_RESET | 0xf |
-| TXP_CTRL_PILOT_RESET | 0x54 |
-| TXP_CTRL_POWERDOWN_RESET | 0x0 |
-| TXP_CTRL_VERSION_RESET | 0x1 |
-| TXP_DIM_HEIGHT_RESET | 0x0 |
-| TXP_DIM_WIDTH_RESET | 0x0 |
-
 ##Register info
 
 
@@ -37,8 +26,8 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
-| TXP_DIM_WIDTH | 0 | 11 | 0x00000fff | 0xfffff000 |  |
-| TXP_DIM_HEIGHT | 16 | 27 | 0x0fff0000 | 0xf000ffff |  |
+| TXP_DIM_WIDTH | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+| TXP_DIM_HEIGHT | 16 | 27 | 0x0fff0000 | 0xf000ffff | 0x0 |
 
 ###TXP_CTRL
  Address: 0x7e00400c
@@ -58,11 +47,11 @@
 | TXP_CTRL_DITHER | 13 | 13 | 0x00002000 | 0xffffdfff |  |
 | TXP_CTRL_ABORT | 14 | 14 | 0x00004000 | 0xffffbfff |  |
 | TXP_CTRL_VSTART_AT_EOF | 15 | 15 | 0x00008000 | 0xffff7fff |  |
-| TXP_CTRL_BWE | 16 | 19 | 0x000f0000 | 0xfff0ffff |  |
+| TXP_CTRL_BWE | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0xf |
 | TXP_CTRL_ALPHA_ENABLE | 20 | 20 | 0x00100000 | 0xffefffff |  |
-| TXP_CTRL_POWERDOWN | 21 | 21 | 0x00200000 | 0xffdfffff |  |
-| TXP_CTRL_VERSION | 22 | 23 | 0x00c00000 | 0xff3fffff |  |
-| TXP_CTRL_PILOT | 24 | 31 | 0xff000000 | 0x00ffffff |  |
+| TXP_CTRL_POWERDOWN | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
+| TXP_CTRL_VERSION | 22 | 23 | 0x00c00000 | 0xff3fffff | 0x1 |
+| TXP_CTRL_PILOT | 24 | 31 | 0xff000000 | 0x00ffffff | 0x54 |
 
 ###TXP_PROGRESS
  Address: 0x7e004010

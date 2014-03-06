@@ -1,21 +1,24 @@
 help:
 	@echo "Usage: make BCRMBASE=<base of exploded brcm_android.tar> <target>"
-	@echo "Targets: html md"
+	@echo "Targets: html md mw"
 
 clean:
 	rm -f rpi-registers.html  defined.txt md/*md
 
-all: html md
+all: html md mw
 
 html: testenv rpi-registers.html
 rpi-registers.html: defined2html+md.pl defined.txt
-	perl defined2html+md.pl -h defined.txt > rpi-registers.html
+	perl defined2html+md.pl -html defined.txt > rpi-registers.html
 
 md: testenv md/README.md
-
 md/README.md: defined2html+md.pl defined.txt
 	mkdir -p md
-	perl defined2html+md.pl -m defined.txt
+	perl defined2html+md.pl -markdown defined.txt
+
+mw: testenv mediawiki.markup
+mediawiki.markup: defined2html+md.pl defined.txt
+	perl defined2html+md.pl -mediawiki defined.txt > mediawiki.markup
 
 defined.txt: Makefile
 	( \
@@ -32,6 +35,7 @@ defined.txt: Makefile
 	| gcc -E -nostdinc -fno-builtin -I. -w -P -x none - \
 	| sed "s/^X_/echo /" \
 	| bash \
+        | sort \
 	) > defined.txt
 
 testenv:

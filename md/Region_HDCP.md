@@ -16,14 +16,6 @@
 | HDCP_KEY_KY0 | 0x7e809008 | RW | 32 | 0xffffffff | 0000000000 |
 | HDCP_KEY_KY1 | 0x7e80900c | RW | 24 | 0x00ffffff | 0000000000 |
 
-##Unsupported defines
-
-| define | value |
-| --- | --- |
-| HDCP_KEY_CTL_DISHDCP_RESET | 0x0 |
-| HDCP_KEY_CTL_DONE_RESET | 0x0 |
-| HDCP_KEY_CTL_START_RESET | 0x0 |
-
 ##Register info
 
 

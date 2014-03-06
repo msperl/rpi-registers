@@ -33,32 +33,7 @@
 
 | define | value |
 | --- | --- |
-| SMI_CS_ACTIVE_RESET | 0x0 |
-| SMI_CS_AFERR_RESET | 0x0 |
-| SMI_CS_CLEAR_RESET | 0x0 |
-| SMI_CS_DONE_RESET | 0x0 |
-| SMI_CS_EDREQ_RESET | 0x0 |
-| SMI_CS_ENABLE_RESET | 0x0 |
-| SMI_CS_INTD_RESET | 0x0 |
-| SMI_CS_INTR_RESET | 0x0 |
-| SMI_CS_INTT_RESET | 0x0 |
-| SMI_CS_PAD_RESET | 0x0 |
-| SMI_CS_PRDY_RESET | 0x0 |
-| SMI_CS_PVMODE_RESET | 0x0 |
-| SMI_CS_PXLDAT_RESET | 0x0 |
-| SMI_CS_RXD_RESET | 0x0 |
-| SMI_CS_RXF_RESET | 0x0 |
-| SMI_CS_RXR_RESET | 0x0 |
-| SMI_CS_SETERR_RESET | 0x0 |
-| SMI_CS_START_RESET | 0x0 |
-| SMI_CS_TEEN_RESET | 0x0 |
-| SMI_CS_TXD_RESET | 0x1 |
-| SMI_CS_TXE_RESET | 0x1 |
-| SMI_CS_TXW_RESET | 0x1 |
-| SMI_CS_WRITE_RESET | 0x0 |
 | SMI_DMA | UNKNOWN |
-| SMI_FD_FCNT_RESET | 0x0 |
-| SMI_FD_FLVL_RESET | 0x0 |
 | SMI_FIFO_ADDRESS | MACRO |
 | SMI_SCALER_0_DMA | UNKNOWN |
 | SMI_SCALER_1_DMA | UNKNOWN |
@@ -72,29 +47,29 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
-| SMI_CS_ENABLE | 0 | 0 | 0x00000001 | 0xfffffffe |  |
-| SMI_CS_DONE | 1 | 1 | 0x00000002 | 0xfffffffd |  |
-| SMI_CS_ACTIVE | 2 | 2 | 0x00000004 | 0xfffffffb |  |
-| SMI_CS_START | 3 | 3 | 0x00000008 | 0xfffffff7 |  |
-| SMI_CS_CLEAR | 4 | 4 | 0x00000010 | 0xffffffef |  |
-| SMI_CS_WRITE | 5 | 5 | 0x00000020 | 0xffffffdf |  |
-| SMI_CS_PAD | 6 | 7 | 0x000000c0 | 0xffffff3f |  |
-| SMI_CS_TEEN | 8 | 8 | 0x00000100 | 0xfffffeff |  |
-| SMI_CS_INTD | 9 | 9 | 0x00000200 | 0xfffffdff |  |
-| SMI_CS_INTT | 10 | 10 | 0x00000400 | 0xfffffbff |  |
-| SMI_CS_INTR | 11 | 11 | 0x00000800 | 0xfffff7ff |  |
-| SMI_CS_PVMODE | 12 | 12 | 0x00001000 | 0xffffefff |  |
-| SMI_CS_SETERR | 13 | 13 | 0x00002000 | 0xffffdfff |  |
-| SMI_CS_PXLDAT | 14 | 14 | 0x00004000 | 0xffffbfff |  |
-| SMI_CS_EDREQ | 15 | 15 | 0x00008000 | 0xffff7fff |  |
-| SMI_CS_PRDY | 24 | 24 | 0x01000000 | 0xfeffffff |  |
-| SMI_CS_AFERR | 25 | 25 | 0x02000000 | 0xfdffffff |  |
-| SMI_CS_TXW | 26 | 26 | 0x04000000 | 0xfbffffff |  |
-| SMI_CS_RXR | 27 | 27 | 0x08000000 | 0xf7ffffff |  |
-| SMI_CS_TXD | 28 | 28 | 0x10000000 | 0xefffffff |  |
-| SMI_CS_RXD | 29 | 29 | 0x20000000 | 0xdfffffff |  |
-| SMI_CS_TXE | 30 | 30 | 0x40000000 | 0xbfffffff |  |
-| SMI_CS_RXF | 31 | 31 | 0x80000000 | 0x7fffffff |  |
+| SMI_CS_ENABLE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| SMI_CS_DONE | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+| SMI_CS_ACTIVE | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| SMI_CS_START | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| SMI_CS_CLEAR | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| SMI_CS_WRITE | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| SMI_CS_PAD | 6 | 7 | 0x000000c0 | 0xffffff3f | 0x0 |
+| SMI_CS_TEEN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| SMI_CS_INTD | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| SMI_CS_INTT | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
+| SMI_CS_INTR | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
+| SMI_CS_PVMODE | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| SMI_CS_SETERR | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
+| SMI_CS_PXLDAT | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
+| SMI_CS_EDREQ | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
+| SMI_CS_PRDY | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
+| SMI_CS_AFERR | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
+| SMI_CS_TXW | 26 | 26 | 0x04000000 | 0xfbffffff | 0x1 |
+| SMI_CS_RXR | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
+| SMI_CS_TXD | 28 | 28 | 0x10000000 | 0xefffffff | 0x1 |
+| SMI_CS_RXD | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
+| SMI_CS_TXE | 30 | 30 | 0x40000000 | 0xbfffffff | 0x1 |
+| SMI_CS_RXF | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###SMI_A
  Address: 0x7e600008

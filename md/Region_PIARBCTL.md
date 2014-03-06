@@ -12,16 +12,6 @@
 | --- | --- | --- | --- | --- | --- |
 | [PIARBCTL_CAM](#piarbctl_cam) | 0x7e80a000 | RW | 16 | 0x0000ffff | 0000000000 |
 
-##Unsupported defines
-
-| define | value |
-| --- | --- |
-| PIARBCTL_CAM_ALGORITHM_RESET | 0x0 |
-| PIARBCTL_CAM_CHANNEL_INIBIT_RESET | 0x0 |
-| PIARBCTL_CAM_DELAY_RESET | 0x0 |
-| PIARBCTL_CAM_LIMIT_RESET | 0x0 |
-| PIARBCTL_CAM_THRESHOLD_RESET | 0x0 |
-
 ##Register info
 
 

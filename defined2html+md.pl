@@ -76,19 +76,22 @@ sub parseDefined {
 		    msb => $sec->{defs}->{$n."_MSB"},
 		    set => $sec->{defs}->{$n."_SET"},
 		    clear => $sec->{defs}->{$n."_CLR"},
+		    reset => $sec->{defs}->{$n."_RESET"},
 		};
-		if (defined $reset) {
+		if (
+		    (!defined $sec->{defs}->{$n."_RESET"})
+		    && (defined $reset) ) {
 		    my $s = hex($sec->{defs}->{$n."_SET"});
 		    my $r = hex($reset) & $s;
 		    $r = $r >> $sec->{defs}->{$n."_LSB"};
 		    $reg->{bits}->{$n}->{reset} = sprintf ("0x%x",$r);
 		}
-
 		delete $sec->{defs}->{$n."_BITS"};
 		delete $sec->{defs}->{$n."_SET"};
 		delete $sec->{defs}->{$n."_CLR"};
 		delete $sec->{defs}->{$n."_LSB"};
 		delete $sec->{defs}->{$n."_MSB"};
+		delete $sec->{defs}->{$n."_RESET"};
 	    } grep (/^${n}_(.*)_BITS$/,keys %{$sec->{defs}});
 	} grep(/^${s}_(.*)_REG$/,keys %{$sec->{defs}});
     }
@@ -313,16 +316,122 @@ sub toMD {
     }
 }
 
+sub toMW {
+    my ($d)=@_;
+    # first create the region markdown
+    print "__NOTOC__\n";
+    print "= Register Regions =\n\n";
+
+    print "{|class=\"wikitable\"\n";
+    print "! register region !! base address !! description\n";
+    foreach my $k (sort keys %{$d}) {
+	print "|-\n| [[#".$d->{$k}->{name}."|".$d->{$k}->{name}."]]||align=\"right\"|".$d->{$k}->{base}." ||\n";
+    }
+    print "|}\n";
+
+    print "= Register Regions =\n\n";
+
+    # now the sections
+    foreach my $s (sort keys %{$d}) {
+	print "= ".$d->{$s}->{name}." =\n\n";
+	print "== Description ==\n";
+	print "TODO\n";
+	print "== Info ==\n";
+	print "{|class=\"wikitable\"\n";
+	print "!Name !! value !! description\n";
+	for my $k ("base","id","password") {
+	    if ($d->{$s}->{$k}) {
+		print "|-\n| ".$k." || ".$d->{$s}->{$k}." ||\n";
+	    }
+	}
+	print "|}\n";
+
+	my @k=sort keys %{$d->{$s}->{defs}};
+	if ($#k > -1) {
+	    my $defs=$d->{$s}->{defs};
+	    print "== unknown defined macro ==\n";
+	    print "{|class=\"wikitable\"\n";
+	    print "!define !! type !! description\n";
+	    foreach my $n (@k) {
+		if ($n eq $defs->{$n}) {
+		    print "|-\n| ".$n." || UNKNOWN ||\n";
+		} else {
+		    print "|-\n| ".$n." || ".$defs->{$n}." ||\n";
+		}
+	    }
+	    print "|}\n";
+	}
+
+	my $regs=$d->{$s}->{regs};
+	my @regssorted = sort
+	    { hex($regs->{$a}->{addr}) <=> hex($regs->{$b}->{addr}) }
+	    keys %{$regs};
+	print "== Registers ==\n";
+	print "{|class=\"wikitable\"\n";
+	print "! name !! address !! type || width || mask || reset || description\n";
+	foreach my $k (@regssorted) {
+	    my $r = $regs->{$k};
+	    if (exists $r->{bits}) {
+		print "|-\n| [[#".$r->{name}."|".$r->{name}."]]";
+	    } else {
+		print "|-\n| ".$r->{name};
+	    }
+	    print " ||align=\"right\"|".$r->{addr}
+	    ." ||align=\"center\"| ".$r->{type}
+	    ." ||align=\"right\"| ".$r->{width}
+	    ." ||align=\"right\"| ".$r->{mask}
+	    ." ||align=\"right\"| ".$r->{reset}
+	    ." ||\n";
+	}
+	print "|}\n";
+
+	print "== Register details ==\n";
+	foreach my $k (@regssorted) {
+	    my $r = $regs->{$k};
+	    if (exists $r->{bits}) {
+		my $bits=$r->{bits};
+		#create register map
+		print "=== ".$r->{name}." ===\n";
+		print "==== Info ====\n";
+		print "{|class=\"wikitable\"\n";
+		print "!Name !! value !! description\n";
+		print "|-\n| address || ".$d->{$s}->{addr}." ||\n";
+		print "|}\n";
+		print "==== Description ====\n";
+		print "TODO\n";
+		print "==== bits in register ====\n";
+		print "{|class=\"wikitable\"\n";
+		print "! field_name !! start_bit !! end_bit !! set !! clear !! reset !! description\n";
+		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
+			       keys %{$bits}) {
+		    my $f=$bits->{$b};
+		    print "|-\n| ".$f->{name}
+		    ." || ".$f->{lsb}
+		    ." || ".$f->{msb}
+		    ." || ".$f->{set}
+		    ." || ".$f->{clear}
+		    ." || ".$f->{reset}
+		    ." ||\n";
+		}
+		print "|}\n";
+	    }
+	}
+
+    }
+}
+
 if ($#ARGV <1) {
-    print STDERR "Usage: $0 [-h|-m] <defined.txt>\n";
+    print STDERR "Usage: $0 [-html|-markdown|-mediawiki] <defined.txt>\n";
     exit(1);
 }
 my $type=shift(@ARGV);
 my $d=parseDefined();
-if ($type eq "-h") {
+if ($type eq "-html") {
     toHTML($d);
-} elsif ($type eq "-m") {
+} elsif ($type eq "-markdown") {
     toMD($d);
+} elsif ($type eq "-mediawiki") {
+    toMW($d);
 } else {
     print STDERR "$0: unsupported option $type\n";
     exit(2)
