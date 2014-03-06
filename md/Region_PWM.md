@@ -52,6 +52,7 @@
 | PWM_CTL_SBIT2 | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | PWM_CTL_POLA2 | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | PWM_CTL_USEF2 | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
+| missing definiton | 14 | 14 | NA | NA | NA |
 | PWM_CTL_MSEN2 | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 | PWM_CTL_PWEN3 | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | PWM_CTL_MODE3 | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
@@ -59,6 +60,7 @@
 | PWM_CTL_SBIT3 | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
 | PWM_CTL_POLA3 | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 | PWM_CTL_USEF3 | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
+| missing definiton | 22 | 22 | NA | NA | NA |
 | PWM_CTL_MSEN3 | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
 | PWM_CTL_PWEN4 | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | PWM_CTL_MODE4 | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
@@ -66,6 +68,7 @@
 | PWM_CTL_SBIT4 | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
 | PWM_CTL_POLA4 | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | PWM_CTL_USEF4 | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
+| missing definiton | 30 | 30 | NA | NA | NA |
 | PWM_CTL_MSEN4 | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###PWM_STA
@@ -94,4 +97,5 @@
 | --- | --- | --- | --- | --- | --- |
 | PWM_DMAC_DREQ | 0 | 7 | 0x000000ff | 0xffffff00 | 0x7 |
 | PWM_DMAC_PANIC | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x7 |
+| missing definiton | 16 | 30 | NA | NA | NA |
 | PWM_DMAC_ENAB | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |

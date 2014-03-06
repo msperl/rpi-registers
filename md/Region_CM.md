@@ -142,6 +142,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_VPUCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x1 |
+| missing definiton | 4 | 5 | NA | NA | NA |
 | CM_VPUCTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x1 |
 | CM_VPUCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_VPUCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
@@ -152,6 +153,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_VPUDIV_DIV | 4 | 23 | 0x00fffff0 | 0xff00000f | 0x100 |
 
 ###CM_SYSCTL
@@ -159,6 +161,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 5 | NA | NA | NA |
 | CM_SYSCTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x1 |
 
 ###CM_SYSDIV
@@ -166,6 +169,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_SYSDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###CM_PERIACTL
@@ -173,6 +177,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 5 | NA | NA | NA |
 | CM_PERIACTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x1 |
 
 ###CM_PERIADIV
@@ -180,6 +185,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_PERIADIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###CM_PERIICTL
@@ -187,6 +193,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 5 | NA | NA | NA |
 | CM_PERIICTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 
 ###CM_PERIIDIV
@@ -194,6 +201,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_PERIIDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###CM_H264CTL
@@ -214,6 +222,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_H264DIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_ISPCTL
@@ -234,6 +243,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_ISPDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_V3DCTL
@@ -254,6 +264,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_V3DDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_CAM0CTL
@@ -264,6 +275,7 @@
 | CM_CAM0CTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_CAM0CTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_CAM0CTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_CAM0CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_CAM0CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_CAM0CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -273,6 +285,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_CAM0DIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_CAM1CTL
@@ -283,6 +296,7 @@
 | CM_CAM1CTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_CAM1CTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_CAM1CTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_CAM1CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_CAM1CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_CAM1CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -292,6 +306,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_CAM1DIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_CCP2CTL
@@ -300,7 +315,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_CCP2CTL_SRC | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | CM_CCP2CTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 6 | NA | NA | NA |
 | CM_CCP2CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_CCP2CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_CCP2CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -310,6 +327,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_CCP2DIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###CM_DSI0ECTL
@@ -320,6 +338,7 @@
 | CM_DSI0ECTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_DSI0ECTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_DSI0ECTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_DSI0ECTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_DSI0ECTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI0ECTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -329,6 +348,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_DSI0EDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_DSI0PCTL
@@ -338,6 +358,7 @@
 | --- | --- | --- | --- | --- | --- |
 | CM_DSI0PCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_DSI0PCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 6 | NA | NA | NA |
 | CM_DSI0PCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_DSI0PCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI0PCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -347,6 +368,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_DSI0PDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###CM_DPICTL
@@ -357,6 +379,7 @@
 | CM_DPICTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_DPICTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_DPICTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_DPICTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_DPICTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DPICTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -366,6 +389,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_DPIDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_GP0CTL
@@ -376,6 +400,7 @@
 | CM_GP0CTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_GP0CTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_GP0CTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_GP0CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_GP0CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_GP0CTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
@@ -395,6 +420,7 @@
 | CM_GP1CTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_GP1CTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_GP1CTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_GP1CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_GP1CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_GP1CTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
@@ -414,6 +440,7 @@
 | CM_GP2CTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_GP2CTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_GP2CTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_GP2CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_GP2CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_GP2CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -443,6 +470,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_HSMDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_OTPCTL
@@ -451,8 +479,10 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_OTPCTL_SRC | 0 | 1 | 0x00000003 | 0xfffffffc | 0x1 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | CM_OTPCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x1 |
 | CM_OTPCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_OTPCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_OTPCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_OTPCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -462,6 +492,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_OTPDIV_DIV | 12 | 16 | 0x0001f000 | 0xfffe0fff | 0x4 |
 
 ###CM_PCMCTL
@@ -472,6 +503,7 @@
 | CM_PCMCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_PCMCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_PCMCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_PCMCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_PCMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_PCMCTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
@@ -491,6 +523,7 @@
 | CM_PWMCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_PWMCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_PWMCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_PWMCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_PWMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_PWMCTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
@@ -510,6 +543,7 @@
 | CM_SLIMCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_SLIMCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_SLIMCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_SLIMCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_SLIMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_SLIMCTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
@@ -529,6 +563,7 @@
 | CM_SMICTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_SMICTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_SMICTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_SMICTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_SMICTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_SMICTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -538,6 +573,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_SMIDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_TCNTCTL
@@ -546,8 +582,10 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TCNTCTL_SRC0 | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
+| missing definiton | 4 | 5 | NA | NA | NA |
 | CM_TCNTCTL_KILL | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | CM_TCNTCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
+| missing definiton | 8 | 11 | NA | NA | NA |
 | CM_TCNTCTL_SRC1 | 12 | 13 | 0x00003000 | 0xffffcfff | 0x0 |
 
 ###CM_TCNTCNT
@@ -563,8 +601,10 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TECCTL_SRC | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | CM_TECCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_TECCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_TECCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_TECCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TECCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -574,6 +614,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_TECDIV_DIV | 12 | 17 | 0x0003f000 | 0xfffc0fff | 0x0 |
 
 ###CM_TD0CTL
@@ -588,6 +629,7 @@
 | CM_TD0CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_TD0CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TD0CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 10 | 10 | NA | NA | NA |
 | CM_TD0CTL_FLIP | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | CM_TD0CTL_STEP | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
@@ -610,6 +652,7 @@
 | CM_TD1CTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_TD1CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TD1CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 10 | 10 | NA | NA | NA |
 | CM_TD1CTL_FLIP | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | CM_TD1CTL_STEP | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
@@ -626,8 +669,10 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TSENSCTL_SRC | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | CM_TSENSCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_TSENSCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_TSENSCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_TSENSCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TSENSCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -637,6 +682,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_TSENSDIV_DIV | 12 | 16 | 0x0001f000 | 0xfffe0fff | 0x0 |
 
 ###CM_TIMERCTL
@@ -645,8 +691,10 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TIMERCTL_SRC | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | CM_TIMERCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_TIMERCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_TIMERCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_TIMERCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TIMERCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -666,6 +714,7 @@
 | CM_UARTCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_UARTCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_UARTCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_UARTCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_UARTCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_UARTCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -685,6 +734,7 @@
 | CM_VECCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_VECCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_VECCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_VECCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_VECCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_VECCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -694,6 +744,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_VECDIV_DIV | 12 | 15 | 0x0000f000 | 0xffff0fff | 0x0 |
 
 ###CM_OSCCOUNT
@@ -759,6 +810,7 @@
 | CM_PLLH_LOADPIX | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | CM_PLLH_LOADAUX | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | CM_PLLH_LOADRCAL | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 7 | NA | NA | NA |
 | CM_PLLH_ANARST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
 | CM_PLLH_DIGRST | 9 | 9 | 0x00000200 | 0xfffffdff | 0x1 |
 
@@ -772,6 +824,7 @@
 | CM_LOCK_LOCKC | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | CM_LOCK_LOCKD | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | CM_LOCK_LOCKH | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | CM_LOCK_FLOCKA | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_LOCK_FLOCKB | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | CM_LOCK_FLOCKC | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
@@ -877,7 +930,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PLLTCTL_SRC | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
+| missing definiton | 3 | 4 | NA | NA | NA |
 | CM_PLLTCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_PLLTCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 
 ###CM_PLLTCNT0
@@ -933,8 +988,10 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_BURSTCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_BURSTCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_BURSTCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 
 ###CM_BURSTCNT
@@ -952,6 +1009,7 @@
 | CM_DSI1ECTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_DSI1ECTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_DSI1ECTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_DSI1ECTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_DSI1ECTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI1ECTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -961,6 +1019,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_DSI1EDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
 ###CM_DSI1PCTL
@@ -970,6 +1029,7 @@
 | --- | --- | --- | --- | --- | --- |
 | CM_DSI1PCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_DSI1PCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 6 | NA | NA | NA |
 | CM_DSI1PCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_DSI1PCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI1PCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -979,6 +1039,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_DSI1PDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###CM_DFTCTL
@@ -989,6 +1050,7 @@
 | CM_DFTCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_DFTCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_DFTCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_DFTCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_DFTCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DFTCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -998,6 +1060,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_DFTDIV_DIV | 12 | 16 | 0x0001f000 | 0xfffe0fff | 0x0 |
 
 ###CM_PLLB
@@ -1007,6 +1070,7 @@
 | --- | --- | --- | --- | --- | --- |
 | CM_PLLB_LOADARM | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | CM_PLLB_HOLDARM | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+| missing definiton | 2 | 7 | NA | NA | NA |
 | CM_PLLB_ANARST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
 | CM_PLLB_DIGRST | 9 | 9 | 0x00000200 | 0xfffffdff | 0x1 |
 
@@ -1016,8 +1080,10 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PULSECTL_SRC | 0 | 1 | 0x00000003 | 0xfffffffc | 0x1 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | CM_PULSECTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x1 |
 | CM_PULSECTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_PULSECTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_PULSECTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_PULSECTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -1027,6 +1093,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_PULSEDIV_DIV | 12 | 23 | 0x00fff000 | 0xff000fff | 0x1b |
 
 ###CM_SDCCTL
@@ -1037,9 +1104,11 @@
 | CM_SDCCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_SDCCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_SDCCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_SDCCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_SDCCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_SDCCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 10 | 11 | NA | NA | NA |
 | CM_SDCCTL_CTRL | 12 | 15 | 0x0000f000 | 0xffff0fff | 0x4 |
 | CM_SDCCTL_ACCPT | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | CM_SDCCTL_UPDATE | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
@@ -1049,6 +1118,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_SDCDIV_DIV | 12 | 17 | 0x0003f000 | 0xfffc0fff | 0x0 |
 
 ###CM_ARMCTL
@@ -1059,9 +1129,11 @@
 | CM_ARMCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x4 |
 | CM_ARMCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_ARMCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_ARMCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_ARMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_ARMCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 10 | 11 | NA | NA | NA |
 | CM_ARMCTL_AXIHALF | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
 ###CM_ARMDIV
@@ -1069,6 +1141,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_ARMDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###CM_AVEOCTL
@@ -1079,6 +1152,7 @@
 | CM_AVEOCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_AVEOCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_AVEOCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_AVEOCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_AVEOCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_AVEOCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -1088,6 +1162,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 11 | NA | NA | NA |
 | CM_AVEODIV_DIV | 12 | 15 | 0x0000f000 | 0xffff0fff | 0x0 |
 
 ###CM_EMMCCTL
@@ -1098,6 +1173,7 @@
 | CM_EMMCCTL_SRC | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | CM_EMMCCTL_ENAB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CM_EMMCCTL_KILL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | CM_EMMCCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | CM_EMMCCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_EMMCCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
@@ -1107,4 +1183,5 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 3 | NA | NA | NA |
 | CM_EMMCDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |

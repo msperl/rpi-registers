@@ -39,6 +39,7 @@
 | HD_HDM_CTL_ENABLE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | HD_HDM_CTL_ENDIAN | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | HD_HDM_CTL_SW_RST | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | HD_HDM_CTL_PDSTBY | 4 | 5 | 0x00000030 | 0xffffffcf | 0x3 |
 | HD_HDM_CTL_RFSTBY | 6 | 7 | 0x000000c0 | 0xffffff3f | 0x3 |
 | HD_HDM_CTL_CECOVR | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
@@ -69,8 +70,11 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | HD_MAI_THR_DREQLOW | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x1 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | HD_MAI_THR_DREQHIGH | 8 | 13 | 0x00003f00 | 0xffffc0ff | 0x1 |
+| missing definiton | 14 | 15 | NA | NA | NA |
 | HD_MAI_THR_PANICLOW | 16 | 21 | 0x003f0000 | 0xffc0ffff | 0x1 |
+| missing definiton | 22 | 23 | NA | NA | NA |
 | HD_MAI_THR_PANICHIGH | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 
 ###HD_VID_CTL
@@ -78,6 +82,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 17 | NA | NA | NA |
 | HD_VID_CTL_BLANKPIX | 18 | 18 | 0x00040000 | 0xfffbffff | 0x1 |
 | HD_VID_CTL_EMPRGB | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
 | HD_VID_CTL_EMPSYNC | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |

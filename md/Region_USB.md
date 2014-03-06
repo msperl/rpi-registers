@@ -342,10 +342,12 @@
 | --- | --- | --- | --- | --- | --- |
 | USB_GOTGCTL_SES_REQ_SCS | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | USB_GOTGCTL_SES_REQ | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+| missing definiton | 2 | 7 | NA | NA | NA |
 | USB_GOTGCTL_HST_NEG_SCS | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | USB_GOTGCTL_HNP_REQ | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | USB_GOTGCTL_HST_SET_HNP_EN | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
 | USB_GOTGCTL_DEV_HNP_EN | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
+| missing definiton | 12 | 15 | NA | NA | NA |
 | USB_GOTGCTL_CON_ID_STS | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | USB_GOTGCTL_DBNC_TIME | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | USB_GOTGCTL_A_SES_VLD | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -356,9 +358,12 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 1 | NA | NA | NA |
 | USB_GOTGINT_SES_END_DET | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 7 | NA | NA | NA |
 | USB_GOTGINT_SES_REQ_SUC_STS_CHG | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | USB_GOTGINT_HST_NEG_SUC_STS_CHG | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 10 | 16 | NA | NA | NA |
 | USB_GOTGINT_HST_NEG_DET | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | USB_GOTGINT_A_DEV_TOUT_CHG | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
 | USB_GOTGINT_DBNCE_DONE | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
@@ -371,6 +376,7 @@
 | USB_GAHBCFG_GLBL_INTR_MSK | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | USB_GAHBCFG_H_BST_LEN | 1 | 4 | 0x0000001e | 0xffffffe1 | 0x0 |
 | USB_GAHBCFG_DMA_EN | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | USB_GAHBCFG_NP_TXF_EMP_LVL | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | USB_GAHBCFG_P_TXF_EMP_LVL | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 
@@ -388,6 +394,7 @@
 | USB_GUSBCFG_SRP_CAP | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | USB_GUSBCFG_HNP_CAP | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | USB_GUSBCFG_USB_TRD_TIM | 10 | 13 | 0x00003c00 | 0xffffc3ff | 0x0 |
+| missing definiton | 14 | 14 | NA | NA | NA |
 | USB_GUSBCFG_PHY_LPWR_CLK_SEL | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 | USB_GUSBCFG_OTG_I2C_SEL | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | USB_GUSBCFG_ULPI_FS_LS | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
@@ -399,6 +406,7 @@
 | USB_GUSBCFG_IND_COMP | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
 | USB_GUSBCFG_IND_PASS_THRU | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | USB_GUSBCFG_ULPI_IF_PROT_DIS | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
+| missing definiton | 26 | 28 | NA | NA | NA |
 | USB_GUSBCFG_FORCE_HST_MODE | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | USB_GUSBCFG_FORCE_DEV_MODE | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | USB_GUSBCFG_CORRUPT_TX | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
@@ -415,6 +423,7 @@
 | USB_GRSTCTL_RXF_FLSH | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | USB_GRSTCTL_TXF_FLSH | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | USB_GRSTCTL_TXF_NUM | 6 | 10 | 0x000007c0 | 0xfffff83f | 0x0 |
+| missing definiton | 11 | 29 | NA | NA | NA |
 | USB_GRSTCTL_DMA_REQ | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | USB_GRSTCTL_AHB_IDLE | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -439,16 +448,20 @@
 | USB_GINTMSK_ENUM_DONE | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | USB_GINTMSK_ISO_OUT_DROP | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | USB_GINTMSK_EOPF | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
+| missing definiton | 16 | 16 | NA | NA | NA |
 | USB_GINTMSK_EP_MIS | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | USB_GINTMSK_IEP_INT | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
 | USB_GINTMSK_OEP_INT | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
 | USB_GINTMSK_INCOMPL_ISO_IN | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 | USB_GINTMSK_INCOMPL_P | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
 | USB_GINTMSK_INCOMPL_ISO_OUT | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
+| missing definiton | 22 | 20 | NA | NA | NA |
 | USB_GINTMSK_FET_SUSP | 22 | 22 | 0x00400000 | 0xffbfffff | 0x0 |
+| missing definiton | 23 | 23 | NA | NA | NA |
 | USB_GINTMSK_PRT_INT | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | USB_GINTMSK_HCH_INT | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | USB_GINTMSK_P_TXF_EMP | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
+| missing definiton | 27 | 27 | NA | NA | NA |
 | USB_GINTMSK_CON_ID_STS_CHNG | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | USB_GINTMSK_DISCONN_INT | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | USB_GINTMSK_SESS_REQ_INT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
@@ -463,11 +476,15 @@
 | USB_GRXSTSP_DEV_EP_NUM | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | USB_GRXSTSP_DEV_BCNT | 4 | 14 | 0x00007ff0 | 0xffff800f | 0x0 |
 | USB_GRXSTSP_HST_BCNT | 4 | 14 | 0x00007ff0 | 0xffff800f | 0x0 |
+| missing definiton | 4 | -1 | NA | NA | NA |
+| missing definiton | 15 | 3 | NA | NA | NA |
 | USB_GRXSTSP_HST_DPID | 15 | 16 | 0x00018000 | 0xfffe7fff | 0x0 |
 | USB_GRXSTSP_DEV_DPID | 15 | 16 | 0x00018000 | 0xfffe7fff | 0x0 |
+| missing definiton | 17 | 14 | NA | NA | NA |
 | USB_GRXSTSP_HST_PKT_STS | 17 | 20 | 0x001e0000 | 0xffe1ffff | 0x0 |
 | USB_GRXSTSP_DEV_PKT_STS | 17 | 20 | 0x001e0000 | 0xffe1ffff | 0x0 |
 | USB_GRXSTSP_DEV_FN | 21 | 24 | 0x01e00000 | 0xfe1fffff | 0x0 |
+| missing definiton | 21 | 16 | NA | NA | NA |
 
 ###USB_GRXFSIZ
  Address: 0x7e980024
@@ -485,6 +502,8 @@
 | USB_GNPTXFSIZ_NP_TXF_ST_ADDR | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
 | USB_GNPTXFSIZ_IN_EP_TXF0_DEP | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x0 |
 | USB_GNPTXFSIZ_NP_TXF_DEP | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x0 |
+| missing definiton | 16 | -1 | NA | NA | NA |
+| missing definiton | 32 | 15 | NA | NA | NA |
 
 ###USB_GNPTXSTS
  Address: 0x7e98002c
@@ -504,9 +523,11 @@
 | USB_GI2CCTL_REG_ADDR | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | USB_GI2CCTL_ADDR | 16 | 22 | 0x007f0000 | 0xff80ffff | 0x0 |
 | USB_GI2CCTL_EN | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
+| missing definiton | 24 | 24 | NA | NA | NA |
 | USB_GI2CCTL_SUSP_CTL | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | USB_GI2CCTL_DEV_ADR | 26 | 27 | 0x0c000000 | 0xf3ffffff | 0x0 |
 | USB_GI2CCTL_DAT_SE0 | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
+| missing definiton | 29 | 29 | NA | NA | NA |
 | USB_GI2CCTL_RW | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | USB_GI2CCTL_BSY_DNE | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -518,11 +539,15 @@
 | USB_GPVNDCTL_REG_DATA | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
 | USB_GPVNDCTL_CTRL_UTMI | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x0 |
 | USB_GPVNDCTL_CTRL_ULPI | 8 | 13 | 0x00003f00 | 0xffffc0ff | 0x0 |
+| missing definiton | 12 | 7 | NA | NA | NA |
+| missing definiton | 14 | 15 | NA | NA | NA |
 | USB_GPVNDCTL_REG_ADDR | 16 | 21 | 0x003f0000 | 0xffc0ffff | 0x0 |
 | USB_GPVNDCTL_REG_WR | 22 | 22 | 0x00400000 | 0xffbfffff | 0x0 |
+| missing definiton | 23 | 24 | NA | NA | NA |
 | USB_GPVNDCTL_NEW_REG_REQ | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | USB_GPVNDCTL_STS_BSY | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
 | USB_GPVNDCTL_STS_DONE | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
+| missing definiton | 28 | 30 | NA | NA | NA |
 | USB_GPVNDCTL_DIS_ULPI_DRVR | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###USB_GGPIO
@@ -543,10 +568,14 @@
 | USB_GHWCFG2_SINGLE_POINT | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | USB_GHWCFG2_HSPHY_INTERFACE | 6 | 7 | 0x000000c0 | 0xffffff3f | 0x0 |
 | USB_GHWCFG2_FSPHY_INTERFACE | 8 | 9 | 0x00000300 | 0xfffffcff | 0x0 |
+| missing definiton | 10 | 12 | NA | NA | NA |
+| missing definiton | 11 | 16 | NA | NA | NA |
 | USB_GHWCFG2_NUM_EPS | 13 | 10 | 0x0000000000 | 0xffffffff11 | 0x0 |
+| missing definiton | 15 | 17 | NA | NA | NA |
 | USB_GHWCFG2_NUM_HOST_CHAN | 17 | 14 | 0x0000000000 | 0xffffffff11 | 0x0 |
 | USB_GHWCFG2_EN_PERIO_HOST | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
 | USB_GHWCFG2_DFIFO_DYNAMIC | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
+| missing definiton | 20 | 21 | NA | NA | NA |
 | USB_GHWCFG2_NPERIO_TX_QUEUE_DEPTH | 22 | 23 | 0x00c00000 | 0xff3fffff | 0x0 |
 | USB_GHWCFG2_PERIO_TX_QUEUE_DEPTH | 24 | 25 | 0x03000000 | 0xfcffffff | 0x0 |
 | USB_GHWCFG2_TOKEN_QUEUE_DEPTH | 26 | 30 | 0x7c000000 | 0x83ffffff | 0x0 |
@@ -563,6 +592,7 @@
 | USB_GHWCFG3_VENDOR_CTL_INTERFACE | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | USB_GHWCFG3_RM_OPT_FEATURES | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
 | USB_GHWCFG3_SYNC_RESET_TYPE | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
+| missing definiton | 12 | 15 | NA | NA | NA |
 | USB_GHWCFG3_DFIFO_DEPTH | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x0 |
 
 ###USB_GHWCFG4
@@ -573,6 +603,7 @@
 | USB_GHWCFG4_NUM_PERIO_EPS | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | USB_GHWCFG4_EN_PWROPT | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | USB_GHWCFG4_MIN_AHB_FREQ_LESSTHAN_60 | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 13 | NA | NA | NA |
 | USB_GHWCFG4_HSPHY_DWIDTH | 14 | 15 | 0x0000c000 | 0xffff3fff | 0x0 |
 | USB_GHWCFG4_NUM_CRL_EPS | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
 | USB_GHWCFG4_EN_IDDIG_FILTER | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
@@ -582,6 +613,7 @@
 | USB_GHWCFG4_EN_SESSIONEND_FILTER | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | USB_GHWCFG4_EN_DED_TX_FIFO | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | USB_GHWCFG4_NUM_IN_EPS | 26 | 27 | 0x0c000000 | 0xf3ffffff | 0x0 |
+| missing definiton | 28 | 29 | NA | NA | NA |
 | USB_GHWCFG4_EN_DESC_DMA | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | USB_GHWCFG4_EN_DESC_DMA_DYNAMIC | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -639,6 +671,7 @@
 | USB_HPRT_RES | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | USB_HPRT_SUSP | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | USB_HPRT_RST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 9 | NA | NA | NA |
 | USB_HPRT_LN_STS | 10 | 11 | 0x00000c00 | 0xfffff3ff | 0x0 |
 | USB_HPRT_PWR | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | USB_HPRT_TST_CTL | 13 | 16 | 0x0001e000 | 0xfffe1fff | 0x0 |
@@ -652,6 +685,7 @@
 | USB_HCCHAR0_MPS | 0 | 10 | 0x000007ff | 0xfffff800 | 0x0 |
 | USB_HCCHAR0_EP_NUM | 11 | 14 | 0x00007800 | 0xffff87ff | 0x0 |
 | USB_HCCHAR0_EP_DIR | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
+| missing definiton | 16 | 16 | NA | NA | NA |
 | USB_HCCHAR0_LSPD_DEV | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | USB_HCCHAR0_EP_TYPE | 18 | 19 | 0x000c0000 | 0xfff3ffff | 0x0 |
 | USB_HCCHAR0_MC_EC | 20 | 21 | 0x00300000 | 0xffcfffff | 0x0 |
@@ -669,6 +703,7 @@
 | USB_HCSPLT0_HUB_ADDR | 7 | 13 | 0x00003f80 | 0xffffc07f | 0x0 |
 | USB_HCSPLT0_XACT_POS | 14 | 15 | 0x0000c000 | 0xffff3fff | 0x0 |
 | USB_HCSPLT0_COMP_SPLT | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+| missing definiton | 17 | 30 | NA | NA | NA |
 | USB_HCSPLT0_SPLT_ENA | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###USB_HCINT0
@@ -705,8 +740,10 @@
 | --- | --- | --- | --- | --- | --- |
 | USB_DCFG_DEV_SPD | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
 | USB_DCFG_NZ_STS_OUT_HSHK | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | USB_DCFG_DEV_ADDR | 4 | 10 | 0x000007f0 | 0xfffff80f | 0x0 |
 | USB_DCFG_PER_FR_INT | 11 | 12 | 0x00001800 | 0xffffe7ff | 0x0 |
+| missing definiton | 13 | 17 | NA | NA | NA |
 | USB_DCFG_EP_MIS_CNT | 18 | 22 | 0x007c0000 | 0xff83ffff | 0x0 |
 | USB_DCFG_DESC_DMA | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
 | USB_DCFG_PER_SCH_INTV | 24 | 25 | 0x03000000 | 0xfcffffff | 0x0 |
@@ -726,6 +763,7 @@
 | USB_DCTL_SGOUT_NAK | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | USB_DCTL_CGOUT_NAK | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
 | USB_DCTL_PWRON_PRG_DONE | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
+| missing definiton | 12 | 12 | NA | NA | NA |
 | USB_DCTL_GMC | 13 | 14 | 0x00006000 | 0xffff9fff | 0x0 |
 | USB_DCTL_IGN_FRM_NUM | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 
@@ -737,6 +775,7 @@
 | USB_DSTS_SUSP_STS | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | USB_DSTS_ENUM_SPD | 1 | 2 | 0x00000006 | 0xfffffff9 | 0x0 |
 | USB_DSTS_ERRTIC_ERR | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| missing definiton | 4 | 7 | NA | NA | NA |
 | USB_DSTS_SOF_FN | 8 | 21 | 0x003fff00 | 0xffc000ff | 0x0 |
 
 ###USB_DAINT
@@ -762,6 +801,7 @@
 | USB_DTHRCTL_NON_ISO_THR_EN | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | USB_DTHRCTL_ISO_THR_EN | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | USB_DTHRCTL_TX_THR_LEN | 2 | 10 | 0x000007fc | 0xfffff803 | 0x0 |
+| missing definiton | 11 | 15 | NA | NA | NA |
 | USB_DTHRCTL_RX_THR_EN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | USB_DTHRCTL_RX_THR_LEN | 17 | 26 | 0x07fe0000 | 0xf801ffff | 0x0 |
 | USB_DTHRCTL_ARB_PRK_EN | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
@@ -783,6 +823,7 @@
 | USB_DIEPCTL0_USB_ACT_EP | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 | USB_DIEPCTL0_DPID | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | USB_DIEPCTL0_EO_FR_NUM | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+| missing definiton | 17 | 15 | NA | NA | NA |
 | USB_DIEPCTL0_NAK_STS | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | USB_DIEPCTL0_TYPE | 18 | 19 | 0x000c0000 | 0xfff3ffff | 0x0 |
 | USB_DIEPCTL0_SNP | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
@@ -792,9 +833,11 @@
 | USB_DIEPCTL0_SNAK | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
 | USB_DIEPCTL0_SET_D0_PID | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | USB_DIEPCTL0_SET_EVEN_FR | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
+| missing definiton | 29 | 27 | NA | NA | NA |
 | USB_DIEPCTL0_SET_D1_PID | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | USB_DIEPCTL0_SET_ODD_FR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | USB_DIEPCTL0_DIS | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
+| missing definiton | 30 | 28 | NA | NA | NA |
 | USB_DIEPCTL0_ENA | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###USB_DIEPINT0
@@ -807,16 +850,21 @@
 | USB_DIEPINT0_AHB_ERR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | USB_DIEPINT0_TIMEOUT | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | USB_DIEPINT0_SETUP | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| missing definiton | 4 | 2 | NA | NA | NA |
 | USB_DIEPINT0_OUT_TKN_EP_DIS | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | USB_DIEPINT0_IN_TKN_TXFEMP | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 3 | NA | NA | NA |
 | USB_DIEPINT0_IN_TKN_EP_MIS | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | USB_DIEPINT0_STS_PHSE_RCVD | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
-| USB_DIEPINT0_BACK2BACK_SETUP | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | USB_DIEPINT0_IN_EP_NAK_EFF | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 6 | 4 | NA | NA | NA |
+| USB_DIEPINT0_BACK2BACK_SETUP | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | USB_DIEPINT0_TXF_EMPTY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
+| missing definiton | 7 | 5 | NA | NA | NA |
 | USB_DIEPINT0_OUT_PKT_ERR | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | USB_DIEPINT0_TX_FIFO_UNDRN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | USB_DIEPINT0_BNA | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 9 | 7 | NA | NA | NA |
 
 ###USB_DIEPTSIZ0
  Address: 0x7e980910
@@ -828,12 +876,14 @@
 | USB_DIEPTSIZ0_MC | 29 | 30 | 0x60000000 | 0x9fffffff | 0x0 |
 | USB_DIEPTSIZ0_SUP_CNT | 29 | 30 | 0x60000000 | 0x9fffffff | 0x0 |
 | USB_DIEPTSIZ0_RX_DPID | 29 | 30 | 0x60000000 | 0x9fffffff | 0x0 |
+| missing definiton | 31 | 28 | NA | NA | NA |
 
 ###USB_DTXFSTS0
  Address: 0x7e980918
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 15 | NA | NA | NA |
 | USB_DTXFSTS0_SPC_AVAIL | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x0 |
 
 ###USB_DOEPCTL0
@@ -847,6 +897,7 @@
 | USB_DOEPCTL0_DPID | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | USB_DOEPCTL0_EO_FR_NUM | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | USB_DOEPCTL0_NAK_STS | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+| missing definiton | 17 | 15 | NA | NA | NA |
 | USB_DOEPCTL0_TYPE | 18 | 19 | 0x000c0000 | 0xfff3ffff | 0x0 |
 | USB_DOEPCTL0_SNP | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 | USB_DOEPCTL0_STALL | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
@@ -855,8 +906,10 @@
 | USB_DOEPCTL0_SNAK | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
 | USB_DOEPCTL0_SET_D0_PID | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | USB_DOEPCTL0_SET_EVEN_FR | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
+| missing definiton | 29 | 27 | NA | NA | NA |
 | USB_DOEPCTL0_SET_ODD_FR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | USB_DOEPCTL0_SET_D1_PID | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
+| missing definiton | 30 | 28 | NA | NA | NA |
 | USB_DOEPCTL0_DIS | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | USB_DOEPCTL0_ENA | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -870,16 +923,21 @@
 | USB_DOEPINT0_AHB_ERR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | USB_DOEPINT0_SETUP | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | USB_DOEPINT0_TIMEOUT | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
-| USB_DOEPINT0_OUT_TKN_EP_DIS | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | USB_DOEPINT0_IN_TKN_TXFEMP | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
-| USB_DOEPINT0_STS_PHSE_RCVD | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 4 | 2 | NA | NA | NA |
+| USB_DOEPINT0_OUT_TKN_EP_DIS | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 3 | NA | NA | NA |
 | USB_DOEPINT0_IN_TKN_EP_MIS | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
-| USB_DOEPINT0_IN_EP_NAK_EFF | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| USB_DOEPINT0_STS_PHSE_RCVD | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | USB_DOEPINT0_BACK2BACK_SETUP | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| USB_DOEPINT0_IN_EP_NAK_EFF | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 6 | 4 | NA | NA | NA |
+| missing definiton | 7 | 5 | NA | NA | NA |
 | USB_DOEPINT0_TXF_EMPTY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | USB_DOEPINT0_OUT_PKT_ERR | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | USB_DOEPINT0_TX_FIFO_UNDRN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | USB_DOEPINT0_BNA | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 9 | 7 | NA | NA | NA |
 
 ###USB_DOEPTSIZ0
  Address: 0x7e980b10
@@ -891,6 +949,7 @@
 | USB_DOEPTSIZ0_MC | 29 | 30 | 0x60000000 | 0x9fffffff | 0x0 |
 | USB_DOEPTSIZ0_RX_DPID | 29 | 30 | 0x60000000 | 0x9fffffff | 0x0 |
 | USB_DOEPTSIZ0_SUP_CNT | 29 | 30 | 0x60000000 | 0x9fffffff | 0x0 |
+| missing definiton | 31 | 28 | NA | NA | NA |
 
 ###USB_PCGCR
  Address: 0x7e980e00

@@ -138,6 +138,7 @@
 | L1_D_PRIORITY_c0_l2_priority | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 | L1_D_PRIORITY_c0_uc_priority | 4 | 7 | 0x000000f0 | 0xffffff0f | 0x0 |
 | L1_D_PRIORITY_c0_per_priority | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x0 |
+| missing definiton | 12 | 15 | NA | NA | NA |
 | L1_D_PRIORITY_c1_l2_priority | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
 | L1_D_PRIORITY_c1_uc_priority | 20 | 23 | 0x00f00000 | 0xff0fffff | 0x0 |
 | L1_D_PRIORITY_c1_per_priority | 24 | 27 | 0x0f000000 | 0xf0ffffff | 0x0 |
@@ -148,6 +149,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START0_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x1 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START0_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_START1
@@ -156,6 +158,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START1_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START1_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_START2
@@ -164,6 +167,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START2_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START2_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_START3
@@ -172,6 +176,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START3_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START3_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_START4
@@ -180,6 +185,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START4_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START4_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_START5
@@ -188,6 +194,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START5_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START5_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_START6
@@ -196,6 +203,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START6_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START6_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_START7
@@ -204,6 +212,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_START7_CTRL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START7_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
 ###L1_L1_SANDBOX_PERI_BR
@@ -212,4 +221,5 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | L1_L1_SANDBOX_PERI_BR_sandbox_bootrom | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x7 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | L1_L1_SANDBOX_PERI_BR_sandbox_peri | 8 | 12 | 0x00001f00 | 0xffffe0ff | 0x7 |

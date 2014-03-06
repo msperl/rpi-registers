@@ -43,6 +43,7 @@
 | PCM_CS_A_TXTHR | 5 | 6 | 0x00000060 | 0xffffff9f | 0x0 |
 | PCM_CS_A_RXTHR | 7 | 8 | 0x00000180 | 0xfffffe7f | 0x0 |
 | PCM_CS_A_DMAEN | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
+| missing definiton | 10 | 12 | NA | NA | NA |
 | PCM_CS_A_TXSYNC | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | PCM_CS_A_RXSYNC | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | PCM_CS_A_TXERR | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
@@ -108,8 +109,11 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | PCM_DREQ_A_RX | 0 | 6 | 0x0000007f | 0xffffff80 | 0x20 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | PCM_DREQ_A_TX | 8 | 14 | 0x00007f00 | 0xffff80ff | 0x30 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | PCM_DREQ_A_RX_PANIC | 16 | 22 | 0x007f0000 | 0xff80ffff | 0x30 |
+| missing definiton | 23 | 23 | NA | NA | NA |
 | PCM_DREQ_A_TX_PANIC | 24 | 30 | 0x7f000000 | 0x80ffffff | 0x10 |
 
 ###PCM_INTEN_A
@@ -140,6 +144,7 @@
 | PCM_GRAY_EN | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | PCM_GRAY_CLR | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | PCM_GRAY_FLUSH | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | PCM_GRAY_RXLEVEL | 4 | 9 | 0x000003f0 | 0xfffffc0f | 0x0 |
 | PCM_GRAY_FLUSHED | 10 | 15 | 0x0000fc00 | 0xffff03ff | 0x0 |
 | PCM_GRAY_RXFIFOLEVEL | 16 | 21 | 0x003f0000 | 0xffc0ffff | 0x0 |

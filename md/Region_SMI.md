@@ -62,6 +62,7 @@
 | SMI_CS_SETERR | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | SMI_CS_PXLDAT | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | SMI_CS_EDREQ | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
+| missing definiton | 16 | 23 | NA | NA | NA |
 | SMI_CS_PRDY | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | SMI_CS_AFERR | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | SMI_CS_TXW | 26 | 26 | 0x04000000 | 0xfbffffff | 0x1 |
@@ -77,6 +78,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SMI_A_ADDR | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | SMI_A_DEVICE | 8 | 9 | 0x00000300 | 0xfffffcff | 0x0 |
 
 ###SMI_DSR0
@@ -209,6 +211,7 @@
 | SMI_DC_PANICW | 12 | 17 | 0x0003f000 | 0xfffc0fff | 0x10 |
 | SMI_DC_PANICR | 18 | 23 | 0x00fc0000 | 0xff03ffff | 0x30 |
 | SMI_DC_DMAP | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
+| missing definiton | 25 | 27 | NA | NA | NA |
 | SMI_DC_DMAEN | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 
 ###SMI_DCS
@@ -227,6 +230,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SMI_DA_ADDR | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | SMI_DA_WRITE | 8 | 9 | 0x00000300 | 0xfffffcff | 0x0 |
 
 ###SMI_FD
@@ -235,4 +239,5 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SMI_FD_FCNT | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | SMI_FD_FLVL | 8 | 13 | 0x00003f00 | 0xffffc0ff | 0x0 |

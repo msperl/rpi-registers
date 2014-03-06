@@ -38,8 +38,11 @@
 | FPGA_CTRL0_CAM_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
 | FPGA_CTRL0_DIS_BL | 1 | 1 | 0x00000002 | 0xfffffffd |  |
 | FPGA_CTRL0_CAM_CTL1 | 1 | 1 | 0x00000002 | 0xfffffffd |  |
+| missing definiton | 1 | -1 | NA | NA | NA |
 | FPGA_CTRL0_CAM_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
+| missing definiton | 2 | 0 | NA | NA | NA |
 | FPGA_CTRL0_DIS_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
+| missing definiton | 3 | 1 | NA | NA | NA |
 | FPGA_CTRL0_DIS_RST | 3 | 3 | 0x00000008 | 0xfffffff7 |  |
 | FPGA_CTRL0_SD_PSU_EN | 4 | 4 | 0x00000010 | 0xffffffef |  |
 | FPGA_CTRL0_DIS_SW_SPI | 5 | 5 | 0x00000020 | 0xffffffdf |  |
@@ -51,6 +54,7 @@
 | FPGA_CTRL0_DISP_BUFFER | 11 | 11 | 0x00000800 | 0xfffff7ff |  |
 | FPGA_CTRL0_SPI0_SEL_B | 12 | 12 | 0x00001000 | 0xffffefff |  |
 | FPGA_CTRL0_TV_ACTIVITY | 13 | 13 | 0x00002000 | 0xffffdfff |  |
+| missing definiton | 14 | 15 | NA | NA | NA |
 | FPGA_CTRL0_TERMEN_DO | 16 | 16 | 0x00010000 | 0xfffeffff |  |
 | FPGA_CTRL0_TERMEN_CLK | 17 | 17 | 0x00020000 | 0xfffdffff |  |
 | FPGA_CTRL0_LV_SPARE_OUT | 18 | 19 | 0x000c0000 | 0xfff3ffff |  |
@@ -66,6 +70,7 @@
 | FPGA_STATUS0_SD_CD | 5 | 5 | 0x00000020 | 0xffffffdf |  |
 | FPGA_STATUS0_NAND_RNB | 6 | 6 | 0x00000040 | 0xffffffbf |  |
 | FPGA_STATUS0_SW_SPI_SPI_IN | 7 | 7 | 0x00000080 | 0xffffff7f |  |
+| missing definiton | 8 | 18 | NA | NA | NA |
 | FPGA_STATUS0_SPARE_IN | 19 | 31 | 0xfff80000 | 0x0007ffff |  |
 
 ###FPGA_DCM_WR_DATA
@@ -82,8 +87,11 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | FPGA_DCM_CTRL_REMOTE_RST | 0 | 4 | 0x0000001f | 0xffffffe0 |  |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | FPGA_DCM_CTRL_REMOTE_EN | 8 | 12 | 0x00001f00 | 0xffffe0ff |  |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | FPGA_DCM_CTRL_PERI_RST | 16 | 19 | 0x000f0000 | 0xfff0ffff |  |
+| missing definiton | 20 | 23 | NA | NA | NA |
 | FPGA_DCM_CTRL_PERI_EN | 24 | 27 | 0x0f000000 | 0xf0ffffff |  |
 | FPGA_DCM_CTRL_PERI_WR_EN | 28 | 31 | 0xf0000000 | 0x0fffffff |  |
 

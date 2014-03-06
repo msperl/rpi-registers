@@ -53,4 +53,5 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 5 | NA | NA | NA |
 | CMI_USBCTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x1 |

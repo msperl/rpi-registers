@@ -31,7 +31,9 @@
 | AVE_OUT_CTRL_COEFF_IRQ_EN | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | AVE_OUT_CTRL_REFRESH_RATE | 2 | 3 | 0x0000000c | 0xfffffff3 | 0x0 |
 | AVE_OUT_CTRL_MODE | 4 | 5 | 0x00000030 | 0xffffffcf | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | AVE_OUT_CTRL_PRIV_ACCESS | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
+| missing definiton | 9 | 11 | NA | NA | NA |
 | AVE_OUT_CTRL_INTERLEAVE | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | AVE_OUT_CTRL_NTSC_PAL_IDENT | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | AVE_OUT_CTRL_INVERT_HSYNC | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
@@ -40,6 +42,7 @@
 | AVE_OUT_CTRL_INVERT_CSYNC | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | AVE_OUT_CTRL_INVERT_DSYNC | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
 | AVE_OUT_CTRL_BYTE_SWAP | 19 | 23 | 0x00f80000 | 0xff07ffff | 0x0 |
+| missing definiton | 24 | 29 | NA | NA | NA |
 | AVE_OUT_CTRL_SOFT_RESET | 30 | 30 | 0x40000000 | 0xbfffffff | 0x1 |
 | AVE_OUT_CTRL_ENABLE | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -51,6 +54,7 @@
 | AVE_OUT_STATUS_PXL_FORMAT_ERROR | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | AVE_OUT_STATUS_PXL_OUTPUT_ERROR | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | AVE_OUT_STATUS_COEFF_ERROR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | AVE_OUT_STATUS_HFRONT_PORCH | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | AVE_OUT_STATUS_HBACK_PORCH | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | AVE_OUT_STATUS_HSYNC | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
@@ -66,6 +70,7 @@
 | AVE_OUT_OFFSET_BLUE_OFFSET | 0 | 7 | 0x000000ff | 0xffffff00 | 0x90 |
 | AVE_OUT_OFFSET_GREEN_OFFSET | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x90 |
 | AVE_OUT_OFFSET_RED_OFFSET | 16 | 23 | 0x00ff0000 | 0xff00ffff | 0x10 |
+| missing definiton | 24 | 30 | NA | NA | NA |
 | AVE_OUT_OFFSET_EN_YCBCR_CLAMPING | 31 | 31 | 0x80000000 | 0x7fffffff | 0x1 |
 
 ###AVE_OUT_Y_COEFF

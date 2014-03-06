@@ -68,15 +68,19 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SCALER_DISPCTRL_IRQ_EN | 0 | 6 | 0x0000007f | 0xffffff80 |  |
+| missing definiton | 7 | 8 | NA | NA | NA |
 | SCALER_DISPCTRL_DSP1_IRQ_CTRL | 9 | 10 | 0x00000600 | 0xfffff9ff |  |
 | SCALER_DISPCTRL_DSP2_IRQ_CTRL | 11 | 12 | 0x00001800 | 0xffffe7ff |  |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | SCALER_DISPCTRL_TILE_WID | 16 | 17 | 0x00030000 | 0xfffcffff |  |
 | SCALER_DISPCTRL_DSP3_MUX | 18 | 19 | 0x000c0000 | 0xfff3ffff |  |
+| missing definiton | 20 | 23 | NA | NA | NA |
 | SCALER_DISPCTRL_DSP0_PANIC | 24 | 25 | 0x03000000 | 0xfcffffff |  |
 | SCALER_DISPCTRL_DSP1_PANIC | 26 | 27 | 0x0c000000 | 0xf3ffffff |  |
 | SCALER_DISPCTRL_DSP2_PANIC | 28 | 29 | 0x30000000 | 0xcfffffff |  |
 | SCALER_DISPCTRL_VSCL_DIS | 30 | 31 | 0xc0000000 | 0x3fffffff |  |
 | SCALER_DISPCTRL_HVS_EN | 31 | 31 | 0x80000000 | 0x7fffffff |  |
+| missing definiton | 32 | 30 | NA | NA | NA |
 
 ###SCALER_DISPSTAT
  Address: 0x7e400004
@@ -95,7 +99,18 @@
 | SCALER_DISPSTAT_DMA_ERR_BIT0 | 14 | 31 | 0xffffc000 | 0x00003fff |  |
 | SCALER_DISPSTAT_DMA_ERR_BIT1 | 15 | 31 | 0xffff8000 | 0x00007fff |  |
 | SCALER_DISPSTAT_DSP1_STATUS | 16 | 21 | 0x003f0000 | 0xffc0ffff |  |
+| missing definiton | 22 | 23 | NA | NA | NA |
 | SCALER_DISPSTAT_DSP2_STATUS | 24 | 29 | 0x3f000000 | 0xc0ffffff |  |
+| missing definiton | 32 | 4 | NA | NA | NA |
+| missing definiton | 32 | 3 | NA | NA | NA |
+| missing definiton | 32 | 15 | NA | NA | NA |
+| missing definiton | 32 | 14 | NA | NA | NA |
+| missing definiton | 32 | 6 | NA | NA | NA |
+| missing definiton | 32 | 1 | NA | NA | NA |
+| missing definiton | 32 | 0 | NA | NA | NA |
+| missing definiton | 32 | 5 | NA | NA | NA |
+| missing definiton | 32 | 2 | NA | NA | NA |
+| missing definiton | 32 | 7 | NA | NA | NA |
 
 ###SCALER_DISPECTRL
  Address: 0x7e40000c
@@ -103,12 +118,15 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SCALER_DISPECTRL_PANIC_CTRL | 0 | 6 | 0x0000007f | 0xffffff80 |  |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | SCALER_DISPECTRL_BUSY_STATUS | 8 | 31 | 0xffffff00 | 0x000000ff |  |
 | SCALER_DISPECTRL_Y_BUSY | 9 | 31 | 0xfffffe00 | 0x000001ff |  |
 | SCALER_DISPECTRL_CB_BUSY | 10 | 31 | 0xfffffc00 | 0x000003ff |  |
 | SCALER_DISPECTRL_CR_BUSY | 11 | 31 | 0xfffff800 | 0x000007ff |  |
 | SCALER_DISPECTRL_POSTED_STATUS | 12 | 14 | 0x00007000 | 0xffff8fff |  |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | SCALER_DISPECTRL_POSTED_CTRL | 16 | 21 | 0x003f0000 | 0xffc0ffff |  |
+| missing definiton | 22 | 23 | NA | NA | NA |
 | SCALER_DISPECTRL_GT8_BURST | 24 | 31 | 0xff000000 | 0x00ffffff |  |
 | SCALER_DISPECTRL_TWOD_SINGLE | 25 | 31 | 0xfe000000 | 0x01ffffff |  |
 | SCALER_DISPECTRL_PROF_TYPE | 26 | 27 | 0x0c000000 | 0xf3ffffff |  |
@@ -116,3 +134,12 @@
 | SCALER_DISPECTRL_CB_NE_CTRL | 29 | 31 | 0xe0000000 | 0x1fffffff |  |
 | SCALER_DISPECTRL_CR_NE_CTRL | 30 | 31 | 0xc0000000 | 0x3fffffff |  |
 | SCALER_DISPECTRL_SECURE_MODE | 31 | 31 | 0x80000000 | 0x7fffffff |  |
+| missing definiton | 32 | 11 | NA | NA | NA |
+| missing definiton | 32 | 28 | NA | NA | NA |
+| missing definiton | 32 | 25 | NA | NA | NA |
+| missing definiton | 32 | 24 | NA | NA | NA |
+| missing definiton | 32 | 9 | NA | NA | NA |
+| missing definiton | 32 | 30 | NA | NA | NA |
+| missing definiton | 32 | 10 | NA | NA | NA |
+| missing definiton | 32 | 29 | NA | NA | NA |
+| missing definiton | 32 | 8 | NA | NA | NA |

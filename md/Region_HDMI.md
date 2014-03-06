@@ -292,6 +292,7 @@
 | HDMI_FIFO_CTL_RECENTER | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | HDMI_FIFO_CTL_ON_VB | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | HDMI_FIFO_CTL_VB_CNT | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x0 |
+| missing definiton | 12 | 12 | NA | NA | NA |
 | HDMI_FIFO_CTL_USE_EMPTY | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | HDMI_FIFO_CTL_RECENTER_DONE | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | HDMI_FIFO_CTL_ON_VB_DONE | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
@@ -301,6 +302,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 6 | NA | NA | NA |
 | HDMI_READ_POINTERS_DRFT_RD_ADDR | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | HDMI_READ_POINTERS_DRFT_WR_ADDR | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | HDMI_READ_POINTERS_DRFT_UNDERFLOW | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
@@ -327,6 +329,7 @@
 | HDMI_SCHEDULER_CONTROL_ALWS_REKEY_KEEPOUT | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | HDMI_SCHEDULER_CONTROL_IGN_VSYNC_PREDS | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | HDMI_SCHEDULER_CONTROL_ENC_ONLY_WHEN_AUTH | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | HDMI_SCHEDULER_CONTROL_POSTLN_AVOID | 8 | 13 | 0x00003f00 | 0xffffc0ff | 0x30 |
 | HDMI_SCHEDULER_CONTROL_USE_POSTLN_AVOID | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | HDMI_SCHEDULER_CONTROL_MANUAL_FORMAT | 15 | 15 | 0x00008000 | 0xffff7fff | 0x1 |
@@ -348,6 +351,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 8 | NA | NA | NA |
 | HDMI_HORZB_MANUAL_HFP | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | HDMI_HORZB_MANUAL_HSP | 10 | 19 | 0x000ffc00 | 0xfff003ff | 0x60 |
 | HDMI_HORZB_MANUAL_HBP | 20 | 29 | 0x3ff00000 | 0xc00fffff | 0x30 |
@@ -366,6 +370,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 7 | NA | NA | NA |
 | HDMI_VERTB0_MANUAL_VBP0 | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HDMI_VERTB0_MANUAL_VSPO0 | 9 | 21 | 0x003ffe00 | 0xffc001ff | 0x0 |
 
@@ -383,6 +388,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 7 | NA | NA | NA |
 | HDMI_VERTB1_MANUAL_VBP1 | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HDMI_VERTB1_MANUAL_VSPO1 | 9 | 21 | 0x003ffe00 | 0xffc001ff | 0x0 |
 
@@ -400,6 +406,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 8 | NA | NA | NA |
 | HDMI_DETECTED_HORZB_MANUAL_HFP | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | HDMI_DETECTED_HORZB_MANUAL_HSP | 10 | 19 | 0x000ffc00 | 0xfff003ff | 0x60 |
 | HDMI_DETECTED_HORZB_MANUAL_HBP | 20 | 29 | 0x3ff00000 | 0xc00fffff | 0x30 |
@@ -418,6 +425,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 7 | NA | NA | NA |
 | HDMI_DETECTED_VERTB0_MANUAL_VBP0 | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HDMI_DETECTED_VERTB0_MANUAL_VSPO0 | 9 | 21 | 0x003ffe00 | 0xffc001ff | 0x0 |
 
@@ -435,5 +443,6 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 7 | NA | NA | NA |
 | HDMI_DETECTED_VERTB1_MANUAL_VBP1 | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HDMI_DETECTED_VERTB1_MANUAL_VSPO1 | 9 | 21 | 0x003ffe00 | 0xffc001ff | 0x0 |

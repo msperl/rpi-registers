@@ -55,6 +55,7 @@
 | AVE_IN_CTRL_LOW_PRIORITY | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
 | AVE_IN_CTRL_HIGH_PRIORITY | 20 | 23 | 0x00f00000 | 0xff0fffff | 0x0 |
 | AVE_IN_CTRL_PRIORITY_LIMIT | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
+| missing definiton | 27 | 30 | NA | NA | NA |
 | AVE_IN_CTRL_ENABLE | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###AVE_IN_STATUS
@@ -69,15 +70,20 @@
 | AVE_IN_STATUS_LINE_NUM_HIT | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | AVE_IN_STATUS_HSYNC_DET | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | AVE_IN_STATUS_FRAME_RATE_DET | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | AVE_IN_STATUS_FRAME_RATE | 8 | 9 | 0x00000300 | 0xfffffcff | 0x0 |
 | AVE_IN_STATUS_INTERLACED | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
 | AVE_IN_STATUS_EVEN_FIELD | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | AVE_IN_STATUS_VFORM_FIELD | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | AVE_IN_STATUS_CSYNC_FIELD | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
+| missing definiton | 14 | 15 | NA | NA | NA |
 | AVE_IN_STATUS_MAX_HIT | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | AVE_IN_STATUS_CURRENT_BUF | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+| missing definiton | 18 | 19 | NA | NA | NA |
 | AVE_IN_STATUS_AXI_STATE | 20 | 22 | 0x00700000 | 0xff8fffff | 0x0 |
+| missing definiton | 23 | 23 | NA | NA | NA |
 | AVE_IN_STATUS_OVERRUN_CNT | 24 | 28 | 0x1f000000 | 0xe0ffffff | 0x0 |
+| missing definiton | 29 | 30 | NA | NA | NA |
 | AVE_IN_STATUS_CAPTURING | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###AVE_IN_BUF0_ADDRESS
@@ -121,6 +127,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | AVE_IN_CURRENT_LINE_BUF0_CURRENT_LINE | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+| missing definiton | 12 | 30 | NA | NA | NA |
 | AVE_IN_CURRENT_LINE_BUF0_EVEN_FIELD | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###AVE_IN_CURRENT_LINE_BUF1
@@ -129,6 +136,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | AVE_IN_CURRENT_LINE_BUF1_CURRENT_LINE | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+| missing definiton | 12 | 30 | NA | NA | NA |
 | AVE_IN_CURRENT_LINE_BUF1_EVEN_FIELD | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###AVE_IN_CURRENT_LINE_NUM
@@ -137,6 +145,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | AVE_IN_CURRENT_LINE_NUM_CURRENT_LINE | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+| missing definiton | 12 | 28 | NA | NA | NA |
 | AVE_IN_CURRENT_LINE_NUM_BUFFER_POINTER | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | AVE_IN_CURRENT_LINE_NUM_INTERLACED | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | AVE_IN_CURRENT_LINE_NUM_EVEN_FIELD | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |

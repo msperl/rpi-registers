@@ -110,6 +110,7 @@
 | SD_CS_SREF2RUN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | SD_CS_IDLE | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | SD_CS_DLLCAL | 10 | 11 | 0x00000c00 | 0xfffff3ff | 0x0 |
+| missing definiton | 12 | 13 | NA | NA | NA |
 | SD_CS_CLKOFF | 14 | 14 | 0x00004000 | 0xffffbfff | 0x1 |
 | SD_CS_SDUP | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 | SD_CS_RDH_IDLE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
@@ -125,8 +126,10 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SD_SA_POWSAVE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 6 | NA | NA | NA |
 | SD_SA_CLKSTOP | 7 | 7 | 0x00000080 | 0xffffff7f | 0x1 |
 | SD_SA_PGEHLDE | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 14 | NA | NA | NA |
 | SD_SA_PGEHLD_IDL | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 | SD_SA_RFSH_T | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x30c |
 
@@ -141,6 +144,7 @@
 | SD_SB_BANKLOW | 5 | 6 | 0x00000060 | 0xffffff9f | 0x0 |
 | SD_SB_REORDER | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | SD_SB_INHIBIT_LA | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 19 | NA | NA | NA |
 | SD_SB_STBY_T | 20 | 31 | 0xfff00000 | 0x000fffff | 0x0 |
 
 ###SD_SC
@@ -149,8 +153,11 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SD_SC_WL | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x2 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | SD_SC_T_WTR | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | SD_SC_T_WR | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x6 |
+| missing definiton | 12 | 19 | NA | NA | NA |
 | SD_SC_T_RRD | 20 | 23 | 0x00f00000 | 0xff0fffff | 0x4 |
 | SD_SC_T_RFC | 24 | 30 | 0x7f000000 | 0x80ffffff | 0x1e |
 
@@ -243,11 +250,17 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SD_PHYC_PHYRST | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 3 | NA | NA | NA |
 | SD_PHYC_VREF_ENB | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | SD_PHYC_BIST_MODE | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 11 | NA | NA | NA |
 | SD_PHYC_IOB_TMODE | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | SD_PHYC_MDLL_TMODE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+| missing definiton | 17 | 19 | NA | NA | NA |
 | SD_PHYC_CRC_EN | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
+| missing definiton | 21 | 23 | NA | NA | NA |
 | SD_PHYC_CRC_CLR | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 
 ###SD_MRT
@@ -264,7 +277,9 @@
 | --- | --- | --- | --- | --- | --- |
 | SD_TMC_TSTCLK | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | SD_TMC_TS | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | SD_TMC_IPSEL | 4 | 6 | 0x00000070 | 0xffffff8f | 0x0 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | SD_TMC_IPRD | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | SD_TMC_TSTPAT | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x0 |
 
@@ -274,12 +289,16 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SD_RWC_RXVAL | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+| missing definiton | 5 | 6 | NA | NA | NA |
 | SD_RWC_RXOVR | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | SD_RWC_WRTVAL | 8 | 12 | 0x00001f00 | 0xffffe0ff | 0x0 |
+| missing definiton | 13 | 14 | NA | NA | NA |
 | SD_RWC_WRTOVR | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 | SD_RWC_LASTCNT | 16 | 20 | 0x001f0000 | 0xffe0ffff | 0x0 |
+| missing definiton | 21 | 21 | NA | NA | NA |
 | SD_RWC_MARGIN | 22 | 23 | 0x00c00000 | 0xff3fffff | 0x1 |
 | SD_RWC_MAXCNT | 24 | 28 | 0x1f000000 | 0xe0ffffff | 0x0 |
+| missing definiton | 29 | 30 | NA | NA | NA |
 | SD_RWC_RSTMAX | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###SD_VIN
@@ -290,9 +309,13 @@
 | SD_VIN_ID | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
 | SD_VIN_WRITE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | SD_VIN_SPLIT | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+| missing definiton | 18 | 19 | NA | NA | NA |
 | SD_VIN_VIO | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
+| missing definiton | 21 | 23 | NA | NA | NA |
 | SD_VIN_MULT | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
+| missing definiton | 25 | 27 | NA | NA | NA |
 | SD_VIN_INT_EN | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
+| missing definiton | 29 | 30 | NA | NA | NA |
 | SD_VIN_CLEAR | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###SD_MR
@@ -303,6 +326,7 @@
 | SD_MR_ADDR | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
 | SD_MR_WDATA | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | SD_MR_RDATA | 16 | 23 | 0x00ff0000 | 0xff00ffff | 0x0 |
+| missing definiton | 24 | 27 | NA | NA | NA |
 | SD_MR_RW | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | SD_MR_HI_Z | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | SD_MR_TIMEOUT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
@@ -316,8 +340,11 @@
 | SD_SD_T_RCD | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x8 |
 | SD_SD_T_RPpb | 4 | 7 | 0x000000f0 | 0xffffff0f | 0x8 |
 | SD_SD_T_RAS | 8 | 12 | 0x00001f00 | 0xffffe0ff | 0xe |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | SD_SD_T_XP | 16 | 18 | 0x00070000 | 0xfff8ffff | 0x2 |
+| missing definiton | 19 | 19 | NA | NA | NA |
 | SD_SD_T_RC | 20 | 24 | 0x01f00000 | 0xfe0fffff | 0x14 |
+| missing definiton | 25 | 27 | NA | NA | NA |
 | SD_SD_T_RPab | 28 | 31 | 0xf0000000 | 0x0fffffff | 0xa |
 
 ###SD_SE
@@ -326,9 +353,13 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SD_SE_T_XSR | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x28 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | SD_SE_T_RTP | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
+| missing definiton | 11 | 11 | NA | NA | NA |
 | SD_SE_T_FAW | 12 | 17 | 0x0003f000 | 0xfffc0fff | 0x19 |
+| missing definiton | 18 | 19 | NA | NA | NA |
 | SD_SE_RL | 20 | 25 | 0x03f00000 | 0xfc0fffff | 0x8 |
+| missing definiton | 26 | 27 | NA | NA | NA |
 | SD_SE_RL_EN | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 
 ###SD_STALL

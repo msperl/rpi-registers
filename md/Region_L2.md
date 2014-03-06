@@ -40,6 +40,8 @@
 | L2_CONT_OFF_l2_flush | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | L2_CONT_OFF_l2_flush_mode | 3 | 4 | 0x00000018 | 0xffffffe7 | 0x0 |
 | L2_CONT_OFF_l2_enable_stats | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 9 | NA | NA | NA |
 | L2_CONT_OFF_l2_standby | 10 | 11 | 0x00000c00 | 0xfffff3ff | 0x0 |
+| missing definiton | 12 | 15 | NA | NA | NA |
 | L2_CONT_OFF_l2_flush_flush_limit | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
 | L2_CONT_OFF_l2_flush_core_limit | 20 | 23 | 0x00f00000 | 0xff0fffff | 0x0 |

@@ -65,7 +65,9 @@
 | EMMC_CMDTM_TM_AUTO_CMD_EN | 2 | 3 | 0x0000000c | 0xfffffff3 | 0x0 |
 | EMMC_CMDTM_TM_DAT_DIR | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | EMMC_CMDTM_TM_MULTI_BLOCK | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 15 | NA | NA | NA |
 | EMMC_CMDTM_CMD_RSPNS_TYPE | 16 | 17 | 0x00030000 | 0xfffcffff | 0x0 |
+| missing definiton | 18 | 18 | NA | NA | NA |
 | EMMC_CMDTM_CMD_CRCCHK_EN | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
 | EMMC_CMDTM_CMD_IXCHK_EN | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 | EMMC_CMDTM_CMD_ISDATA | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
@@ -81,10 +83,12 @@
 | EMMC_STATUS_DAT_INHIBIT | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | EMMC_STATUS_DAT_ACTIVE | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | EMMC_STATUS_RETUNING_REQ | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| missing definiton | 4 | 7 | NA | NA | NA |
 | EMMC_STATUS_WRITE_TRANSFER | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | EMMC_STATUS_READ_TRANSFER | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | EMMC_STATUS_NEW_WRITE_DATA | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
 | EMMC_STATUS_NEW_READ_DATA | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
+| missing definiton | 12 | 15 | NA | NA | NA |
 | EMMC_STATUS_CARD_INSERT | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | EMMC_STATUS_CARD_STABLE | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | EMMC_STATUS_CARD_DETECT | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -108,6 +112,7 @@
 | EMMC_CONTROL0_PWCTL_ON | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | EMMC_CONTROL0_PWCTL_SDVOLTS | 9 | 11 | 0x00000e00 | 0xfffff1ff | 0x0 |
 | EMMC_CONTROL0_PWCTL_HWRST | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | EMMC_CONTROL0_GAP_STOP | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | EMMC_CONTROL0_GAP_RESTART | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | EMMC_CONTROL0_READWAIT_EN | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -115,6 +120,7 @@
 | EMMC_CONTROL0_SPI_MODE | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 | EMMC_CONTROL0_BOOT_EN | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
 | EMMC_CONTROL0_ALT_BOOT_EN | 22 | 22 | 0x00400000 | 0xffbfffff | 0x0 |
+| missing definiton | 23 | 23 | NA | NA | NA |
 | EMMC_CONTROL0_WAKE_ONINT_EN | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | EMMC_CONTROL0_WAKE_ONINS_EN | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_CONTROL0_WAKE_ONREM_EN | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
@@ -127,10 +133,12 @@
 | EMMC_CONTROL1_CLK_INTLEN | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | EMMC_CONTROL1_CLK_STABLE | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | EMMC_CONTROL1_CLK_EN | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 4 | NA | NA | NA |
 | EMMC_CONTROL1_CLK_GENSEL | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | EMMC_CONTROL1_CLK_FREQ_MS2 | 6 | 7 | 0x000000c0 | 0xffffff3f | 0x0 |
 | EMMC_CONTROL1_CLK_FREQ8 | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | EMMC_CONTROL1_DATA_TOUNIT | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
+| missing definiton | 20 | 23 | NA | NA | NA |
 | EMMC_CONTROL1_SRST_HC | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | EMMC_CONTROL1_SRST_CMD | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_CONTROL1_SRST_DATA | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
@@ -167,6 +175,7 @@
 | EMMC_INTERRUPT_ACMD_ERR | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | EMMC_INTERRUPT_ADMA_ERR | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_INTERRUPT_TUNE_ERR | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
+| missing definiton | 27 | 27 | NA | NA | NA |
 | EMMC_INTERRUPT_DMA_ERR | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | EMMC_INTERRUPT_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_INTERRUPT_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
@@ -191,6 +200,7 @@
 | EMMC_IRPT_MASK_RETUNE | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | EMMC_IRPT_MASK_BOOTACK | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | EMMC_IRPT_MASK_ENDBOOT | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | EMMC_IRPT_MASK_CTO_ERR | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | EMMC_IRPT_MASK_CCRC_ERR | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | EMMC_IRPT_MASK_CEND_ERR | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -201,6 +211,7 @@
 | EMMC_IRPT_MASK_SDOFF_ERR | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
 | EMMC_IRPT_MASK_ACMD_ERR | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | EMMC_IRPT_MASK_ADMA_ERR | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
+| missing definiton | 26 | 27 | NA | NA | NA |
 | EMMC_IRPT_MASK_DMA_ERR | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | EMMC_IRPT_MASK_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_IRPT_MASK_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
@@ -225,6 +236,7 @@
 | EMMC_IRPT_EN_RETUNE | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | EMMC_IRPT_EN_BOOTACK | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | EMMC_IRPT_EN_ENDBOOT | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | EMMC_IRPT_EN_CTO_ERR | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | EMMC_IRPT_EN_CCRC_ERR | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | EMMC_IRPT_EN_CEND_ERR | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -236,6 +248,7 @@
 | EMMC_IRPT_EN_ACMD_ERR | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | EMMC_IRPT_EN_ADMA_ERR | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_IRPT_EN_TUNE_ERR | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
+| missing definiton | 27 | 27 | NA | NA | NA |
 | EMMC_IRPT_EN_DMA_ERR | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | EMMC_IRPT_EN_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_IRPT_EN_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
@@ -250,12 +263,15 @@
 | EMMC_CONTROL2_ACCRC_ERR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | EMMC_CONTROL2_ACEND_ERR | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | EMMC_CONTROL2_ACBAD_ERR | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 6 | NA | NA | NA |
 | EMMC_CONTROL2_NOTC12_ERR | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
+| missing definiton | 8 | 15 | NA | NA | NA |
 | EMMC_CONTROL2_UHSMODE | 16 | 18 | 0x00070000 | 0xfff8ffff | 0x0 |
 | EMMC_CONTROL2_SIGTYPE | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x1 |
 | EMMC_CONTROL2_DRVTYPE | 20 | 21 | 0x00300000 | 0xffcfffff | 0x0 |
 | EMMC_CONTROL2_TUNEON | 22 | 22 | 0x00400000 | 0xffbfffff | 0x0 |
 | EMMC_CONTROL2_TUNED | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
+| missing definiton | 24 | 29 | NA | NA | NA |
 | EMMC_CONTROL2_EN_AINT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | EMMC_CONTROL2_EN_PSV | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -265,17 +281,20 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_HWCAP0_TCLKFREQ | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
+| missing definiton | 6 | 6 | NA | NA | NA |
 | EMMC_HWCAP0_TCLKUNIT | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | EMMC_HWCAP0_BASEMHZ | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | EMMC_HWCAP0_MAXLEN | 16 | 17 | 0x00030000 | 0xfffcffff | 0x0 |
 | EMMC_HWCAP0_XMEDBUS | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
 | EMMC_HWCAP0_ADMA2 | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
+| missing definiton | 20 | 20 | NA | NA | NA |
 | EMMC_HWCAP0_HS | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
 | EMMC_HWCAP0_SDMA | 22 | 22 | 0x00400000 | 0xffbfffff | 0x0 |
 | EMMC_HWCAP0_RESUME | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
 | EMMC_HWCAP0_V3_3 | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | EMMC_HWCAP0_V3_0 | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_HWCAP0_V1_8 | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
+| missing definiton | 27 | 27 | NA | NA | NA |
 | EMMC_HWCAP0_BUS64 | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | EMMC_HWCAP0_AINT | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_HWCAP0_SLOT_TYPE | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
@@ -288,10 +307,13 @@
 | EMMC_HWCAP1_SDR50 | 0 | 0 | 0x00000001 | 0xfffffffe | 0x1 |
 | EMMC_HWCAP1_SDR104 | 1 | 1 | 0x00000002 | 0xfffffffd | 0x1 |
 | EMMC_HWCAP1_DDR50 | 2 | 2 | 0x00000004 | 0xfffffffb | 0x1 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | EMMC_HWCAP1_DRV18_TYPEA | 4 | 4 | 0x00000010 | 0xffffffef | 0x1 |
 | EMMC_HWCAP1_DRV18_TYPEC | 5 | 5 | 0x00000020 | 0xffffffdf | 0x1 |
 | EMMC_HWCAP1_DRV18_TYPED | 6 | 6 | 0x00000040 | 0xffffffbf | 0x1 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | EMMC_HWCAP1_RETUNE_TMR | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x7 |
+| missing definiton | 12 | 12 | NA | NA | NA |
 | EMMC_HWCAP1_SDR50_TUNE | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | EMMC_HWCAP1_DATA_RETUNE | 14 | 15 | 0x0000c000 | 0xffff3fff | 0x0 |
 | EMMC_HWCAP1_MULTIPLIER | 16 | 23 | 0x00ff0000 | 0xff00ffff | 0x0 |
@@ -320,6 +342,7 @@
 | EMMC_FORCE_IRPT_READ_RDY | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | EMMC_FORCE_IRPT_CARD_IN | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | EMMC_FORCE_IRPT_CARD_OUT | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
+| missing definiton | 8 | 15 | NA | NA | NA |
 | EMMC_FORCE_IRPT_CTO_ERR | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | EMMC_FORCE_IRPT_CCRC_ERR | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | EMMC_FORCE_IRPT_CEND_ERR | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -331,6 +354,7 @@
 | EMMC_FORCE_IRPT_ACMD_ERR | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | EMMC_FORCE_IRPT_ADMA_ERR | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_FORCE_IRPT_TUNE_ERR | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
+| missing definiton | 27 | 27 | NA | NA | NA |
 | EMMC_FORCE_IRPT_DMA_ERR | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | EMMC_FORCE_IRPT_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_FORCE_IRPT_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
@@ -399,8 +423,11 @@
 | --- | --- | --- | --- | --- | --- |
 | EMMC_BUS_CTRL_CLK_PINS | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
 | EMMC_BUS_CTRL_IRQ_PINS | 3 | 5 | 0x00000038 | 0xffffffc7 | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | EMMC_BUS_CTRL_BUS_WIDTH | 8 | 14 | 0x00007f00 | 0xffff80ff | 0x0 |
+| missing definiton | 15 | 19 | NA | NA | NA |
 | EMMC_BUS_CTRL_IRQSEL | 20 | 22 | 0x00700000 | 0xff8fffff | 0x0 |
+| missing definiton | 23 | 23 | NA | NA | NA |
 | EMMC_BUS_CTRL_BE_PWR | 24 | 30 | 0x7f000000 | 0x80ffffff | 0x0 |
 
 ###EMMC_SPI_INT_SPT
@@ -416,5 +443,6 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_SLOTISR_VER_SLOT_STATUS | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| missing definiton | 8 | 15 | NA | NA | NA |
 | EMMC_SLOTISR_VER_SDVERSION | 16 | 23 | 0x00ff0000 | 0xff00ffff | 0x2 |
 | EMMC_SLOTISR_VER_VENDOR | 24 | 31 | 0xff000000 | 0x00ffffff | 0x99 |

@@ -88,6 +88,7 @@
 | --- | --- | --- | --- | --- | --- |
 | MPHI_C0INDS_WORDS | 0 | 20 | 0x001fffff | 0xffe00000 | 0x0 |
 | MPHI_C0INDS_HANDLE | 21 | 28 | 0x1fe00000 | 0xe01fffff | 0x0 |
+| missing definiton | 29 | 29 | NA | NA | NA |
 | MPHI_C0INDS_VALID | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | MPHI_C0INDS_DISCARD | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -98,6 +99,7 @@
 | --- | --- | --- | --- | --- | --- |
 | MPHI_C1INDS_WORDS | 0 | 20 | 0x001fffff | 0xffe00000 | 0x0 |
 | MPHI_C1INDS_HANDLE | 21 | 28 | 0x1fe00000 | 0xe01fffff | 0x0 |
+| missing definiton | 29 | 29 | NA | NA | NA |
 | MPHI_C1INDS_VALID | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | MPHI_C1INDS_DISCARD | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -165,6 +167,7 @@
 | --- | --- | --- | --- | --- | --- |
 | MPHI_OUTDS_WORDS | 0 | 20 | 0x001fffff | 0xffe00000 | 0x0 |
 | MPHI_OUTDS_HANDLE | 21 | 28 | 0x1fe00000 | 0xe01fffff | 0x0 |
+| missing definiton | 29 | 29 | NA | NA | NA |
 | MPHI_OUTDS_VALID | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 
 ###MPHI_OUTDFS
@@ -182,6 +185,7 @@
 | MPHI_MINFS_LEVEL | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
 | MPHI_MINFS_WPTR | 10 | 19 | 0x000ffc00 | 0xfff003ff | 0x0 |
 | MPHI_MINFS_RPTR | 20 | 29 | 0x3ff00000 | 0xc00fffff | 0x0 |
+| missing definiton | 30 | 30 | NA | NA | NA |
 | MPHI_MINFS_OFLOW | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###MPHI_MOUTFS
@@ -192,6 +196,7 @@
 | MPHI_MOUTFS_LEVEL | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
 | MPHI_MOUTFS_WPTR | 10 | 19 | 0x000ffc00 | 0xfff003ff | 0x0 |
 | MPHI_MOUTFS_RPTR | 20 | 29 | 0x3ff00000 | 0xc00fffff | 0x0 |
+| missing definiton | 30 | 30 | NA | NA | NA |
 | MPHI_MOUTFS_UFLOW | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###MPHI_AXIPRIV
@@ -200,7 +205,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | MPHI_AXIPRIV_TXPROT | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x2 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | MPHI_AXIPRIV_RXPROT | 4 | 6 | 0x00000070 | 0xffffff8f | 0x2 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | MPHI_AXIPRIV_HSPECEN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 
 ###MPHI_RXAXICFG
@@ -227,12 +234,18 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | MPHI_CTRL_HATVAL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 3 | NA | NA | NA |
 | MPHI_CTRL_DIRECT | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | MPHI_CTRL_INVERT | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 11 | NA | NA | NA |
 | MPHI_CTRL_EIGHTBIT | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | MPHI_CTRL_REQ_SOFT_RST | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | MPHI_CTRL_SOFT_RST_DNE | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
+| missing definiton | 18 | 26 | NA | NA | NA |
 | MPHI_CTRL_STBY | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x1 |
+| missing definiton | 28 | 30 | NA | NA | NA |
 | MPHI_CTRL_ENABLE | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###MPHI_INTSTAT
@@ -241,12 +254,19 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | MPHI_INTSTAT_RX0MEND | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 3 | NA | NA | NA |
 | MPHI_INTSTAT_RX0TEND | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | MPHI_INTSTAT_RX1MEND | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 11 | NA | NA | NA |
 | MPHI_INTSTAT_RX1TEND | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | MPHI_INTSTAT_TXEND | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+| missing definiton | 17 | 19 | NA | NA | NA |
 | MPHI_INTSTAT_RX0DISC | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
+| missing definiton | 21 | 23 | NA | NA | NA |
 | MPHI_INTSTAT_RX1DISC | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
+| missing definiton | 25 | 26 | NA | NA | NA |
 | MPHI_INTSTAT_HSDCFOFLW | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
 | MPHI_INTSTAT_OMFUFLW | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | MPHI_INTSTAT_IMFOFLW | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
@@ -259,10 +279,15 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | MPHI_INTCTRL_RX0DISC | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 3 | NA | NA | NA |
 | MPHI_INTCTRL_RX1DISC | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | MPHI_INTCTRL_IMFOFLW | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 11 | NA | NA | NA |
 | MPHI_INTCTRL_OMFUFLW | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | MPHI_INTCTRL_HSDISC | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
+| missing definiton | 17 | 19 | NA | NA | NA |
 | MPHI_INTCTRL_HSDCOFLW | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 
 ###MPHI_HSINDCF
@@ -273,6 +298,7 @@
 | MPHI_HSINDCF_LENGTH | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
 | MPHI_HSINDCF_HANDLE | 20 | 27 | 0x0ff00000 | 0xf00fffff | 0x0 |
 | MPHI_HSINDCF_MTERM | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
+| missing definiton | 29 | 29 | NA | NA | NA |
 | MPHI_HSINDCF_LENERR | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | MPHI_HSINDCF_EMPTY | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -283,6 +309,7 @@
 | --- | --- | --- | --- | --- | --- |
 | MPHI_HSINDS_WORDS | 0 | 20 | 0x001fffff | 0xffe00000 | 0x0 |
 | MPHI_HSINDS_HANDLE | 21 | 28 | 0x1fe00000 | 0xe01fffff | 0x0 |
+| missing definiton | 29 | 29 | NA | NA | NA |
 | MPHI_HSINDS_VALID | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | MPHI_HSINDS_DISCARD | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
@@ -300,6 +327,7 @@
 | --- | --- | --- | --- | --- | --- |
 | MPHI_HSINDDB_LENGTH | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
 | MPHI_HSINDDB_HANDLE | 20 | 27 | 0x0ff00000 | 0xf00fffff | 0x0 |
+| missing definiton | 28 | 28 | NA | NA | NA |
 | MPHI_HSINDDB_TENDINT | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 
 ###MPHI_HSINDFS
@@ -308,4 +336,5 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | MPHI_HSINDFS_DFIFOLVL | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 15 | NA | NA | NA |
 | MPHI_HSINDFS_CFIFOLVL | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x0 |

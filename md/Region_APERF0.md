@@ -63,7 +63,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | APERF0_BW0_CTRL_BUS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | APERF0_BW0_CTRL_ID | 8 | 12 | 0x00001f00 | 0xffffe0ff | 0x0 |
+| missing definiton | 13 | 27 | NA | NA | NA |
 | APERF0_BW0_CTRL_LATHALT | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | APERF0_BW0_CTRL_ID_EN | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | APERF0_BW0_CTRL_EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
@@ -75,7 +77,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | APERF0_BW1_CTRL_BUS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | APERF0_BW1_CTRL_ID | 8 | 12 | 0x00001f00 | 0xffffe0ff | 0x0 |
+| missing definiton | 13 | 27 | NA | NA | NA |
 | APERF0_BW1_CTRL_LATHALT | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | APERF0_BW1_CTRL_ID_EN | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | APERF0_BW1_CTRL_EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
@@ -87,7 +91,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | APERF0_BW2_CTRL_BUS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | APERF0_BW2_CTRL_ID | 8 | 12 | 0x00001f00 | 0xffffe0ff | 0x0 |
+| missing definiton | 13 | 27 | NA | NA | NA |
 | APERF0_BW2_CTRL_LATHALT | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | APERF0_BW2_CTRL_ID_EN | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | APERF0_BW2_CTRL_EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |

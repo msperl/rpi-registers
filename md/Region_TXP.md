@@ -27,6 +27,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | TXP_DIM_WIDTH | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
+| missing definiton | 12 | 15 | NA | NA | NA |
 | TXP_DIM_HEIGHT | 16 | 27 | 0x0fff0000 | 0xf000ffff | 0x0 |
 
 ###TXP_CTRL

@@ -43,6 +43,7 @@
 | I2C_SPI_SLV_DR_TXDMABREQ | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | I2C_SPI_SLV_DR_RXDMAPREQ | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | I2C_SPI_SLV_DR_RXDMABREQ | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
+| missing definiton | 14 | 15 | NA | NA | NA |
 | I2C_SPI_SLV_DR_TXBUSY | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | I2C_SPI_SLV_DR_RXFE | 17 | 17 | 0x00020000 | 0xfffdffff | 0x1 |
 | I2C_SPI_SLV_DR_TXFF | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -102,6 +103,8 @@
 | I2C_SPI_SLV_FR_RXFF | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | I2C_SPI_SLV_FR_TXFE | 4 | 4 | 0x00000010 | 0xffffffef | 0x1 |
 | I2C_SPI_SLV_FR_RXBUSY | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 9 | NA | NA | NA |
+| missing definiton | 7 | 10 | NA | NA | NA |
 | I2C_SPI_SLV_FR_TXFLEVEL | 10 | 6 | 0x00000000000 | 0xffffffff111 | 0x0 |
 | I2C_SPI_SLV_FR_RXFLEVEL | 11 | 15 | 0x0000f800 | 0xffff07ff | 0x0 |
 

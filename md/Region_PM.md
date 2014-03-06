@@ -63,6 +63,7 @@
 | PM_GNRIC_ISFUNC | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | PM_GNRIC_RSTN | 6 | 11 | 0x00000fc0 | 0xfffff03f | 0x0 |
 | PM_GNRIC_ENAB | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | PM_GNRIC_CFG | 16 | 22 | 0x007f0000 | 0xff80ffff | 0x0 |
 
 ###PM_AUDIO
@@ -80,10 +81,15 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | PM_RSTC_DRCFG | 0 | 1 | 0x00000003 | 0xfffffffc | 0x2 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | PM_RSTC_WRCFG | 4 | 5 | 0x00000030 | 0xffffffcf | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | PM_RSTC_SRCFG | 8 | 9 | 0x00000300 | 0xfffffcff | 0x1 |
+| missing definiton | 10 | 11 | NA | NA | NA |
 | PM_RSTC_QRCFG | 12 | 13 | 0x00003000 | 0xffffcfff | 0x0 |
+| missing definiton | 14 | 15 | NA | NA | NA |
 | PM_RSTC_FRCFG | 16 | 17 | 0x00030000 | 0xfffcffff | 0x0 |
+| missing definiton | 18 | 19 | NA | NA | NA |
 | PM_RSTC_HRCFG | 20 | 21 | 0x00300000 | 0xffcfffff | 0x0 |
 
 ###PM_RSTS
@@ -94,12 +100,15 @@
 | PM_RSTS_HADDRQ | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | PM_RSTS_HADDRF | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | PM_RSTS_HADDRH | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | PM_RSTS_HADWRQ | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | PM_RSTS_HADWRF | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | PM_RSTS_HADWRH | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | PM_RSTS_HADSRQ | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | PM_RSTS_HADSRF | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | PM_RSTS_HADSRH | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
+| missing definiton | 11 | 11 | NA | NA | NA |
 | PM_RSTS_HADPOR | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
 ###PM_WDOG
@@ -166,7 +175,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | PM_PADS6_DRIVE | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| missing definiton | 2 | 4 | NA | NA | NA |
 | PM_PADS6_POWOK | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | PM_PADS6_PD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 
 ###PM_CAM0
@@ -355,7 +366,9 @@
 | PM_IMAGE_PERIRSTN | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | PM_IMAGE_H264RSTN | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 | PM_IMAGE_ISPRSTN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 11 | NA | NA | NA |
 | PM_IMAGE_ENAB | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | PM_IMAGE_CFG | 16 | 22 | 0x007f0000 | 0xff80ffff | 0x0 |
 
 ###PM_GRAFX
@@ -370,7 +383,9 @@
 | PM_GRAFX_MRDONE | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | PM_GRAFX_ISFUNC | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | PM_GRAFX_V3DRSTN | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 11 | NA | NA | NA |
 | PM_GRAFX_ENAB | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | PM_GRAFX_CFG | 16 | 22 | 0x007f0000 | 0xff80ffff | 0x0 |
 
 ###PM_PROC
@@ -385,5 +400,7 @@
 | PM_PROC_MRDONE | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | PM_PROC_ISFUNC | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | PM_PROC_ARMRSTN | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 11 | NA | NA | NA |
 | PM_PROC_ENAB | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | PM_PROC_CFG | 16 | 22 | 0x007f0000 | 0xff80ffff | 0x0 |

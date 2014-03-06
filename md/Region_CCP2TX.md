@@ -34,7 +34,9 @@
 | CCP2TX_TC_TEN | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | CCP2TX_TC_MEN | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | CCP2TX_TC_CLKM | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 7 | NA | NA | NA |
 | CCP2TX_TC_TIP | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0xff |
+| missing definiton | 16 | 30 | NA | NA | NA |
 | CCP2TX_TC_SWR | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###CCP2TX_TS
@@ -49,7 +51,9 @@
 | CCP2TX_TS_TFE | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | CCP2TX_TS_TFF | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | CCP2TX_TS_TFP | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | CCP2TX_TS_TQL | 8 | 12 | 0x00001f00 | 0xffffe0ff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | CCP2TX_TS_IS | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | CCP2TX_TS_TII | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | CCP2TX_TS_TEI | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |
@@ -64,6 +68,7 @@
 | CCP2TX_TAC_APD | 1 | 1 | 0x00000002 | 0xfffffffd | 0x1 |
 | CCP2TX_TAC_BPD | 2 | 2 | 0x00000004 | 0xfffffffb | 0x1 |
 | CCP2TX_TAC_TPC | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
+| missing definiton | 4 | 7 | NA | NA | NA |
 | CCP2TX_TAC_DLAC | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x43 |
 | CCP2TX_TAC_CLAC | 16 | 23 | 0x00ff0000 | 0xff00ffff | 0x43 |
 | CCP2TX_TAC_PTATADJ | 24 | 27 | 0x0f000000 | 0xf0ffffff | 0x7 |
@@ -93,6 +98,7 @@
 | CCP2TX_TIC_TIIE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | CCP2TX_TIC_TEIE | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | CCP2TX_TIC_TQIE | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | CCP2TX_TIC_TQIT | 4 | 7 | 0x000000f0 | 0xffffff0f | 0x0 |
 
 ###CCP2TX_TTC
@@ -104,7 +110,9 @@
 | CCP2TX_TTC_LSC | 4 | 7 | 0x000000f0 | 0xffffff0f | 0x0 |
 | CCP2TX_TTC_LEC | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x1 |
 | CCP2TX_TTC_FSP | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | CCP2TX_TTC_BI | 16 | 23 | 0x00ff0000 | 0xff00ffff | 0x0 |
+| missing definiton | 24 | 30 | NA | NA | NA |
 | CCP2TX_TTC_ATX | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
 ###CCP2TX_TBA

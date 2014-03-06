@@ -52,6 +52,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | TB_PRINTER_CTRL_OFFSET | 0 | 1 | 0x00000003 | 0xfffffffc |  |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | TB_PRINTER_CTRL_TASKNO | 4 | 15 | 0x0000fff0 | 0xffff000f |  |
 
 ###TB_BOOT_OPT
@@ -69,6 +70,7 @@
 | TB_BOOT_OPT_BOOT_HALT | 7 | 7 | 0x00000080 | 0xffffff7f |  |
 | TB_BOOT_OPT_BANK_MODE | 8 | 9 | 0x00000300 | 0xfffffcff |  |
 | TB_BOOT_OPT_DONT_SET_VPU_CLK | 10 | 10 | 0x00000400 | 0xfffffbff |  |
+| missing definiton | 11 | 30 | NA | NA | NA |
 | TB_BOOT_OPT_TB_PRESENT | 31 | 31 | 0x80000000 | 0x7fffffff |  |
 
 ###TB_BOOT_SECURE_MODE
@@ -91,6 +93,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | TB_JTB_CONFIG_SBITS | 0 | 4 | 0x0000001f | 0xffffffe0 |  |
+| missing definiton | 5 | 5 | NA | NA | NA |
 | TB_JTB_CONFIG_OUT_MS | 6 | 6 | 0x00000040 | 0xffffffbf |  |
 | TB_JTB_CONFIG_INV_CLK | 7 | 7 | 0x00000080 | 0xffffff7f |  |
 | TB_JTB_CONFIG_TMS_RISE | 8 | 8 | 0x00000100 | 0xfffffeff |  |
@@ -99,6 +102,9 @@
 | TB_JTB_CONFIG_ENABLE | 11 | 11 | 0x00000800 | 0xfffff7ff |  |
 | TB_JTB_CONFIG_D_HOLD | 12 | 13 | 0x00003000 | 0xffffcfff |  |
 | TB_JTB_CONFIG_TRSTN | 14 | 14 | 0x00004000 | 0xffffbfff |  |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | TB_JTB_CONFIG_SPEED | 16 | 23 | 0x00ff0000 | 0xff00ffff |  |
 | TB_JTB_CONFIG_BITCNT | 23 | 29 | 0x3f800000 | 0xc07fffff |  |
+| missing definiton | 24 | 22 | NA | NA | NA |
+| missing definiton | 30 | 30 | NA | NA | NA |
 | TB_JTB_CONFIG_BUSY | 31 | 31 | 0x80000000 | 0x7fffffff |  |

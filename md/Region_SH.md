@@ -40,6 +40,7 @@
 | SH_CMD_LONG_RESPONSE | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | SH_CMD_NO_RESPONSE | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
 | SH_CMD_BUSY_CMD | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
+| missing definiton | 12 | 13 | NA | NA | NA |
 | SH_CMD_FAIL_FLAG | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | SH_CMD_NEW_FLAG | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 
@@ -98,6 +99,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SH_HSTS_DATA_FLAG | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
+| missing definiton | 1 | 2 | NA | NA | NA |
 | SH_HSTS_FIFO_ERROR | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | SH_HSTS_CRC7_ERROR | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | SH_HSTS_CRC16_ERROR | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
@@ -135,7 +137,9 @@
 | SH_HCFG_SLOW_CARD | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | SH_HCFG_DATA_IRPT_EN | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | SH_HCFG_SDIO_IRPT_EN | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | SH_HCFG_BLOCK_IRPT_EN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 9 | NA | NA | NA |
 | SH_HCFG_BUSY_IRPT_EN | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
 
 ###SH_HBCT

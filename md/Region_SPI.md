@@ -31,6 +31,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 1 | NA | NA | NA |
 | SPI_CS_CPHA | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | SPI_CS_CPOL | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | SPI_CS_CLEAR | 4 | 5 | 0x00000030 | 0xffffffcf | 0x0 |
@@ -39,6 +40,7 @@
 | SPI_CS_DMAEN | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | SPI_CS_INTD | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | SPI_CS_INTR | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
+| missing definiton | 11 | 15 | NA | NA | NA |
 | SPI_CS_DONE | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | SPI_CS_RXD | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | SPI_CS_TXD | 18 | 18 | 0x00040000 | 0xfffbffff | 0x0 |

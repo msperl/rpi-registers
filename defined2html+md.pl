@@ -2,7 +2,6 @@
 use strict;
 use Data::Dumper;
 
-
 sub parseDefined {
     # read the defines
     my %defs;
@@ -48,13 +47,13 @@ sub parseDefined {
 	    my $n=$_;
 	    $n =~ s/_REG$//;
 	    $n =~ /^${s}_(.*)/;
-	    my $a=$sec->{defs}->{$_};
-	    $a =~s/:(RO|RW)$//;
+	    my $addr=$sec->{defs}->{$_};
+	    $addr =~s/:(RO|RW)$//;
 	    my $reset = $sec->{defs}->{$n."_RESET"};
 	    my $t=$1;
 	    $sec->{regs}->{$n} = {
 		name => $n,
-		addr => $a,
+		addr => $addr,
 		type => $t,
 		width => $sec->{defs}->{$n."_WIDTH"},
 		reset => $sec->{defs}->{$n."_RESET"},
@@ -93,6 +92,28 @@ sub parseDefined {
 		delete $sec->{defs}->{$n."_MSB"};
 		delete $sec->{defs}->{$n."_RESET"};
 	    } grep (/^${n}_(.*)_BITS$/,keys %{$sec->{defs}});
+	    # now check for missing areas
+	    if (exists $reg->{bits}) {
+		my $bits=$reg->{bits};
+		my @bitssorted = (sort { $a->{lsb} <=> $b->{lsb} }
+				  values %{$bits});
+		my $next=0;
+		foreach my $bit (@bitssorted) {
+		    if ($next != $bit->{lsb}) {
+			my $bitstr=$next.":".($bit->{lsb}-1);
+			$reg->{bits}->{"missing:".$bitstr} ={
+			    name => "missing definiton",
+			    bits => $bitstr,
+			    lsb => $next,
+			    msb => $bit->{lsb}-1,
+			    set => "NA",
+			    clear => "NA",
+			    reset => "NA",,
+			}
+		    }
+		    $next = $bit->{msb} + 1;
+		}
+	    }
 	} grep(/^${s}_(.*)_REG$/,keys %{$sec->{defs}});
     }
     # map everything else to unhandled

@@ -61,10 +61,13 @@
 | DSI0_PHYC_dlane_hsen_0_sync | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | DSI0_PHYC_txulpshs_0_sync | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | DSI0_PHYC_forcehsstop_sync | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | DSI0_PHYC_unused | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | DSI0_PHYC_dlane_hsen_1_sync | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | DSI0_PHYC_txulpshs_1_sync | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | DSI0_PHYC_clane_hsen_sync | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | DSI0_PHYC_txulps_clk_sync | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 | DSI0_PHYC_txhsclk_cont_sync | 10 | 10 | 0x00000400 | 0xfffffbff | 0x0 |
+| missing definiton | 11 | 11 | NA | NA | NA |
 | DSI0_PHYC_dsi_esc_lpdt | 12 | 17 | 0x0003f000 | 0xfffc0fff | 0x0 |

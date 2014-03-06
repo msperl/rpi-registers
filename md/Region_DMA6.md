@@ -35,9 +35,12 @@
 | DMA6_CS_PAUSED | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | DMA6_CS_DREQ_STOPS_DMA | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | DMA6_CS_WAITING_FOR_OUTSTANDING_WRITES | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | DMA6_CS_ERROR | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 15 | NA | NA | NA |
 | DMA6_CS_PRIORITY | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
 | DMA6_CS_PANIC_PRIORITY | 20 | 23 | 0x00f00000 | 0xff0fffff | 0x0 |
+| missing definiton | 24 | 27 | NA | NA | NA |
 | DMA6_CS_WAIT_FOR_OUTSTANDING_WRITES | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 | DMA6_CS_DISDEBUG | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | DMA6_CS_ABORT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
@@ -48,6 +51,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 4 | NA | NA | NA |
 | DMA6_CONBLK_AD_SCB_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f | 0x0 |
 
 ###DMA6_TI
@@ -57,6 +61,7 @@
 | --- | --- | --- | --- | --- | --- |
 | DMA6_TI_INTEN | 0 | 0 | 0x00000001 | 0xfffffffe |  |
 | DMA6_TI_TDMODE | 1 | 1 | 0x00000002 | 0xfffffffd |  |
+| missing definiton | 2 | 2 | NA | NA | NA |
 | DMA6_TI_WAIT_RESP | 3 | 3 | 0x00000008 | 0xfffffff7 |  |
 | DMA6_TI_DEST_INC | 4 | 4 | 0x00000010 | 0xffffffef |  |
 | DMA6_TI_DEST_WIDTH | 5 | 5 | 0x00000020 | 0xffffffdf |  |
@@ -106,6 +111,7 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| missing definiton | 0 | 4 | NA | NA | NA |
 | DMA6_NEXTCONBK_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f |  |
 
 ###DMA6_DEBUG
@@ -116,6 +122,7 @@
 | DMA6_DEBUG_READ_LAST_NOT_SET_ERROR | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | DMA6_DEBUG_FIFO_ERROR | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | DMA6_DEBUG_READ_ERROR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
+| missing definiton | 3 | 3 | NA | NA | NA |
 | DMA6_DEBUG_OUTSTANDING_WRITES | 4 | 7 | 0x000000f0 | 0xffffff0f | 0x0 |
 | DMA6_DEBUG_DMA_ID | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | DMA6_DEBUG_DMA_STATE | 16 | 24 | 0x01ff0000 | 0xfe00ffff | 0x0 |

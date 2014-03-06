@@ -304,7 +304,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLA_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| missing definiton | 10 | 11 | NA | NA | NA |
 | A2W_PLLA_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | A2W_PLLA_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
 | A2W_PLLA_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 
@@ -322,7 +324,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLC_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| missing definiton | 10 | 11 | NA | NA | NA |
 | A2W_PLLC_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | A2W_PLLC_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
 | A2W_PLLC_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 
@@ -340,7 +344,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLD_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| missing definiton | 10 | 11 | NA | NA | NA |
 | A2W_PLLD_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | A2W_PLLD_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
 | A2W_PLLD_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 
@@ -358,7 +364,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLH_CTRL_NDIV | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
+| missing definiton | 8 | 11 | NA | NA | NA |
 | A2W_PLLH_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | A2W_PLLH_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
 | A2W_PLLH_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 
@@ -368,9 +376,12 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_HDMI_CTL_RCAL_SELAVG | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | A2W_HDMI_CTL_RCAL_SELDIV | 4 | 5 | 0x00000030 | 0xffffffcf | 0x0 |
+| missing definiton | 6 | 7 | NA | NA | NA |
 | A2W_HDMI_CTL_RCAL_MANR | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x0 |
 | A2W_HDMI_CTL_RCAL_MANREN | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | A2W_HDMI_CTL_RCAL_RSTB | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
 
 ###A2W_XOSC_CTRL
@@ -386,6 +397,7 @@
 | A2W_XOSC_CTRL_PLLDEN | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 | A2W_XOSC_CTRL_PLLAEN | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 | A2W_XOSC_CTRL_PLLBEN | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
+| missing definiton | 8 | 11 | NA | NA | NA |
 | A2W_XOSC_CTRL_PLLCOK | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | A2W_XOSC_CTRL_HDMIOK | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | A2W_XOSC_CTRL_USBOK | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
@@ -408,7 +420,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_SMPS_B_STAT_VOLTS | 0 | 4 | 0x0000001f | 0xffffffe0 | 0x0 |
+| missing definiton | 5 | 7 | NA | NA | NA |
 | A2W_SMPS_B_STAT_BSTPWMB | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
+| missing definiton | 9 | 11 | NA | NA | NA |
 | A2W_SMPS_B_STAT_POK | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
 ###A2W_SMPS_C_CLK
@@ -433,7 +447,9 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLB_CTRL_NDIV | 0 | 9 | 0x000003ff | 0xfffffc00 | 0x0 |
+| missing definiton | 10 | 11 | NA | NA | NA |
 | A2W_PLLB_CTRL_PDIV | 12 | 14 | 0x00007000 | 0xffff8fff | 0x0 |
+| missing definiton | 15 | 15 | NA | NA | NA |
 | A2W_PLLB_CTRL_PWRDN | 16 | 16 | 0x00010000 | 0xfffeffff | 0x1 |
 | A2W_PLLB_CTRL_PRSTN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 
@@ -493,6 +509,7 @@
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | A2W_XOSC_CPR_DIV | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
+| missing definiton | 2 | 3 | NA | NA | NA |
 | A2W_XOSC_CPR_CPR1 | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 
 ###A2W_SMPS_A_VOLTS
@@ -547,6 +564,7 @@
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLA_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
 | A2W_PLLA_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | A2W_PLLA_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
 
 ###A2W_PLLC_CORE2
@@ -565,6 +583,7 @@
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLC_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
 | A2W_PLLC_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | A2W_PLLC_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
 
 ###A2W_PLLD_DSI0
@@ -583,6 +602,7 @@
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLD_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
 | A2W_PLLD_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | A2W_PLLD_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
 
 ###A2W_PLLH_AUX
@@ -601,6 +621,7 @@
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLH_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
 | A2W_PLLH_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | A2W_PLLH_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
 
 ###A2W_XOSC_BIAS
@@ -641,6 +662,7 @@
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLB_ANA_KAIP_KP | 0 | 3 | 0x0000000f | 0xfffffff0 | 0xa |
 | A2W_PLLB_ANA_KAIP_KI | 4 | 6 | 0x00000070 | 0xffffff8f | 0x3 |
+| missing definiton | 7 | 7 | NA | NA | NA |
 | A2W_PLLB_ANA_KAIP_KA | 8 | 10 | 0x00000700 | 0xfffff8ff | 0x3 |
 
 ###A2W_PLLA_CORE
@@ -884,6 +906,7 @@
 | --- | --- | --- | --- | --- | --- |
 | A2W_PLLH_ANA_STAT_DATA | 0 | 11 | 0x00000fff | 0xfffff000 | 0x0 |
 | A2W_PLLH_ANA_STAT_RCALDONE | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
+| missing definiton | 13 | 15 | NA | NA | NA |
 | A2W_PLLH_ANA_STAT_RCALCODE | 16 | 19 | 0x000f0000 | 0xfff0ffff | 0x0 |
 | A2W_PLLH_ANA_STAT_CNTLENB | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 
