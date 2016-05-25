@@ -57,5 +57,11 @@
 | VEC_DAC_CONFIG | 0x7e806210 | RW | 32 | 0xffffffff |  |
 | VEC_DAC_MISC | 0x7e806214 | RW | 32 | 0xffffffff |  |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| VEC_BASE_ADDRESS | 0x7e806000 |
+
 ##Register info
 

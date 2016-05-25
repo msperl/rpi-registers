@@ -1,4 +1,15 @@
 /* here go some external defines that are not in the BRCM tarball */
+#include "../hardware_vc4.h"
+#include "register_map_macros.h"
+/* set up some macro overwrites */
+#undef HW_REGISTER_RW
+#undef HW_REGISTER_RO
+#define __HW_REGISTER(addr,type) addr:type
+#define HW_REGISTER_RW(addr) __HW_REGISTER(addr,RW)
+#define HW_REGISTER_RO(addr) __HW_REGISTER(addr,RO)
+
+#include "register_map.h"
+#include "aux_io.h"
 
 /* Descriptions for distinct Register ranges */
 #define CM_DESCRIPTION		"Clock manager"

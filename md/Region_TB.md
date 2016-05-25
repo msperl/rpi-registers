@@ -10,8 +10,8 @@
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
-| [TB_TASK](#tb_task) | 0x7e20b000 | RW | 17 | 0x0001ffff |  |
 | TB_ADDR | 0x7e20b000 | RW | 32 | 0xffffffff |  |
+| [TB_TASK](#tb_task) | 0x7e20b000 | RW | 17 | 0x0001ffff |  |
 | TB_TASK_PARAM1 | 0x7e20b004 | RW | 32 | 0xffffffff |  |
 | TB_TASK_PARAM2 | 0x7e20b008 | RW | 32 | 0xffffffff |  |
 | TB_TASK_PARAM3 | 0x7e20b00c | RW | 32 | 0xffffffff |  |

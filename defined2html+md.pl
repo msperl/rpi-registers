@@ -14,28 +14,67 @@ sub parseDefined {
 	    $k .= "_REG";
 	}
 	if ($k=~/^[^_]+_/) {
+	    # and set it
 	    $defs{$k}=$v;
 	}
     }
 
-    # remap regs to sections
-    foreach my $s (grep(/_BASE(_REG)?$/,keys %defs)) {
-	my $base=$defs{$s};
-	# skip if it is not really a base with the corresponding address
-	if (not $base =~/0x[0-9a-f]/) {
+    # try to evaluate values
+    foreach my $k (keys %defs) {
+	my $v = $defs{$k};
+
+	if ($v=~ /"/ ) {
 	    next;
 	}
-	delete $defs{$s};
-	$s =~s/_BASE(_REG)?$//;
 
+	#try to eval $v
+	if ($v =~ /(\+|<<|>>)/) {
+	    my ($v1,$v2) = split(":",$v,2);
+	    # try to eval V1
+	    $v1 = eval "$v1";
+	    if (not $@) {
+		if ($v1>256) {
+		    $v1 = sprintf("0x%x", $v1);
+		}
+		if ($v2) {
+		    $v1.=":".$v2;
+		}
+		$defs{$k} = $v1;
+	    }
+	}
+    }
+
+
+    # remap regs to sections
+    my @sn;
+    foreach my $s (sort grep(/_BASE(_REG)?$/,keys %defs)) {
+	my $base=$defs{$s};
+	# skip if it is not really a base with the corresponding address
+	if ($base =~/0x7[ef]/i) {
+	    $s =~s/_BASE(_REG)?$//;
+	    push(@sn, $s);
+	}
+    }
+
+    foreach my $s (sort @sn) {
+	my $base = $defs{$s."_BASE"};
+	$s =~ s/_IO$//;
 	my $sec = $sections->{$s} = {
 	    name=>$s,
-	    description=>$defs{$s."_DESCRIPTION"},
-	    notes=>$defs{$s."_NOTES"},
-	    base=>$base,
-	    id=>$defs{$s."_APB_ID"},
-	    password=>$defs{$s."_PASSWORD"},
+	    description => $defs{$s."_DESCRIPTION"},
+	    notes => $defs{$s."_NOTES"},
+	    base => $base,
+	    id => $defs{$s."_APB_ID"},
+	    password => $defs{$s."_PASSWORD"},
+	    count => 0,
 	};
+	# strip leading/trailing quotes
+	foreach my $k ("name", "description", "notes") {
+	    $sec->{$k} =~ s/^\"//;
+	    $sec->{$k} =~ s/\"$//;
+	}
+
+	delete $defs{$s."_BASE"};
 	delete $defs{$s."_DESCRIPTION"};
 	delete $defs{$s."_NOTES"};
 	delete $defs{$s."_APB_ID"};
@@ -63,6 +102,7 @@ sub parseDefined {
 		reset => $sec->{defs}->{$n."_RESET"},
 		mask  => $sec->{defs}->{$n."_MASK"},
 	    };
+	    $sec->{count}++;
 	    delete $sec->{defs}->{$_};
 	    delete $sec->{defs}->{$n."_WIDTH"};
 	    delete $sec->{defs}->{$n."_RESET"};
@@ -119,6 +159,14 @@ sub parseDefined {
 		}
 	    }
 	} grep(/^${s}_(.*)_REG$/,keys %{$sec->{defs}});
+
+	# handle sections without registers moving them back
+	if ($sec->{count} == 0) {
+	    delete $sections->{$s};
+	    while (my ($k, $v) = each %{$sec->{defs}}) {
+		$defs{$k} = $v;
+	    }
+	}
     }
     # map everything else to unhandled
     my @unk=keys %defs;
@@ -267,6 +315,7 @@ sub toMD {
 
     # and now the sections
     foreach my $s (sort keys %{$d}) {
+
 	open(FH,">","md/Region_".$d->{$s}->{name}.".md");
 	print FH "# Register Region: ".$d->{$s}->{name}."\n\n";
 

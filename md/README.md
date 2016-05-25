@@ -7,7 +7,9 @@
 | [APERF0](Region_APERF0.md) | 0x7e009800 |  |
 | [APERF1](Region_APERF1.md) | 0x7ee08000 |  |
 | [APHY_CSR](Region_APHY_CSR.md) | 0x7ee06000 | SDRAM Adress (pin) control |
+| [ARM](Region_ARM.md) | 0x7E00B000 |  |
 | [ASB](Region_ASB.md) | 0x7e00a000 |  |
+| [AUX](Region_AUX.md) | 0x7E215000 |  |
 | [AVE_IN](Region_AVE_IN.md) | 0x7e910000 |  |
 | [AVE_OUT](Region_AVE_OUT.md) | 0x7e240000 |  |
 | [CAM0](Region_CAM0.md) | 0x7e800000 |  |
@@ -35,13 +37,11 @@
 | [DMA9](Region_DMA9.md) | 0x7e007900 |  |
 | [DPHY_CSR](Region_DPHY_CSR.md) | 0x7ee07000 | SDRAM Data (pin) control |
 | [DPI](Region_DPI.md) | 0x7e208000 |  |
+| [DSI](Region_DSI.md) | 0x7e209000 |  |
 | [DSI0](Region_DSI0.md) | 0x7e209000 |  |
 | [DSI1](Region_DSI1.md) | 0x7e700000 |  |
 | [EMMC](Region_EMMC.md) | 0x7e300000 |  |
 | [FPGA](Region_FPGA.md) | 0x7e20b600 |  |
-| [FPGA_A0](Region_FPGA_A0.md) | 0x7e213000 |  |
-| [FPGA_B0](Region_FPGA_B0.md) | 0x7e214000 |  |
-| [FPGA_MB](Region_FPGA_MB.md) | 0x7e20b700 |  |
 | [GP](Region_GP.md) | 0x7e200000 | GPIO control |
 | [H264](Region_H264.md) | 0x7f000000 |  |
 | [HD](Region_HD.md) | 0x7e808000 |  |
@@ -82,7 +82,9 @@
 | [TE](Region_TE.md) | 0x7e20e000 |  |
 | [TS](Region_TS.md) | 0x7e212000 |  |
 | [TXP](Region_TXP.md) | 0x7e004000 |  |
+| [UART](Region_UART.md) | 0x7e201000 |  |
 | [USB](Region_USB.md) | 0x7e980000 |  |
 | [V3D](Region_V3D.md) | 0x7ec00000 |  |
+| [VCE](Region_VCE.md) | 0x7f100000 |  |
 | [VEC](Region_VEC.md) | 0x7e806000 |  |
 | [VPU_ARB_CTRL](Region_VPU_ARB_CTRL.md) | 0x7ee04000 |  |

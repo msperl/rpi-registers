@@ -90,7 +90,7 @@
 
 | define | value |
 | --- | --- |
-| SD_HOST_DMA | UNKNOWN |
+| SD_HOST_DMA | 0xd0000 |
 
 ##Register info
 

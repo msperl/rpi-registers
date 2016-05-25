@@ -93,10 +93,16 @@
 
 | define | value |
 | --- | --- |
-| SLIM_CRX_DMA | UNKNOWN |
-| SLIM_CTX_DMA | UNKNOWN |
-| SLIM_DRX_DMA | UNKNOWN |
-| SLIM_DTX_DMA | UNKNOWN |
+| SLIM_CRX_DMA | 0xb0000 |
+| SLIM_CTX_DMA | 0xa0000 |
+| SLIM_DCC_BASE(n) | MACRO |
+| SLIM_DCC_CON(n) | MACRO |
+| SLIM_DCC_PA0(n) | MACRO |
+| SLIM_DCC_PA1(n) | MACRO |
+| SLIM_DCC_STAT(n) | MACRO |
+| SLIM_DRX_DMA | 0x90000 |
+| SLIM_DTX_DMA | 0x80000 |
+| SLIM_NUM_DCC | 10 |
 
 ##Register info
 

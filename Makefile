@@ -20,28 +20,22 @@ mw: testenv mediawiki.markup
 mediawiki.markup: defined2html+md.pl defined.txt
 	perl defined2html+md.pl -mediawiki defined.txt > mediawiki.markup
 
-defined.txt: Makefile external_defines.h
-	( \
-	cd $(BRCMBASE)/brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip; \
-	pwd >&2 ; \
-	 (echo '#include "register_map.h"'; \
-	  echo '#include "register_map_macros.h"'; \
-	  echo '#include "external_defines.h"';) \
-	| gcc -E -nostdinc -fno-builtin -I. -I $(PWD) \
-	  -w -P -dM -x none - \
-	| grep -v "#define __" \
-	| awk '{ if ($$2) print "X_"$$2,$$2;}' \
-	| awk '{t=index($$2,"(");if(t){print "X_"substr($$2,1,t-1),"MACRO";}else{print}}' \
-	| (echo '#include "register_map.h"'; \
-	   echo '#include "external_defines.h"'; \
-	   echo '#define HW_REGISTER_RW(...) `printf "0x%08x:RW" $$[__VA_ARGS__]`'; \
-	   echo '#define HW_REGISTER_RO(...) `printf "0x%08x:RO" $$[__VA_ARGS__]`'; \
-	   sort) \
-	| gcc -E -nostdinc -fno-builtin -I. -I $(PWD) -w -P -x none - \
-	| sed "s/^X_/echo /" \
-	| bash \
-        | sort \
-	) > defined.txt
+defined.txt: testenv Makefile external_defines.h
+	gcc -E -nostdinc -fno-builtin \
+	  -I$(BRCMBASE)/brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip \
+	  -I$(PWD) \
+	  -dM -P -w -x none \
+	  external_defines.h \
+	| grep -v "^#define _" \
+	| awk '/^#define/{N=$$2;if (index(N,"(")){M="MACRO";}else{M=N};printf "X_%s %s\n",N,M}' \
+	| gcc -E -nostdinc -fno-builtin \
+	  -I$(BRCMBASE)/brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip \
+	  -I$(PWD) \
+	  -P -w -x none \
+	  -include external_defines.h \
+	  - \
+	| sed "s/^X_//" \
+	> defined.txt
 
 testenv_check:
 	@test -d "$(BRCMBASE)" \
