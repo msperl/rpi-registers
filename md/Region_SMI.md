@@ -33,11 +33,12 @@
 
 | define | value |
 | --- | --- |
-| SMI_DMA | UNKNOWN |
-| SMI_FIFO_ADDRESS | MACRO |
-| SMI_SCALER_0_DMA | UNKNOWN |
-| SMI_SCALER_1_DMA | UNKNOWN |
-| SMI_SCALER_2_DMA | UNKNOWN |
+| SMI_BASE_DIRECT | 0x7E601000 |
+| SMI_DMA | 0x40000 |
+| SMI_FIFO_ADDRESS(device,addr) | MACRO |
+| SMI_SCALER_0_DMA | 0x180000 |
+| SMI_SCALER_1_DMA | 0x190000 |
+| SMI_SCALER_2_DMA | 0x1a0000 |
 
 ##Register info
 

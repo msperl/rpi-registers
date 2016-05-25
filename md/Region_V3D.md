@@ -107,5 +107,13 @@
 | V3D_FDBGS | 0x7ec00f10 | RW | 32 | 0xffffffff |  |
 | V3D_ERRSTAT | 0x7ec00f20 | RW | 32 | 0xffffffff |  |
 
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| V3D_BASE_ADDRESS | 0x1A005000 |
+| V3D_MEM1_BASE_ADDRESS | 0x1A00B000 |
+| V3D_MEM2_BASE_ADDRESS | 0x1A00C000 |
+
 ##Register info
 

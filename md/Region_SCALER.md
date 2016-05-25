@@ -11,34 +11,56 @@
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
+| SCALER_INPUT_CONTROL | 0x7e400000 | RW |  |  |  |
 | [SCALER_DISPCTRL](#scaler_dispctrl) | 0x7e400000 | RW | 32 | 0xffffffff |  |
 | [SCALER_DISPSTAT](#scaler_dispstat) | 0x7e400004 | RW | 32 | 0xffffffff |  |
+| SCALER_IRQ_STATUS | 0x7e400004 | RW |  |  |  |
 | SCALER_DISPID | 0x7e400008 | RW | 32 | 0xffffffff | 0x64647276 |
+| SCALER_ID | 0x7e400008 | RW |  |  |  |
+| SCALER_ALT_CONTROL | 0x7e40000c | RW |  |  |  |
 | [SCALER_DISPECTRL](#scaler_dispectrl) | 0x7e40000c | RW | 32 | 0xffffffff |  |
 | SCALER_DISPPROF | 0x7e400010 | RW | 32 | 0xffffffff |  |
+| SCALER_PROFILE | 0x7e400010 | RW |  |  |  |
+| SCALER_DITHER | 0x7e400014 | RW |  |  |  |
 | SCALER_DISPDITHER | 0x7e400014 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPEOLN | 0x7e400018 | RW | 32 | 0xffffffff |  |
+| SCALER_DISP_LIST_0 | 0x7e400020 | RW |  |  |  |
 | SCALER_DISPLIST0 | 0x7e400020 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPLIST1 | 0x7e400024 | RW | 32 | 0xffffffff |  |
+| SCALER_DISP_LIST_1 | 0x7e400024 | RW |  |  |  |
+| SCALER_DISP_LIST_2 | 0x7e400028 | RW |  |  |  |
 | SCALER_DISPLIST2 | 0x7e400028 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPLSTAT | 0x7e40002c | RW | 32 | 0xffffffff |  |
+| SCALER_DISP_LIST_STATUS | 0x7e40002c | RW |  |  |  |
 | SCALER_DISPLACT0 | 0x7e400030 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPLACT1 | 0x7e400034 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPLACT2 | 0x7e400038 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPCTL_0 | 0x7e400040 | RW |  |  |  |
 | SCALER_DISPCTRL0 | 0x7e400040 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPBKGND_0 | 0x7e400044 | RW |  |  |  |
 | SCALER_DISPBKGND0 | 0x7e400044 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPSTAT_0 | 0x7e400048 | RW |  |  |  |
 | SCALER_DISPSTAT0 | 0x7e400048 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPBASE0 | 0x7e40004c | RW | 32 | 0xffffffff |  |
 | SCALER_DISPCTRL1 | 0x7e400050 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPCTL_1 | 0x7e400050 | RW |  |  |  |
+| SCALER_DISPBKGND_1 | 0x7e400054 | RW |  |  |  |
 | SCALER_DISPBKGND1 | 0x7e400054 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPSTAT_1 | 0x7e400058 | RW |  |  |  |
 | SCALER_DISPSTAT1 | 0x7e400058 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPBASE_1 | 0x7e40005c | RW |  |  |  |
 | SCALER_DISPBASE1 | 0x7e40005c | RW | 32 | 0xffffffff |  |
 | SCALER_DISPCTRL2 | 0x7e400060 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPCTL_2 | 0x7e400060 | RW |  |  |  |
+| SCALER_DISPBKGND_2 | 0x7e400064 | RW |  |  |  |
 | SCALER_DISPBKGND2 | 0x7e400064 | RW | 32 | 0xffffffff |  |
+| SCALER_DISPSTAT_2 | 0x7e400068 | RW |  |  |  |
 | SCALER_DISPSTAT2 | 0x7e400068 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPBASE2 | 0x7e40006c | RW | 32 | 0xffffffff |  |
+| SCALER_DISPBASE_2 | 0x7e40006c | RW |  |  |  |
 | SCALER_DISPALPHA2 | 0x7e400070 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPGAMADR | 0x7e400078 | RW | 32 | 0xffffffff |  |
+| SCALER_GAM_ADDRESS | 0x7e400078 | RW |  |  |  |
 | SCALER_OLEDOFFS | 0x7e400080 | RW | 32 | 0xffffffff |  |
 | SCALER_OLEDCOEF0 | 0x7e400084 | RW | 32 | 0xffffffff |  |
 | SCALER_OLEDCOEF1 | 0x7e400088 | RW | 32 | 0xffffffff |  |
@@ -46,18 +68,21 @@
 | SCALER_DISPSLAVE0 | 0x7e4000c0 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPSLAVE1 | 0x7e4000c8 | RW | 32 | 0xffffffff |  |
 | SCALER_DISPSLAVE2 | 0x7e4000d0 | RW | 32 | 0xffffffff |  |
+| SCALER_GAM_DATA | 0x7e4000e0 | RW |  |  |  |
 | SCALER_DISPGAMDAT | 0x7e4000e0 | RW | 32 | 0xffffffff |  |
 
 ##Unsupported defines
 
 | define | value |
 | --- | --- |
-| SCALER_0_DMA | UNKNOWN |
-| SCALER_1_DMA | UNKNOWN |
-| SCALER_2_DMA | UNKNOWN |
-| SCALER_COB_FIFO_SIZE | UNKNOWN |
-| SCALER_CONTEXT_MEM_SIZE | UNKNOWN |
-| SCALER_LINE_BUFFER_MEM_SIZE | UNKNOWN |
+| SCALER_0_DMA | 0x150000 |
+| SCALER_1_DMA | 0x160000 |
+| SCALER_2_DMA | 0x170000 |
+| SCALER_BASE_ADDRESS | 0x7e400000 |
+| SCALER_COB_FIFO_SIZE | (0x4000) |
+| SCALER_CONTEXT_MEMORY_START | 0x7e402000 |
+| SCALER_CONTEXT_MEM_SIZE | ( 1024 * 16 ) |
+| SCALER_LINE_BUFFER_MEM_SIZE | ( 1024 * 64 ) |
 
 ##Register info
 
@@ -101,16 +126,16 @@
 | SCALER_DISPSTAT_DSP1_STATUS | 16 | 21 | 0x003f0000 | 0xffc0ffff |  |
 | missing definiton | 22 | 23 | NA | NA | NA |
 | SCALER_DISPSTAT_DSP2_STATUS | 24 | 29 | 0x3f000000 | 0xc0ffffff |  |
-| missing definiton | 32 | 4 | NA | NA | NA |
-| missing definiton | 32 | 3 | NA | NA | NA |
-| missing definiton | 32 | 15 | NA | NA | NA |
-| missing definiton | 32 | 14 | NA | NA | NA |
-| missing definiton | 32 | 6 | NA | NA | NA |
 | missing definiton | 32 | 1 | NA | NA | NA |
-| missing definiton | 32 | 0 | NA | NA | NA |
-| missing definiton | 32 | 5 | NA | NA | NA |
 | missing definiton | 32 | 2 | NA | NA | NA |
+| missing definiton | 32 | 5 | NA | NA | NA |
+| missing definiton | 32 | 0 | NA | NA | NA |
+| missing definiton | 32 | 4 | NA | NA | NA |
+| missing definiton | 32 | 6 | NA | NA | NA |
+| missing definiton | 32 | 3 | NA | NA | NA |
+| missing definiton | 32 | 14 | NA | NA | NA |
 | missing definiton | 32 | 7 | NA | NA | NA |
+| missing definiton | 32 | 15 | NA | NA | NA |
 
 ###SCALER_DISPECTRL
  Address: 0x7e40000c
@@ -134,12 +159,12 @@
 | SCALER_DISPECTRL_CB_NE_CTRL | 29 | 31 | 0xe0000000 | 0x1fffffff |  |
 | SCALER_DISPECTRL_CR_NE_CTRL | 30 | 31 | 0xc0000000 | 0x3fffffff |  |
 | SCALER_DISPECTRL_SECURE_MODE | 31 | 31 | 0x80000000 | 0x7fffffff |  |
-| missing definiton | 32 | 11 | NA | NA | NA |
-| missing definiton | 32 | 28 | NA | NA | NA |
 | missing definiton | 32 | 25 | NA | NA | NA |
-| missing definiton | 32 | 24 | NA | NA | NA |
-| missing definiton | 32 | 9 | NA | NA | NA |
-| missing definiton | 32 | 30 | NA | NA | NA |
-| missing definiton | 32 | 10 | NA | NA | NA |
-| missing definiton | 32 | 29 | NA | NA | NA |
 | missing definiton | 32 | 8 | NA | NA | NA |
+| missing definiton | 32 | 9 | NA | NA | NA |
+| missing definiton | 32 | 11 | NA | NA | NA |
+| missing definiton | 32 | 30 | NA | NA | NA |
+| missing definiton | 32 | 29 | NA | NA | NA |
+| missing definiton | 32 | 24 | NA | NA | NA |
+| missing definiton | 32 | 28 | NA | NA | NA |
+| missing definiton | 32 | 10 | NA | NA | NA |

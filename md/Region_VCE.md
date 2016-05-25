@@ -1,0 +1,71 @@
+# Register Region: VCE
+
+
+##Info
+| Name | value |
+| --- | --- |
+| base | 0x7f100000 |
+
+##Registers
+
+| register name | address | type | width | mask | reset |
+| --- | --- | --- | --- | --- | --- |
+| VCE_DATA_MEM_BASE | 0x7f100000 | RW |  |  |  |
+| VCE_PROGRAM_MEM_BASE | 0x7f110000 | RW |  |  |  |
+| VCE_REGISTERS_BASE | 0x7f120000 | RW |  |  |  |
+| VCE_STATUS | 0x7f140000 | RW |  |  |  |
+| VCE_VERSION | 0x7f140004 | RW |  |  |  |
+| VCE_PC_PF0 | 0x7f140008 | RW |  |  |  |
+| VCE_PC_IF0 | 0x7f14000c | RW |  |  |  |
+| VCE_PC_RD0 | 0x7f140010 | RW |  |  |  |
+| VCE_PC_EX0 | 0x7f140014 | RW |  |  |  |
+| VCE_CONTROL | 0x7f140020 | RW |  |  |  |
+| VCE_SEMA_CLEAR | 0x7f140024 | RW |  |  |  |
+| VCE_SEMA_SET | 0x7f140028 | RW |  |  |  |
+| VCE_BAD_ADDR | 0x7f140030 | RW |  |  |  |
+| VCE_SIM_DEBUG_OPTIONS | 0x7f140100 | RW |  |  |  |
+
+##Unsupported defines
+
+| define | value |
+| --- | --- |
+| VCE_BAD_ADDR_OFFSET | 0x40030 |
+| VCE_BUSY_BKPT | 0x00 |
+| VCE_BUSY_DMAIN | 0x08 |
+| VCE_BUSY_DMAOUT | 0x09 |
+| VCE_BUSY_MEMSYNC | 0x0a |
+| VCE_BUSY_SLEEP | 0x0b |
+| VCE_BUSY_USER | 0x01 |
+| VCE_CONTROL_CLEAR_RUN | 0 |
+| VCE_CONTROL_OFFSET | 0x40020 |
+| VCE_CONTROL_SET_RUN | 1 |
+| VCE_CONTROL_SINGLE_STEP | 3 |
+| VCE_DATA_MEM_OFFSET | 0 |
+| VCE_DATA_MEM_SIZE | 0x2000 |
+| VCE_PC_EX0_OFFSET | 0x40014 |
+| VCE_PC_IF0_OFFSET | 0x4000c |
+| VCE_PC_PF0_OFFSET | 0x40008 |
+| VCE_PC_RD0_OFFSET | 0x40010 |
+| VCE_PROGRAM_MEM_OFFSET | 0x10000 |
+| VCE_PROGRAM_MEM_SIZE | 0x4000 |
+| VCE_REASON_RESET | 0x12 |
+| VCE_REASON_RUNNING | 0x11 |
+| VCE_REASON_SINGLE | 0x13 |
+| VCE_REASON_STOPPED | 0x10 |
+| VCE_REGISTERS_COUNT | 63 |
+| VCE_REGISTERS_OFFSET | 0x20000 |
+| VCE_SEMA_CLEAR_OFFSET | 0x40024 |
+| VCE_SEMA_COUNT | 8 |
+| VCE_SEMA_SET_OFFSET | 0x40028 |
+| VCE_SIM_DEBUG_OPTIONS_OFFSET | 0x40100 |
+| VCE_STATUS_BUSYBITS_MASK | 0xffff |
+| VCE_STATUS_INTERRUPT_POS | 31 |
+| VCE_STATUS_NANOFLAG_POS | 25 |
+| VCE_STATUS_OFFSET | 0x40000 |
+| VCE_STATUS_REASON_MASK | 0x1f |
+| VCE_STATUS_REASON_POS | 16 |
+| VCE_STATUS_RUNNING_POS | 24 |
+| VCE_VERSION_OFFSET | 0x40004 |
+
+##Register info
+

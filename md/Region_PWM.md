@@ -28,7 +28,8 @@
 
 | define | value |
 | --- | --- |
-| PWM_DMA | UNKNOWN |
+| PWM_BASE_ADDRESS | 0x7e20c000 |
+| PWM_DMA | 0x50000 |
 
 ##Register info
 

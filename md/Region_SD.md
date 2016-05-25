@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | SDRAM |
 | base | 0x7ee00000 |
 | id | 0x5344434f |
 
@@ -89,7 +90,7 @@
 
 | define | value |
 | --- | --- |
-| SD_HOST_DMA | UNKNOWN |
+| SD_HOST_DMA | 0xd0000 |
 
 ##Register info
 

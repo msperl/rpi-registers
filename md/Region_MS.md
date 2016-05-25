@@ -66,7 +66,7 @@
 
 | define | value |
 | --- | --- |
-| MS_DMA | UNKNOWN |
+| MS_DMA | 0 |
 
 ##Register info
 

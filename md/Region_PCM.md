@@ -24,8 +24,23 @@
 
 | define | value |
 | --- | --- |
-| PCM_RX_DMA | UNKNOWN |
-| PCM_TX_DMA | UNKNOWN |
+| PCM_CH1EN | 0x40000000 |
+| PCM_CH1POS_LSB | 20 |
+| PCM_CH1WEX | 0x80000000 |
+| PCM_CH1WID_LSB | 16 |
+| PCM_CH2EN | 0x4000 |
+| PCM_CH2POS_LSB | 4 |
+| PCM_CH2WEX | 0x8000 |
+| PCM_CH2WID_LSB | 0 |
+| PCM_FIFO_DEPTH | 64 |
+| PCM_POS1(x) | MACRO |
+| PCM_POS2(x) | MACRO |
+| PCM_RX_DMA | 0x30000 |
+| PCM_TX_DMA | 0x20000 |
+| PCM_WID1(x) | MACRO |
+| PCM_WID2(x) | MACRO |
+| PCM_WIDTH1(x) | MACRO |
+| PCM_WIDTH2(x) | MACRO |
 
 ##Register info
 

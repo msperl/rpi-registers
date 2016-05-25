@@ -20,8 +20,8 @@
 
 | define | value |
 | --- | --- |
-| SPI_RX_DMA | UNKNOWN |
-| SPI_TX_DMA | UNKNOWN |
+| SPI_RX_DMA | 0x70000 |
+| SPI_TX_DMA | 0x60000 |
 
 ##Register info
 

@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | SDRAM Adress (pin) control |
 | base | 0x7ee06000 |
 
 ##Registers

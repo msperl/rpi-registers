@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | GPIO control |
 | base | 0x7e200000 |
 | id | 0x6770696f |
 
