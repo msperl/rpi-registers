@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | SDRAM Data (pin) control |
 | base | 0x7ee07000 |
 
 ##Registers

@@ -101,16 +101,16 @@
 | SCALER_DISPSTAT_DSP1_STATUS | 16 | 21 | 0x003f0000 | 0xffc0ffff |  |
 | missing definiton | 22 | 23 | NA | NA | NA |
 | SCALER_DISPSTAT_DSP2_STATUS | 24 | 29 | 0x3f000000 | 0xc0ffffff |  |
-| missing definiton | 32 | 4 | NA | NA | NA |
-| missing definiton | 32 | 3 | NA | NA | NA |
-| missing definiton | 32 | 15 | NA | NA | NA |
-| missing definiton | 32 | 14 | NA | NA | NA |
 | missing definiton | 32 | 6 | NA | NA | NA |
+| missing definiton | 32 | 7 | NA | NA | NA |
+| missing definiton | 32 | 15 | NA | NA | NA |
+| missing definiton | 32 | 3 | NA | NA | NA |
+| missing definiton | 32 | 4 | NA | NA | NA |
+| missing definiton | 32 | 14 | NA | NA | NA |
+| missing definiton | 32 | 5 | NA | NA | NA |
 | missing definiton | 32 | 1 | NA | NA | NA |
 | missing definiton | 32 | 0 | NA | NA | NA |
-| missing definiton | 32 | 5 | NA | NA | NA |
 | missing definiton | 32 | 2 | NA | NA | NA |
-| missing definiton | 32 | 7 | NA | NA | NA |
 
 ###SCALER_DISPECTRL
  Address: 0x7e40000c
@@ -134,12 +134,12 @@
 | SCALER_DISPECTRL_CB_NE_CTRL | 29 | 31 | 0xe0000000 | 0x1fffffff |  |
 | SCALER_DISPECTRL_CR_NE_CTRL | 30 | 31 | 0xc0000000 | 0x3fffffff |  |
 | SCALER_DISPECTRL_SECURE_MODE | 31 | 31 | 0x80000000 | 0x7fffffff |  |
-| missing definiton | 32 | 11 | NA | NA | NA |
-| missing definiton | 32 | 28 | NA | NA | NA |
-| missing definiton | 32 | 25 | NA | NA | NA |
+| missing definiton | 32 | 8 | NA | NA | NA |
 | missing definiton | 32 | 24 | NA | NA | NA |
-| missing definiton | 32 | 9 | NA | NA | NA |
 | missing definiton | 32 | 30 | NA | NA | NA |
+| missing definiton | 32 | 9 | NA | NA | NA |
 | missing definiton | 32 | 10 | NA | NA | NA |
 | missing definiton | 32 | 29 | NA | NA | NA |
-| missing definiton | 32 | 8 | NA | NA | NA |
+| missing definiton | 32 | 11 | NA | NA | NA |
+| missing definiton | 32 | 25 | NA | NA | NA |
+| missing definiton | 32 | 28 | NA | NA | NA |

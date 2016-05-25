@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | Clock manager |
 | base | 0x7e101000 |
 | id | 0x0000636d |
 | password | 0x5a000000 |

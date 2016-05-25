@@ -30,10 +30,14 @@ sub parseDefined {
 
 	my $sec = $sections->{$s} = {
 	    name=>$s,
+	    description=>$defs{$s."_DESCRIPTION"},
+	    notes=>$defs{$s."_NOTES"},
 	    base=>$base,
 	    id=>$defs{$s."_APB_ID"},
 	    password=>$defs{$s."_PASSWORD"},
 	};
+	delete $defs{$s."_DESCRIPTION"};
+	delete $defs{$s."_NOTES"};
 	delete $defs{$s."_APB_ID"};
 	delete $defs{$s."_PASSWORD"};
 
@@ -136,8 +140,13 @@ sub toHTML {
     # now the index
     print "<h1>Index</h1>\n<ul>\n";
     foreach my $k (sort keys %{$d}) {
-	print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
-	."(".$d->{$k}->{base}.")</a></li>\n";
+	if ($d->{$k}->{description}) {
+	    print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
+	    ."(".$d->{$k}->{base}.") - ".$d->{$k}->{description}."</a></li>\n";
+	} else {
+	    print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
+	    ."(".$d->{$k}->{base}.")</a></li>\n";
+	}
     }
     print "</ul>\n";
 
@@ -147,7 +156,7 @@ sub toHTML {
 	    ."</a></h1><br/>\n";
 	print "<h3>Info</h3>\n";
 	print "<table border=\"1\">\n";
-	for my $k ("base","id","password") {
+	for my $k ("description", "notes", "base", "id", "password") {
 	    if ($d->{$s}->{$k}) {
 		print "  <tr><th>$k</th><td>".$d->{$s}->{$k}."</td></tr>\n";
 	    }
@@ -250,9 +259,9 @@ sub toMD {
     open(FH,">","md/README.md");
     print FH "#Register Regions\n\n";
 
-    print FH "| Region | Base |\n| --- | --- |\n";
+    print FH "| Region | Base | Description |\n| --- | --- | --- |\n";
     foreach my $k (sort keys %{$d}) {
-	print FH "| [".$d->{$k}->{name}."](Region_".$d->{$k}->{name}.".md) | ".$d->{$k}->{base}." |\n";
+	print FH "| [".$d->{$k}->{name}."](Region_".$d->{$k}->{name}.".md) | ".$d->{$k}->{base}." | ".$d->{$k}->{description}." |\n";
     }
     close(FH);
 
@@ -263,7 +272,7 @@ sub toMD {
 
 	print FH "\n##Info\n";
 	print FH "| Name | value |\n| --- | --- |\n";
-	for my $k ("base","id","password") {
+	for my $k ("description", "notes", "base","id","password") {
 	    if ($d->{$s}->{$k}) {
 		print FH "| ".$k." | ".$d->{$s}->{$k}." |\n";
 	    }
@@ -355,12 +364,10 @@ sub toMW {
     # now the sections
     foreach my $s (sort keys %{$d}) {
 	print "== ".$d->{$s}->{name}." ==\n\n";
-	print "=== Description ===\n";
-	print "TODO\n";
 	print "=== Info ===\n";
 	print "{|class=\"wikitable\"\n";
 	print "!Name !! value !! description\n";
-	for my $k ("base","id","password") {
+	for my $k ("description", "notes", "base","id","password") {
 	    if ($d->{$s}->{$k}) {
 		print "|-\n| ".$k." || <code>".$d->{$s}->{$k}."</code> ||\n";
 	    }

@@ -3,17 +3,17 @@
 <h1>Index</h1>
 <ul>
   <li><a href="#Unhandled">Unhandled(NA)</a></li>
-  <li><a href="#A2W">A2W(0x7e102000)</a></li>
+  <li><a href="#A2W">A2W(0x7e102000) - Clock manager PLL control</a></li>
   <li><a href="#APERF0">APERF0(0x7e009800)</a></li>
   <li><a href="#APERF1">APERF1(0x7ee08000)</a></li>
-  <li><a href="#APHY_CSR">APHY_CSR(0x7ee06000)</a></li>
+  <li><a href="#APHY_CSR">APHY_CSR(0x7ee06000) - SDRAM Adress (pin) control</a></li>
   <li><a href="#ASB">ASB(0x7e00a000)</a></li>
   <li><a href="#AVE_IN">AVE_IN(0x7e910000)</a></li>
   <li><a href="#AVE_OUT">AVE_OUT(0x7e240000)</a></li>
   <li><a href="#CAM0">CAM0(0x7e800000)</a></li>
   <li><a href="#CAM1">CAM1(0x7e801000)</a></li>
   <li><a href="#CCP2TX">CCP2TX(0x7e001000)</a></li>
-  <li><a href="#CM">CM(0x7e101000)</a></li>
+  <li><a href="#CM">CM(0x7e101000) - Clock manager</a></li>
   <li><a href="#CMI">CMI(0x7e802000)</a></li>
   <li><a href="#CPG">CPG(0x7e211000)</a></li>
   <li><a href="#DMA">DMA(0x7e007fe0)</a></li>
@@ -33,16 +33,13 @@
   <li><a href="#DMA7">DMA7(0x7e007700)</a></li>
   <li><a href="#DMA8">DMA8(0x7e007800)</a></li>
   <li><a href="#DMA9">DMA9(0x7e007900)</a></li>
-  <li><a href="#DPHY_CSR">DPHY_CSR(0x7ee07000)</a></li>
+  <li><a href="#DPHY_CSR">DPHY_CSR(0x7ee07000) - SDRAM Data (pin) control</a></li>
   <li><a href="#DPI">DPI(0x7e208000)</a></li>
   <li><a href="#DSI0">DSI0(0x7e209000)</a></li>
   <li><a href="#DSI1">DSI1(0x7e700000)</a></li>
   <li><a href="#EMMC">EMMC(0x7e300000)</a></li>
   <li><a href="#FPGA">FPGA(0x7e20b600)</a></li>
-  <li><a href="#FPGA_A0">FPGA_A0(0x7e213000)</a></li>
-  <li><a href="#FPGA_B0">FPGA_B0(0x7e214000)</a></li>
-  <li><a href="#FPGA_MB">FPGA_MB(0x7e20b700)</a></li>
-  <li><a href="#GP">GP(0x7e200000)</a></li>
+  <li><a href="#GP">GP(0x7e200000) - GPIO control</a></li>
   <li><a href="#H264">H264(0x7f000000)</a></li>
   <li><a href="#HD">HD(0x7e808000)</a></li>
   <li><a href="#HDCP">HDCP(0x7e809000)</a></li>
@@ -55,23 +52,23 @@
   <li><a href="#IC1">IC1(0x7e002800)</a></li>
   <li><a href="#ISP">ISP(0x7ea00000)</a></li>
   <li><a href="#JP">JP(0x7e005000)</a></li>
-  <li><a href="#L1">L1(0x7ee02000)</a></li>
-  <li><a href="#L2">L2(0x7ee01000)</a></li>
+  <li><a href="#L1">L1(0x7ee02000) - VC4-L1 control</a></li>
+  <li><a href="#L2">L2(0x7ee01000) - VC4-L2 control</a></li>
   <li><a href="#MPHI">MPHI(0x7e006000)</a></li>
   <li><a href="#MS">MS(0x7e000000)</a></li>
   <li><a href="#NU">NU(0x7e008000)</a></li>
-  <li><a href="#OTP">OTP(0x7e20f000)</a></li>
+  <li><a href="#OTP">OTP(0x7e20f000) - One Time programmable</a></li>
   <li><a href="#PCM">PCM(0x7e203000)</a></li>
   <li><a href="#PIARBCTL">PIARBCTL(0x7e80a000)</a></li>
   <li><a href="#PIXELVALVE0">PIXELVALVE0(0x7e206000)</a></li>
   <li><a href="#PIXELVALVE1">PIXELVALVE1(0x7e207000)</a></li>
   <li><a href="#PIXELVALVE2">PIXELVALVE2(0x7e807000)</a></li>
-  <li><a href="#PM">PM(0x7e100000)</a></li>
+  <li><a href="#PM">PM(0x7e100000) - Power manager</a></li>
   <li><a href="#PRM">PRM(0x7e20d000)</a></li>
   <li><a href="#PWM">PWM(0x7e20c000)</a></li>
   <li><a href="#RNG">RNG(0x7e104000)</a></li>
   <li><a href="#SCALER">SCALER(0x7e400000)</a></li>
-  <li><a href="#SD">SD(0x7ee00000)</a></li>
+  <li><a href="#SD">SD(0x7ee00000) - SDRAM</a></li>
   <li><a href="#SH">SH(0x7e202000)</a></li>
   <li><a href="#SLIM">SLIM(0x7e210000)</a></li>
   <li><a href="#SMI">SMI(0x7e600000)</a></li>
@@ -2344,6 +2341,7 @@
 <h1><a name="A2W">A2W</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>Clock manager PLL control</td></tr>
   <tr><th>base</th><td>0x7e102000</td></tr>
   <tr><th>id</th><td>0x00613277</td></tr>
   <tr><th>password</th><td>0x5a000000</td></tr>
@@ -7157,6 +7155,14 @@
     <td>0000000000</td>
   </tr>
   <tr>
+    <td>APERF0_BW1_RPEND</td>
+    <td>0x7e009868</td>
+    <td>RO</td>
+    <td>8</td>
+    <td>0x000000ff</td>
+    <td>0000000000</td>
+  </tr>
+  <tr>
     <td>APERF0_BW0_RPEND</td>
     <td>0x7e009868</td>
     <td>RO</td>
@@ -7166,14 +7172,6 @@
   </tr>
   <tr>
     <td>APERF0_BW2_RPEND</td>
-    <td>0x7e009868</td>
-    <td>RO</td>
-    <td>8</td>
-    <td>0x000000ff</td>
-    <td>0000000000</td>
-  </tr>
-  <tr>
-    <td>APERF0_BW1_RPEND</td>
     <td>0x7e009868</td>
     <td>RO</td>
     <td>8</td>
@@ -7700,14 +7698,6 @@
     <td>0000000000</td>
   </tr>
   <tr>
-    <td>APERF1_BW0_RPEND</td>
-    <td>0x7ee08068</td>
-    <td>RO</td>
-    <td>8</td>
-    <td>0x000000ff</td>
-    <td>0000000000</td>
-  </tr>
-  <tr>
     <td>APERF1_BW1_RPEND</td>
     <td>0x7ee08068</td>
     <td>RO</td>
@@ -7717,6 +7707,14 @@
   </tr>
   <tr>
     <td>APERF1_BW2_RPEND</td>
+    <td>0x7ee08068</td>
+    <td>RO</td>
+    <td>8</td>
+    <td>0x000000ff</td>
+    <td>0000000000</td>
+  </tr>
+  <tr>
+    <td>APERF1_BW0_RPEND</td>
     <td>0x7ee08068</td>
     <td>RO</td>
     <td>8</td>
@@ -8141,6 +8139,7 @@
 <h1><a name="APHY_CSR">APHY_CSR</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>SDRAM Adress (pin) control</td></tr>
   <tr><th>base</th><td>0x7ee06000</td></tr>
 </table>
 <h3>Registers</h3>
@@ -11680,6 +11679,7 @@
 <h1><a name="CM">CM</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>Clock manager</td></tr>
   <tr><th>base</th><td>0x7e101000</td></tr>
   <tr><th>id</th><td>0x0000636d</td></tr>
   <tr><th>password</th><td>0x5a000000</td></tr>
@@ -27427,6 +27427,7 @@
 <h1><a name="DPHY_CSR">DPHY_CSR</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>SDRAM Data (pin) control</td></tr>
   <tr><th>base</th><td>0x7ee07000</td></tr>
 </table>
 <h3>Registers</h3>
@@ -31078,6 +31079,118 @@
     <td>0x0000ffff</td>
     <td></td>
   </tr>
+  <tr>
+    <td>FPGA_MB_XSYS_BUILD_NUM</td>
+    <td>0x7e20b700</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XC0_BUILD_NUM</td>
+    <td>0x7e20b704</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XC1_BUILD_NUM</td>
+    <td>0x7e20b708</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XPERI_BUILD_NUM</td>
+    <td>0x7e20b70c</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XH264_BUILD_NUM</td>
+    <td>0x7e20b710</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XV3D_BUILD_NUM</td>
+    <td>0x7e20b714</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XSLC1_BUILD_NUM</td>
+    <td>0x7e20b718</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XSLC2_BUILD_NUM</td>
+    <td>0x7e20b71c</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_XSLC3_BUILD_NUM</td>
+    <td>0x7e20b720</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_CORE_CLK_FREQ</td>
+    <td>0x7e20b724</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_SDC_CLK_FREQ</td>
+    <td>0x7e20b728</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_SDC_H264_FREQ</td>
+    <td>0x7e20b72c</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_SDC_V3D_FREQ</td>
+    <td>0x7e20b730</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_SDC_ISP_FREQ</td>
+    <td>0x7e20b734</td>
+    <td>RO</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
 </table>
 
 <h2>Unsupported defines</h2>
@@ -31087,8 +31200,20 @@
     <th>value</th>
   </tr>
   <tr>
+    <td>FPGA_A0_BASE</td>
+    <td>0x7e213000</td>
+  </tr>
+  <tr>
+    <td>FPGA_B0_BASE</td>
+    <td>0x7e214000</td>
+  </tr>
+  <tr>
     <td>FPGA_CTRL0_OFFSET</td>
     <td>0x08</td>
+  </tr>
+  <tr>
+    <td>FPGA_MB_BASE</td>
+    <td>0x7e20b700</td>
   </tr>
   <tr>
     <td>FPGA_STATUS0_OFFSET</td>
@@ -31106,6 +31231,14 @@
     <th>reset</th>
   </tr>
   <tr>
+    <td>FPGA_CTRL0_CAM_CTL0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0x00000001</td>
+    <td>0xfffffffe</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>FPGA_CTRL0_DIS_CTL0</td>
     <td>0</td>
     <td>0</td>
@@ -31114,12 +31247,12 @@
     <td></td>
   </tr>
   <tr>
-    <td>FPGA_CTRL0_CAM_CTL0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0x00000001</td>
-    <td>0xfffffffe</td>
-    <td></td>
+    <td>missing definiton</td>
+    <td>1</td>
+    <td>-1</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>FPGA_CTRL0_DIS_BL</td>
@@ -31136,14 +31269,6 @@
     <td>0x00000002</td>
     <td>0xfffffffd</td>
     <td></td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>1</td>
-    <td>-1</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
   </tr>
   <tr>
     <td>FPGA_CTRL0_CAM_CTL2</td>
@@ -31170,20 +31295,20 @@
     <td></td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>3</td>
-    <td>1</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>FPGA_CTRL0_DIS_RST</td>
     <td>3</td>
     <td>3</td>
     <td>0x00000008</td>
     <td>0xfffffff7</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>3</td>
+    <td>1</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>FPGA_CTRL0_SD_PSU_EN</td>
@@ -31495,175 +31620,10 @@
   </tr>
 </table>
 <hr/>
-<h1><a name="FPGA_A0">FPGA_A0</a></h1><br/>
-<h3>Info</h3>
-<table border="1">
-  <tr><th>base</th><td>0x7e213000</td></tr>
-</table>
-<h3>Registers</h3>
-<table border="1">
-  <tr>
-    <th>register name</th>
-    <th>address</th>
-    <th>type</th>
-    <th>width</th>
-    <th>mask</th>
-    <th>reset</th>
-  </tr>
-</table>
-
-<hr/>
-<h1><a name="FPGA_B0">FPGA_B0</a></h1><br/>
-<h3>Info</h3>
-<table border="1">
-  <tr><th>base</th><td>0x7e214000</td></tr>
-</table>
-<h3>Registers</h3>
-<table border="1">
-  <tr>
-    <th>register name</th>
-    <th>address</th>
-    <th>type</th>
-    <th>width</th>
-    <th>mask</th>
-    <th>reset</th>
-  </tr>
-</table>
-
-<hr/>
-<h1><a name="FPGA_MB">FPGA_MB</a></h1><br/>
-<h3>Info</h3>
-<table border="1">
-  <tr><th>base</th><td>0x7e20b700</td></tr>
-</table>
-<h3>Registers</h3>
-<table border="1">
-  <tr>
-    <th>register name</th>
-    <th>address</th>
-    <th>type</th>
-    <th>width</th>
-    <th>mask</th>
-    <th>reset</th>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XSYS_BUILD_NUM</td>
-    <td>0x7e20b700</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XC0_BUILD_NUM</td>
-    <td>0x7e20b704</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XC1_BUILD_NUM</td>
-    <td>0x7e20b708</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XPERI_BUILD_NUM</td>
-    <td>0x7e20b70c</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XH264_BUILD_NUM</td>
-    <td>0x7e20b710</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XV3D_BUILD_NUM</td>
-    <td>0x7e20b714</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XSLC1_BUILD_NUM</td>
-    <td>0x7e20b718</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XSLC2_BUILD_NUM</td>
-    <td>0x7e20b71c</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_XSLC3_BUILD_NUM</td>
-    <td>0x7e20b720</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_CORE_CLK_FREQ</td>
-    <td>0x7e20b724</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_SDC_CLK_FREQ</td>
-    <td>0x7e20b728</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_SDC_H264_FREQ</td>
-    <td>0x7e20b72c</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_SDC_V3D_FREQ</td>
-    <td>0x7e20b730</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>FPGA_MB_SDC_ISP_FREQ</td>
-    <td>0x7e20b734</td>
-    <td>RO</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-</table>
-
-<hr/>
 <h1><a name="GP">GP</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>GPIO control</td></tr>
   <tr><th>base</th><td>0x7e200000</td></tr>
   <tr><th>id</th><td>0x6770696f</td></tr>
 </table>
@@ -38681,6 +38641,7 @@
 <h1><a name="L1">L1</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>VC4-L1 control</td></tr>
   <tr><th>base</th><td>0x7ee02000</td></tr>
   <tr><th>id</th><td>0x4c314343</td></tr>
 </table>
@@ -39817,6 +39778,7 @@
 <h1><a name="L2">L2</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>VC4-L2 control</td></tr>
   <tr><th>base</th><td>0x7ee01000</td></tr>
   <tr><th>id</th><td>0x4c324343</td></tr>
 </table>
@@ -43065,6 +43027,7 @@
 <h1><a name="OTP">OTP</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>One Time programmable</td></tr>
   <tr><th>base</th><td>0x7e20f000</td></tr>
   <tr><th>id</th><td>0x206f7470</td></tr>
 </table>
@@ -44371,6 +44334,7 @@
 <h1><a name="PM">PM</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>Power manager</td></tr>
   <tr><th>base</th><td>0x7e100000</td></tr>
   <tr><th>id</th><td>0x0000706d</td></tr>
   <tr><th>password</th><td>0x5a000000</td></tr>
@@ -47532,31 +47496,7 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>15</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>14</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>6</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>1</td>
+    <td>2</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -47572,6 +47512,14 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
+    <td>14</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
     <td>5</td>
     <td>NA</td>
     <td>NA</td>
@@ -47580,7 +47528,15 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>2</td>
+    <td>6</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>15</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -47589,6 +47545,14 @@
     <td>missing definiton</td>
     <td>32</td>
     <td>7</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>1</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -47743,31 +47707,7 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>11</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>28</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
     <td>25</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>24</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -47783,7 +47723,7 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>30</td>
+    <td>29</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -47799,7 +47739,15 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>29</td>
+    <td>24</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>28</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -47812,11 +47760,28 @@
     <td>NA</td>
     <td>NA</td>
   </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>30</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>11</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
 </table>
 <hr/>
 <h1><a name="SD">SD</a></h1><br/>
 <h3>Info</h3>
 <table border="1">
+  <tr><th>description</th><td>SDRAM</td></tr>
   <tr><th>base</th><td>0x7ee00000</td></tr>
   <tr><th>id</th><td>0x5344434f</td></tr>
 </table>
@@ -54537,14 +54502,6 @@
     <th>reset</th>
   </tr>
   <tr>
-    <td>SYSAC_V3D_LIMITER_INCREMENT</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0x00000001</td>
-    <td>0xfffffffe</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>SYSAC_V3D_LIMITER_ENABLE</td>
     <td>0</td>
     <td>0</td>
@@ -54554,6 +54511,14 @@
   </tr>
   <tr>
     <td>SYSAC_V3D_LIMITER_HOLDOFF</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0x00000001</td>
+    <td>0xfffffffe</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>SYSAC_V3D_LIMITER_INCREMENT</td>
     <td>0</td>
     <td>0</td>
     <td>0x00000001</td>
@@ -55922,7 +55887,7 @@
     <td></td>
   </tr>
   <tr>
-    <td><a href="#USB_DIEPTXF1">USB_DIEPTXF1</a></td>
+    <td>USB_DPTXFSIZ1</td>
     <td>0x7e980104</td>
     <td>RW</td>
     <td>32</td>
@@ -55930,7 +55895,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DPTXFSIZ1</td>
+    <td><a href="#USB_DIEPTXF1">USB_DIEPTXF1</a></td>
     <td>0x7e980104</td>
     <td>RW</td>
     <td>32</td>
@@ -55954,7 +55919,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF3</td>
+    <td>USB_DPTXFSIZ3</td>
     <td>0x7e98010c</td>
     <td>RW</td>
     <td>32</td>
@@ -55962,7 +55927,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DPTXFSIZ3</td>
+    <td>USB_DIEPTXF3</td>
     <td>0x7e98010c</td>
     <td>RW</td>
     <td>32</td>
@@ -56002,14 +55967,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF6</td>
-    <td>0x7e980118</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>USB_DPTXFSIZ6</td>
     <td>0x7e980118</td>
     <td>RW</td>
@@ -56018,8 +55975,8 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF7</td>
-    <td>0x7e98011c</td>
+    <td>USB_DIEPTXF6</td>
+    <td>0x7e980118</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
@@ -56034,8 +55991,8 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF8</td>
-    <td>0x7e980120</td>
+    <td>USB_DIEPTXF7</td>
+    <td>0x7e98011c</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
@@ -56050,8 +56007,8 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF9</td>
-    <td>0x7e980124</td>
+    <td>USB_DIEPTXF8</td>
+    <td>0x7e980120</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
@@ -56059,6 +56016,14 @@
   </tr>
   <tr>
     <td>USB_DPTXFSIZ9</td>
+    <td>0x7e980124</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DIEPTXF9</td>
     <td>0x7e980124</td>
     <td>RW</td>
     <td>32</td>
@@ -56098,14 +56063,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF12</td>
-    <td>0x7e980130</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>USB_DPTXFSIZ12</td>
     <td>0x7e980130</td>
     <td>RW</td>
@@ -56114,8 +56071,8 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DPTXFSIZ13</td>
-    <td>0x7e980134</td>
+    <td>USB_DIEPTXF12</td>
+    <td>0x7e980130</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
@@ -56123,6 +56080,14 @@
   </tr>
   <tr>
     <td>USB_DIEPTXF13</td>
+    <td>0x7e980134</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DPTXFSIZ13</td>
     <td>0x7e980134</td>
     <td>RW</td>
     <td>32</td>
@@ -56146,7 +56111,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF15</td>
+    <td>USB_DPTXFSIZ15</td>
     <td>0x7e98013c</td>
     <td>RW</td>
     <td>32</td>
@@ -56154,7 +56119,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DPTXFSIZ15</td>
+    <td>USB_DIEPTXF15</td>
     <td>0x7e98013c</td>
     <td>RW</td>
     <td>32</td>
@@ -56850,7 +56815,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB2</td>
+    <td>USB_DTXFSTS2</td>
     <td>0x7e980958</td>
     <td>RW</td>
     <td>32</td>
@@ -56858,7 +56823,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS2</td>
+    <td>USB_DIEPDMAB2</td>
     <td>0x7e980958</td>
     <td>RW</td>
     <td>32</td>
@@ -56898,7 +56863,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS3</td>
+    <td>USB_DIEPDMAB3</td>
     <td>0x7e980978</td>
     <td>RW</td>
     <td>32</td>
@@ -56906,7 +56871,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB3</td>
+    <td>USB_DTXFSTS3</td>
     <td>0x7e980978</td>
     <td>RW</td>
     <td>32</td>
@@ -56994,7 +56959,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB5</td>
+    <td>USB_DTXFSTS5</td>
     <td>0x7e9809b8</td>
     <td>RW</td>
     <td>32</td>
@@ -57002,7 +56967,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS5</td>
+    <td>USB_DIEPDMAB5</td>
     <td>0x7e9809b8</td>
     <td>RW</td>
     <td>32</td>
@@ -57138,7 +57103,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS8</td>
+    <td>USB_DIEPDMAB8</td>
     <td>0x7e980a18</td>
     <td>RW</td>
     <td>32</td>
@@ -57146,7 +57111,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB8</td>
+    <td>USB_DTXFSTS8</td>
     <td>0x7e980a18</td>
     <td>RW</td>
     <td>32</td>
@@ -57234,7 +57199,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB10</td>
+    <td>USB_DTXFSTS10</td>
     <td>0x7e980a58</td>
     <td>RW</td>
     <td>32</td>
@@ -57242,7 +57207,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS10</td>
+    <td>USB_DIEPDMAB10</td>
     <td>0x7e980a58</td>
     <td>RW</td>
     <td>32</td>
@@ -57282,7 +57247,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB11</td>
+    <td>USB_DTXFSTS11</td>
     <td>0x7e980a78</td>
     <td>RW</td>
     <td>32</td>
@@ -57290,7 +57255,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS11</td>
+    <td>USB_DIEPDMAB11</td>
     <td>0x7e980a78</td>
     <td>RW</td>
     <td>32</td>
@@ -57378,7 +57343,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS13</td>
+    <td>USB_DIEPDMAB13</td>
     <td>0x7e980ab8</td>
     <td>RW</td>
     <td>32</td>
@@ -57386,7 +57351,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB13</td>
+    <td>USB_DTXFSTS13</td>
     <td>0x7e980ab8</td>
     <td>RW</td>
     <td>32</td>
@@ -57474,7 +57439,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB15</td>
+    <td>USB_DTXFSTS15</td>
     <td>0x7e980af8</td>
     <td>RW</td>
     <td>32</td>
@@ -57482,7 +57447,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS15</td>
+    <td>USB_DIEPDMAB15</td>
     <td>0x7e980af8</td>
     <td>RW</td>
     <td>32</td>
@@ -57522,15 +57487,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB4</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB2</td>
+    <td>USB_DOEPDMAB5</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -57546,31 +57503,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB7</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB3</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB15</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB11</td>
+    <td>USB_DOEPDMAB14</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -57586,7 +57519,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB14</td>
+    <td>USB_DOEPDMAB2</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -57594,7 +57527,15 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB8</td>
+    <td>USB_DOEPDMAB7</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB4</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -57618,7 +57559,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB5</td>
+    <td>USB_DOEPDMAB6</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -57626,7 +57567,31 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB6</td>
+    <td>USB_DOEPDMAB15</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB12</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB11</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB8</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -57642,7 +57607,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB12</td>
+    <td>USB_DOEPDMAB3</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -58997,7 +58962,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GINTMSK_INCOMPL_P</td>
+    <td>USB_GINTMSK_INCOMPL_ISO_OUT</td>
     <td>21</td>
     <td>21</td>
     <td>0x00200000</td>
@@ -59005,7 +58970,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GINTMSK_INCOMPL_ISO_OUT</td>
+    <td>USB_GINTMSK_INCOMPL_P</td>
     <td>21</td>
     <td>21</td>
     <td>0x00200000</td>
@@ -59128,14 +59093,6 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GRXSTSP_DEV_BCNT</td>
-    <td>4</td>
-    <td>14</td>
-    <td>0x00007ff0</td>
-    <td>0xffff800f</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_GRXSTSP_HST_BCNT</td>
     <td>4</td>
     <td>14</td>
@@ -59152,12 +59109,20 @@
     <td>NA</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
+    <td>USB_GRXSTSP_DEV_BCNT</td>
+    <td>4</td>
+    <td>14</td>
+    <td>0x00007ff0</td>
+    <td>0xffff800f</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>USB_GRXSTSP_DEV_DPID</td>
     <td>15</td>
-    <td>3</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
+    <td>16</td>
+    <td>0x00018000</td>
+    <td>0xfffe7fff</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>USB_GRXSTSP_HST_DPID</td>
@@ -59168,12 +59133,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GRXSTSP_DEV_DPID</td>
+    <td>missing definiton</td>
     <td>15</td>
-    <td>16</td>
-    <td>0x00018000</td>
-    <td>0xfffe7fff</td>
-    <td>0x0</td>
+    <td>3</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>missing definiton</td>
@@ -59262,14 +59227,6 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GNPTXFSIZ_IN_EP_TXF0_DEP</td>
-    <td>16</td>
-    <td>31</td>
-    <td>0xffff0000</td>
-    <td>0x0000ffff</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_GNPTXFSIZ_NP_TXF_DEP</td>
     <td>16</td>
     <td>31</td>
@@ -59284,6 +59241,14 @@
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
+  </tr>
+  <tr>
+    <td>USB_GNPTXFSIZ_IN_EP_TXF0_DEP</td>
+    <td>16</td>
+    <td>31</td>
+    <td>0xffff0000</td>
+    <td>0x0000ffff</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>missing definiton</td>
@@ -59447,14 +59412,6 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GPVNDCTL_CTRL_UTMI</td>
-    <td>8</td>
-    <td>11</td>
-    <td>0x00000f00</td>
-    <td>0xfffff0ff</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_GPVNDCTL_CTRL_ULPI</td>
     <td>8</td>
     <td>13</td>
@@ -59463,9 +59420,17 @@
     <td>0x0</td>
   </tr>
   <tr>
+    <td>USB_GPVNDCTL_CTRL_UTMI</td>
+    <td>8</td>
+    <td>11</td>
+    <td>0x00000f00</td>
+    <td>0xfffff0ff</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
     <td>missing definiton</td>
     <td>12</td>
-    <td>7</td>
+    <td>15</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -59473,7 +59438,7 @@
   <tr>
     <td>missing definiton</td>
     <td>14</td>
-    <td>15</td>
+    <td>7</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -60921,20 +60886,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>17</td>
-    <td>15</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>USB_DIEPCTL0_NAK_STS</td>
     <td>17</td>
     <td>17</td>
     <td>0x00020000</td>
     <td>0xfffdffff</td>
     <td>0x0</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>17</td>
+    <td>15</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DIEPCTL0_TYPE</td>
@@ -60985,14 +60950,6 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPCTL0_SET_D0_PID</td>
-    <td>28</td>
-    <td>28</td>
-    <td>0x10000000</td>
-    <td>0xefffffff</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_DIEPCTL0_SET_EVEN_FR</td>
     <td>28</td>
     <td>28</td>
@@ -61001,12 +60958,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
+    <td>USB_DIEPCTL0_SET_D0_PID</td>
+    <td>28</td>
+    <td>28</td>
+    <td>0x10000000</td>
+    <td>0xefffffff</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>USB_DIEPCTL0_SET_ODD_FR</td>
     <td>29</td>
-    <td>27</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
+    <td>29</td>
+    <td>0x20000000</td>
+    <td>0xdfffffff</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>USB_DIEPCTL0_SET_D1_PID</td>
@@ -61017,12 +60982,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPCTL0_SET_ODD_FR</td>
+    <td>missing definiton</td>
     <td>29</td>
-    <td>29</td>
-    <td>0x20000000</td>
-    <td>0xdfffffff</td>
-    <td>0x0</td>
+    <td>27</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DIEPCTL0_DIS</td>
@@ -61084,6 +61049,14 @@
     <td>0x0</td>
   </tr>
   <tr>
+    <td>USB_DIEPINT0_SETUP</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0x00000008</td>
+    <td>0xfffffff7</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
     <td>USB_DIEPINT0_TIMEOUT</td>
     <td>3</td>
     <td>3</td>
@@ -61092,11 +61065,19 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPINT0_SETUP</td>
-    <td>3</td>
-    <td>3</td>
-    <td>0x00000008</td>
-    <td>0xfffffff7</td>
+    <td>USB_DIEPINT0_IN_TKN_TXFEMP</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0x00000010</td>
+    <td>0xffffffef</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>USB_DIEPINT0_OUT_TKN_EP_DIS</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0x00000010</td>
+    <td>0xffffffef</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -61108,19 +61089,11 @@
     <td>NA</td>
   </tr>
   <tr>
-    <td>USB_DIEPINT0_OUT_TKN_EP_DIS</td>
-    <td>4</td>
-    <td>4</td>
-    <td>0x00000010</td>
-    <td>0xffffffef</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
-    <td>USB_DIEPINT0_IN_TKN_TXFEMP</td>
-    <td>4</td>
-    <td>4</td>
-    <td>0x00000010</td>
-    <td>0xffffffef</td>
+    <td>USB_DIEPINT0_STS_PHSE_RCVD</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0x00000020</td>
+    <td>0xffffffdf</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -61140,12 +61113,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPINT0_STS_PHSE_RCVD</td>
-    <td>5</td>
-    <td>5</td>
-    <td>0x00000020</td>
-    <td>0xffffffdf</td>
-    <td>0x0</td>
+    <td>missing definiton</td>
+    <td>6</td>
+    <td>4</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DIEPINT0_IN_EP_NAK_EFF</td>
@@ -61156,27 +61129,11 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>6</td>
-    <td>4</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>USB_DIEPINT0_BACK2BACK_SETUP</td>
     <td>6</td>
     <td>6</td>
     <td>0x00000040</td>
     <td>0xffffffbf</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
-    <td>USB_DIEPINT0_TXF_EMPTY</td>
-    <td>7</td>
-    <td>7</td>
-    <td>0x00000080</td>
-    <td>0xffffff7f</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -61186,6 +61143,14 @@
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
+  </tr>
+  <tr>
+    <td>USB_DIEPINT0_TXF_EMPTY</td>
+    <td>7</td>
+    <td>7</td>
+    <td>0x00000080</td>
+    <td>0xffffff7f</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>USB_DIEPINT0_OUT_PKT_ERR</td>
@@ -61204,20 +61169,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPINT0_BNA</td>
-    <td>9</td>
-    <td>9</td>
-    <td>0x00000200</td>
-    <td>0xfffffdff</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>missing definiton</td>
     <td>9</td>
     <td>7</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
+  </tr>
+  <tr>
+    <td>USB_DIEPINT0_BNA</td>
+    <td>9</td>
+    <td>9</td>
+    <td>0x00000200</td>
+    <td>0xfffffdff</td>
+    <td>0x0</td>
   </tr>
 </table>
 <h2><a name="USB_DIEPTSIZ0">Register:USB_DIEPTSIZ0 (0x7e980910)</h2><br/>
@@ -61341,7 +61306,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPCTL0_DPID</td>
+    <td>USB_DOEPCTL0_EO_FR_NUM</td>
     <td>16</td>
     <td>16</td>
     <td>0x00010000</td>
@@ -61349,7 +61314,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPCTL0_EO_FR_NUM</td>
+    <td>USB_DOEPCTL0_DPID</td>
     <td>16</td>
     <td>16</td>
     <td>0x00010000</td>
@@ -61437,20 +61402,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>29</td>
-    <td>27</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>USB_DOEPCTL0_SET_ODD_FR</td>
     <td>29</td>
     <td>29</td>
     <td>0x20000000</td>
     <td>0xdfffffff</td>
     <td>0x0</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>29</td>
+    <td>27</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DOEPCTL0_SET_D1_PID</td>
@@ -61520,14 +61485,6 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_SETUP</td>
-    <td>3</td>
-    <td>3</td>
-    <td>0x00000008</td>
-    <td>0xfffffff7</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_DOEPINT0_TIMEOUT</td>
     <td>3</td>
     <td>3</td>
@@ -61536,11 +61493,11 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_IN_TKN_TXFEMP</td>
-    <td>4</td>
-    <td>4</td>
-    <td>0x00000010</td>
-    <td>0xffffffef</td>
+    <td>USB_DOEPINT0_SETUP</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0x00000008</td>
+    <td>0xfffffff7</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -61560,19 +61517,11 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>5</td>
-    <td>3</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>USB_DOEPINT0_IN_TKN_EP_MIS</td>
-    <td>5</td>
-    <td>5</td>
-    <td>0x00000020</td>
-    <td>0xffffffdf</td>
+    <td>USB_DOEPINT0_IN_TKN_TXFEMP</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0x00000010</td>
+    <td>0xffffffef</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -61584,15 +61533,23 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_BACK2BACK_SETUP</td>
-    <td>6</td>
-    <td>6</td>
-    <td>0x00000040</td>
-    <td>0xffffffbf</td>
+    <td>USB_DOEPINT0_IN_TKN_EP_MIS</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0x00000020</td>
+    <td>0xffffffdf</td>
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_IN_EP_NAK_EFF</td>
+    <td>missing definiton</td>
+    <td>5</td>
+    <td>3</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>USB_DOEPINT0_BACK2BACK_SETUP</td>
     <td>6</td>
     <td>6</td>
     <td>0x00000040</td>
@@ -61606,6 +61563,14 @@
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
+  </tr>
+  <tr>
+    <td>USB_DOEPINT0_IN_EP_NAK_EFF</td>
+    <td>6</td>
+    <td>6</td>
+    <td>0x00000040</td>
+    <td>0xffffffbf</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>missing definiton</td>
@@ -61624,7 +61589,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_OUT_PKT_ERR</td>
+    <td>USB_DOEPINT0_TX_FIFO_UNDRN</td>
     <td>8</td>
     <td>8</td>
     <td>0x00000100</td>
@@ -61632,7 +61597,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_TX_FIFO_UNDRN</td>
+    <td>USB_DOEPINT0_OUT_PKT_ERR</td>
     <td>8</td>
     <td>8</td>
     <td>0x00000100</td>
@@ -61691,7 +61656,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPTSIZ0_RX_DPID</td>
+    <td>USB_DOEPTSIZ0_SUP_CNT</td>
     <td>29</td>
     <td>30</td>
     <td>0x60000000</td>
@@ -61699,7 +61664,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPTSIZ0_SUP_CNT</td>
+    <td>USB_DOEPTSIZ0_RX_DPID</td>
     <td>29</td>
     <td>30</td>
     <td>0x60000000</td>

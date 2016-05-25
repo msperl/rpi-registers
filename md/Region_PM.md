@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | Power manager |
 | base | 0x7e100000 |
 | id | 0x0000706d |
 | password | 0x5a000000 |

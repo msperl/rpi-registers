@@ -214,9 +214,9 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
+| SYSAC_V3D_LIMITER_HOLDOFF | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | SYSAC_V3D_LIMITER_INCREMENT | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | SYSAC_V3D_LIMITER_ENABLE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
-| SYSAC_V3D_LIMITER_HOLDOFF | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | missing definiton | 1 | -1 | NA | NA | NA |
 | SYSAC_V3D_LIMITER_SPARE | 1 | 3 | 0x0000000e | 0xfffffff1 | 0x0 |
 | SYSAC_V3D_LIMITER_MAX_PRIORITY | 3 | 7 | 0x000000f8 | 0xffffff07 | 0x0 |

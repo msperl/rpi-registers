@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | SDRAM |
 | base | 0x7ee00000 |
 | id | 0x5344434f |
 

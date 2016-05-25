@@ -36,14 +36,14 @@
 | --- | --- | --- | --- | --- | --- |
 | FPGA_CTRL0_DIS_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
 | FPGA_CTRL0_CAM_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
-| FPGA_CTRL0_DIS_BL | 1 | 1 | 0x00000002 | 0xfffffffd |  |
-| FPGA_CTRL0_CAM_CTL1 | 1 | 1 | 0x00000002 | 0xfffffffd |  |
 | missing definiton | 1 | -1 | NA | NA | NA |
-| FPGA_CTRL0_CAM_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
-| missing definiton | 2 | 0 | NA | NA | NA |
+| FPGA_CTRL0_CAM_CTL1 | 1 | 1 | 0x00000002 | 0xfffffffd |  |
+| FPGA_CTRL0_DIS_BL | 1 | 1 | 0x00000002 | 0xfffffffd |  |
 | FPGA_CTRL0_DIS_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
-| missing definiton | 3 | 1 | NA | NA | NA |
+| missing definiton | 2 | 0 | NA | NA | NA |
+| FPGA_CTRL0_CAM_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
 | FPGA_CTRL0_DIS_RST | 3 | 3 | 0x00000008 | 0xfffffff7 |  |
+| missing definiton | 3 | 1 | NA | NA | NA |
 | FPGA_CTRL0_SD_PSU_EN | 4 | 4 | 0x00000010 | 0xffffffef |  |
 | FPGA_CTRL0_DIS_SW_SPI | 5 | 5 | 0x00000020 | 0xffffffdf |  |
 | FPGA_CTRL0_SW_SPI_SCL | 6 | 6 | 0x00000040 | 0xffffffbf |  |

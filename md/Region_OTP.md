@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | One Time programmable |
 | base | 0x7e20f000 |
 | id | 0x206f7470 |
 

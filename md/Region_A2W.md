@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | Clock manager PLL control |
 | base | 0x7e102000 |
 | id | 0x00613277 |
 | password | 0x5a000000 |

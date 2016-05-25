@@ -1,5 +1,5 @@
 help:
-	@echo "Usage: make BCRMBASE=<base of exploded brcm_android.tar> <target>"
+	@echo "Usage: make BRCMBASE=<base of exploded brcm_android.tar> <target>"
 	@echo "Targets: html md mw"
 
 clean:
@@ -20,35 +20,46 @@ mw: testenv mediawiki.markup
 mediawiki.markup: defined2html+md.pl defined.txt
 	perl defined2html+md.pl -mediawiki defined.txt > mediawiki.markup
 
-defined.txt: Makefile
+defined.txt: Makefile external_defines.h
 	( \
-	cd $(BCRMBASE)/brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip; \
-	(echo '#include "register_map.h"'; echo '#include "register_map_macros.h"')\
-	| gcc -E -nostdinc -fno-builtin -I. -w -P -dM -x none - \
+	cd $(BRCMBASE)/brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip; \
+	pwd >&2 ; \
+	 (echo '#include "register_map.h"'; \
+	  echo '#include "register_map_macros.h"'; \
+	  echo '#include "external_defines.h"';) \
+	| gcc -E -nostdinc -fno-builtin -I. -I $(PWD) \
+	  -w -P -dM -x none - \
 	| grep -v "#define __" \
 	| awk '{ if ($$2) print "X_"$$2,$$2;}' \
-	| awk '{t=index($$2,"(");if(t){print "X_"substr($$2,1,t-1),"MACRO";}else{print}}'\
+	| awk '{t=index($$2,"(");if(t){print "X_"substr($$2,1,t-1),"MACRO";}else{print}}' \
 	| (echo '#include "register_map.h"'; \
-	   echo '#define HW_REGISTER_RW(...) `printf "0x%08x:RW" $$[__VA_ARGS__]`';\
-	   echo '#define HW_REGISTER_RO(...) `printf "0x%08x:RO" $$[__VA_ARGS__]`';\
+	   echo '#include "external_defines.h"'; \
+	   echo '#define HW_REGISTER_RW(...) `printf "0x%08x:RW" $$[__VA_ARGS__]`'; \
+	   echo '#define HW_REGISTER_RO(...) `printf "0x%08x:RO" $$[__VA_ARGS__]`'; \
 	   sort) \
-	| gcc -E -nostdinc -fno-builtin -I. -w -P -x none - \
+	| gcc -E -nostdinc -fno-builtin -I. -I $(PWD) -w -P -x none - \
 	| sed "s/^X_/echo /" \
 	| bash \
         | sort \
 	) > defined.txt
 
-testenv:
-	@test -d "$(BCRMBASE)" \
-	|| echo "BCRMBASE is not defined or not a directory"
-	@test -d "$(BCRMBASE)"
-	@test -d "$(BCRMBASE)/brcm_usrlib/chip/verification/code/vcinclude" \
-	|| (echo "BCRMBASE does not point to an exploded directory of"; \
-	echo "Brcm_Android_ICS_Graphics_Stack.tar.gz")
-	@test -d "$(BCRMBASE)/brcm_usrlib/chip/verification/code/vcinclude"
+testenv_check:
+	@test -d "$(BRCMBASE)" \
+	|| (echo "BRCMBASE is not defined or not a directory" ; false)
+	@test -d "$(BRCMBASE)/brcm_usrlib/dag/vmcsx/vcinclude" \
+	|| (echo "BRCMBASE does not point to an exploded directory of"; \
+	echo "Brcm_Android_ICS_Graphics_Stack.tar.gz"; false)
+
+testenv_missing_dirlinks:
 	@# create directories if necessary
-	@mkdir -p $(BCRMBASE)/brcm_usrlib/chip/verification/code
+	@mkdir -p $(BRCMBASE)/brcm_usrlib/chip/verification/code
 	@# create softlink if necessary
-	@test -L $(BCRMBASE)/brcm_usrlib/chip/verification/code/vcinclude \
-	|| ln -s ../../../dag/vmcsx/vcinclude/bcm2708_chip \
-	     $(BCRMBASE)/brcm_usrlib/chip/verification
+	@test -L $(BRCMBASE)/brcm_usrlib/chip/verification/code/vcinclude \
+	|| ln -sfv ../../../dag/vmcsx/vcinclude/bcm2708_chip \
+	     $(BRCMBASE)/brcm_usrlib/chip/verification/code/vcinclude
+
+testenv_missing_includes:
+	@touch $(BRCMBASE)/brcm_usrlib/chip/verification/code/vcinclude/cpr_avs2wtap.h
+	@touch $(BRCMBASE)/brcm_usrlib/chip/verification/code/vcinclude/uart_arm.h
+
+testenv: testenv_check testenv_missing_dirlinks testenv_missing_includes

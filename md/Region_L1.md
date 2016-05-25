@@ -4,6 +4,7 @@
 ##Info
 | Name | value |
 | --- | --- |
+| description | VC4-L1 control |
 | base | 0x7ee02000 |
 | id | 0x4c314343 |
 
