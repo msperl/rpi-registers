@@ -305,7 +305,7 @@ sub toMD {
     my ($d)=@_;
     # first create the region markdown
     open(FH,">","md/README.md");
-    print FH "#Register Regions\n\n";
+    print FH "# Register Regions\n\n";
 
     print FH "| Region | Base | Description |\n| --- | --- | --- |\n";
     foreach my $k (sort keys %{$d}) {
@@ -319,7 +319,7 @@ sub toMD {
 	open(FH,">","md/Region_".$d->{$s}->{name}.".md");
 	print FH "# Register Region: ".$d->{$s}->{name}."\n\n";
 
-	print FH "\n##Info\n";
+	print FH "\n## Info\n";
 	print FH "| Name | value |\n| --- | --- |\n";
 	for my $k ("description", "notes", "base","id","password") {
 	    if ($d->{$s}->{$k}) {
@@ -327,7 +327,7 @@ sub toMD {
 	    }
 	}
 
-	print FH "\n##Registers\n\n";
+	print FH "\n## Registers\n\n";
 
 	print FH "| register name | address | type | width | mask | reset |\n";
 	print FH "| --- | --- | --- | --- | --- | --- |\n";
@@ -354,7 +354,7 @@ sub toMD {
 	my @k=sort keys %{$d->{$s}->{defs}};
 	if ($#k > -1) {
 	    my $defs=$d->{$s}->{defs};
-	    print FH "\n##Unsupported defines\n\n";
+	    print FH "\n## Unsupported defines\n\n";
 
 	    print FH "| define | value |\n";
 	    print FH "| --- | --- |\n";
@@ -367,13 +367,13 @@ sub toMD {
 	    }
 	}
 
-	print FH "\n##Register info\n\n";
+	print FH "\n## Register info\n\n";
 	foreach my $k (@regssorted) {
 	    my $r = $regs->{$k};
 	    if (exists $r->{bits}) {
 		my $bits=$r->{bits};
 		#create register map
-		print FH "\n###$r->{name}\n Address: ".$r->{addr}."\n\n";
+		print FH "\n### $r->{name}\n Address: ".$r->{addr}."\n\n";
 
 		print FH "| field_name | start_bit | end_bit | set | clear | reset |\n";
 		print FH "| --- | --- | --- | --- | --- | --- |\n";
