@@ -12,6 +12,6 @@ it creates it both as an html and markdown version:
 to create it yourself:
 * untar the broadcom provided tar to a directory
 * clone this project
-* in the project directory execute: ```make BCRMBASE=<the dir where you untared the sources> md html```
+* in the project directory execute: ```make BRCMBASE=<the dir where you untared the sources> md html```
 
 now you get all the registers as files
