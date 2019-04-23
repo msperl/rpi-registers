@@ -1,12 +1,12 @@
 # Register Region: V3D
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7ec00000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -107,7 +107,7 @@
 | V3D_FDBGS | 0x7ec00f10 | RW | 32 | 0xffffffff |  |
 | V3D_ERRSTAT | 0x7ec00f20 | RW | 32 | 0xffffffff |  |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -115,5 +115,5 @@
 | V3D_MEM1_BASE_ADDRESS | 0x1A00B000 |
 | V3D_MEM2_BASE_ADDRESS | 0x1A00C000 |
 
-##Register info
+## Register info
 

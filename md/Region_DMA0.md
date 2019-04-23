@@ -1,12 +1,12 @@
 # Register Region: DMA0
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e007000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -20,10 +20,10 @@
 | [DMA0_NEXTCONBK](#dma0_nextconbk) | 0x7e00701c | RO | 32 | 0xffffffe0 |  |
 | [DMA0_DEBUG](#dma0_debug) | 0x7e007020 | RW | 29 | 0x1ffffff7 | 0000000000 |
 
-##Register info
+## Register info
 
 
-###DMA0_CS
+### DMA0_CS
  Address: 0x7e007000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -46,7 +46,7 @@
 | DMA0_CS_ABORT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | DMA0_CS_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###DMA0_CONBLK_AD
+### DMA0_CONBLK_AD
  Address: 0x7e007004
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -54,7 +54,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA0_CONBLK_AD_SCB_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f | 0x0 |
 
-###DMA0_TI
+### DMA0_TI
  Address: 0x7e007008
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -76,21 +76,21 @@
 | DMA0_TI_WAITS | 21 | 25 | 0x03e00000 | 0xfc1fffff |  |
 | DMA0_TI_NO_WIDE_BURSTS | 26 | 26 | 0x04000000 | 0xfbffffff |  |
 
-###DMA0_SOURCE_AD
+### DMA0_SOURCE_AD
  Address: 0x7e00700c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA0_SOURCE_AD_S_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA0_DEST_AD
+### DMA0_DEST_AD
  Address: 0x7e007010
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA0_DEST_AD_D_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA0_TXFR_LEN
+### DMA0_TXFR_LEN
  Address: 0x7e007014
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -98,7 +98,7 @@
 | DMA0_TXFR_LEN_XLENGTH | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | DMA0_TXFR_LEN_YLENGTH | 16 | 29 | 0x3fff0000 | 0xc000ffff |  |
 
-###DMA0_STRIDE
+### DMA0_STRIDE
  Address: 0x7e007018
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -106,7 +106,7 @@
 | DMA0_STRIDE_S_STRIDE | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | DMA0_STRIDE_D_STRIDE | 16 | 31 | 0xffff0000 | 0x0000ffff |  |
 
-###DMA0_NEXTCONBK
+### DMA0_NEXTCONBK
  Address: 0x7e00701c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -114,7 +114,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA0_NEXTCONBK_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f |  |
 
-###DMA0_DEBUG
+### DMA0_DEBUG
  Address: 0x7e007020
 
 | field_name | start_bit | end_bit | set | clear | reset |

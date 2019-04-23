@@ -1,14 +1,14 @@
 # Register Region: L2
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | description | VC4-L2 control |
 | base | 0x7ee01000 |
 | id | 0x4c324343 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -28,10 +28,10 @@
 | L2_TAG_STALLS | 0x7ee01120 | RO | 32 | 0xffffffff |  |
 | L2_SD_STALLS | 0x7ee01124 | RO | 32 | 0xffffffff |  |
 
-##Register info
+## Register info
 
 
-###L2_CONT_OFF
+### L2_CONT_OFF
  Address: 0x7ee01000
 
 | field_name | start_bit | end_bit | set | clear | reset |

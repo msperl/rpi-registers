@@ -1,12 +1,12 @@
 # Register Region: VEC
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e806000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -57,11 +57,11 @@
 | VEC_DAC_CONFIG | 0x7e806210 | RW | 32 | 0xffffffff |  |
 | VEC_DAC_MISC | 0x7e806214 | RW | 32 | 0xffffffff |  |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
 | VEC_BASE_ADDRESS | 0x7e806000 |
 
-##Register info
+## Register info
 

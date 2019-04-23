@@ -1,13 +1,13 @@
 # Register Region: SMI
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e600000 |
 | id | 0x534d4958 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | SMI_DD | 0x7e60003c | RW | 18 | 0x0003ffff | 0000000000 |
 | [SMI_FD](#smi_fd) | 0x7e600040 | RW | 14 | 0x00003f3f | 0000000000 |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -40,10 +40,10 @@
 | SMI_SCALER_1_DMA | 0x190000 |
 | SMI_SCALER_2_DMA | 0x1a0000 |
 
-##Register info
+## Register info
 
 
-###SMI_CS
+### SMI_CS
  Address: 0x7e600000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -73,7 +73,7 @@
 | SMI_CS_TXE | 30 | 30 | 0x40000000 | 0xbfffffff | 0x1 |
 | SMI_CS_RXF | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###SMI_A
+### SMI_A
  Address: 0x7e600008
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -82,7 +82,7 @@
 | missing definiton | 6 | 7 | NA | NA | NA |
 | SMI_A_DEVICE | 8 | 9 | 0x00000300 | 0xfffffcff | 0x0 |
 
-###SMI_DSR0
+### SMI_DSR0
  Address: 0x7e600010
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -97,7 +97,7 @@
 | SMI_DSR0_RSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSR0_RWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DSW0
+### SMI_DSW0
  Address: 0x7e600014
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -112,7 +112,7 @@
 | SMI_DSW0_WSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSW0_WWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DSR1
+### SMI_DSR1
  Address: 0x7e600018
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -127,7 +127,7 @@
 | SMI_DSR1_RSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSR1_RWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DSW1
+### SMI_DSW1
  Address: 0x7e60001c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -142,7 +142,7 @@
 | SMI_DSW1_WSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSW1_WWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DSR2
+### SMI_DSR2
  Address: 0x7e600020
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -157,7 +157,7 @@
 | SMI_DSR2_RSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSR2_RWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DSW2
+### SMI_DSW2
  Address: 0x7e600024
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -172,7 +172,7 @@
 | SMI_DSW2_WSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSW2_WWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DSR3
+### SMI_DSR3
  Address: 0x7e600028
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -187,7 +187,7 @@
 | SMI_DSR3_RSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSR3_RWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DSW3
+### SMI_DSW3
  Address: 0x7e60002c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -202,7 +202,7 @@
 | SMI_DSW3_WSETUP | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 | SMI_DSW3_WWIDTH | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###SMI_DC
+### SMI_DC
  Address: 0x7e600030
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -215,7 +215,7 @@
 | missing definiton | 25 | 27 | NA | NA | NA |
 | SMI_DC_DMAEN | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 
-###SMI_DCS
+### SMI_DCS
  Address: 0x7e600034
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -225,7 +225,7 @@
 | SMI_DCS_DONE | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | SMI_DCS_WRITE | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###SMI_DA
+### SMI_DA
  Address: 0x7e600038
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -234,7 +234,7 @@
 | missing definiton | 6 | 7 | NA | NA | NA |
 | SMI_DA_WRITE | 8 | 9 | 0x00000300 | 0xfffffcff | 0x0 |
 
-###SMI_FD
+### SMI_FD
  Address: 0x7e600040
 
 | field_name | start_bit | end_bit | set | clear | reset |

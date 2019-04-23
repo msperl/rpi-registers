@@ -1,13 +1,13 @@
 # Register Region: TE
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e20e000 |
 | id | 0x00746563 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -21,5 +21,5 @@
 | TE_2VSWIDTH | 0x7e20e01c | RW | 32 | 0xffffffff |  |
 | TE_2TIMER | 0x7e20e020 | RW | 32 | 0xffffffff |  |
 
-##Register info
+## Register info
 

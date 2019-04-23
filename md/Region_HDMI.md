@@ -1,42 +1,42 @@
 # Register Region: HDMI
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e902000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
-| HDMI_HDMI_13_AUDIO_STATUS_1 | HDMI_BASE_ADDRESS + 340 | RW |  |  |  |
-| HDMI_HDMI_13_AUDIO_CFG_1 | HDMI_BASE_ADDRESS + 336 | RW |  |  |  |
-| HDMI_PCI_STATUS | (HDMI_BASE_ADDRESS + 0x340) + 0x18 | RW |  |  |  |
-| HDMI_RAM_PACKET_RSVD_0 | (HDMI_BASE_ADDRESS + 0x400) + 504 | RW |  |  |  |
-| HDMI_ASYNC_RM_FORMAT | (HDMI_BASE_ADDRESS + 0x300) + 24 | RW |  |  |  |
-| HDMI_ASYNC_RM_PHASE_INC | (HDMI_BASE_ADDRESS + 0x300) + 12 | RW |  |  |  |
-| HDMI_PCI_MASK_SET | (HDMI_BASE_ADDRESS + 0x340) + 0x28 | RW |  |  |  |
-| HDMI_PCI_MASK_STATUS | (HDMI_BASE_ADDRESS + 0x340) + 0x24 | RW |  |  |  |
-| HDMI_PCI_MASK_CLEAR | (HDMI_BASE_ADDRESS + 0x340) + 0x2c | RW |  |  |  |
-| HDMI_TX_PHY_HDMI_TX_PHY_PLL_CFG | (HDMI_BASE_ADDRESS + 0x2c0) + 16 | RW |  |  |  |
-| HDMI_HDMI_HBR_AUDIO_PACKET_HEADER | HDMI_BASE_ADDRESS + 344 | RW |  |  |  |
-| HDMI_ASYNC_RM_RATE_RATIO | (HDMI_BASE_ADDRESS + 0x300) + 4 | RW |  |  |  |
-| HDMI_TX_PHY_HDMI65_TX_PHY_TMDS_CFG | (HDMI_BASE_ADDRESS + 0x2c0) + 20 | RW |  |  |  |
-| HDMI_PCI_SET | (HDMI_BASE_ADDRESS + 0x340) + 0x1c | RW |  |  |  |
-| HDMI_PERT_INSERT_ERR_SEPARATION | HDMI_BASE_ADDRESS + 132 | RW |  |  |  |
-| HDMI_TX_PHY_HDMI_TX_PHY_SPARE | (HDMI_BASE_ADDRESS + 0x2c0) + 32 | RW |  |  |  |
-| HDMI_TX_PHY_HDMI_TX_PHY_CTL_1 | (HDMI_BASE_ADDRESS + 0x2c0) + 8 | RW |  |  |  |
-| HDMI_TX_PHY_HDMI_TX_PHY_STATUS | (HDMI_BASE_ADDRESS + 0x2c0) + 24 | RW |  |  |  |
-| HDMI_ASYNC_RM_CONTROL | (HDMI_BASE_ADDRESS + 0x300) + 0 | RW |  |  |  |
 | HDMI_ASYNC_RM_OFFSET | (HDMI_BASE_ADDRESS + 0x300) + 20 | RW |  |  |  |
-| HDMI_ASYNC_RM_INTEGRATOR | (HDMI_BASE_ADDRESS + 0x300) + 16 | RW |  |  |  |
+| HDMI_PCI_SET | (HDMI_BASE_ADDRESS + 0x340) + 0x1c | RW |  |  |  |
+| HDMI_ASYNC_RM_FORMAT | (HDMI_BASE_ADDRESS + 0x300) + 24 | RW |  |  |  |
+| HDMI_PCI_STATUS | (HDMI_BASE_ADDRESS + 0x340) + 0x18 | RW |  |  |  |
 | HDMI_RAM_PACKET_RSVD_1 | (HDMI_BASE_ADDRESS + 0x400) + 508 | RW |  |  |  |
 | HDMI_TX_PHY_HDMI_TX_PHY_CTL_2 | (HDMI_BASE_ADDRESS + 0x2c0) + 12 | RW |  |  |  |
+| HDMI_ASYNC_RM_CONTROL | (HDMI_BASE_ADDRESS + 0x300) + 0 | RW |  |  |  |
+| HDMI_PERT_INSERT_ERR_SEPARATION | HDMI_BASE_ADDRESS + 132 | RW |  |  |  |
+| HDMI_TX_PHY_HDMI_TX_PHY_CTL_0 | (HDMI_BASE_ADDRESS + 0x2c0) + 4 | RW |  |  |  |
+| HDMI_TX_PHY_HDMI65_TX_PHY_TMDS_CFG | (HDMI_BASE_ADDRESS + 0x2c0) + 20 | RW |  |  |  |
+| HDMI_ASYNC_RM_RATE_RATIO | (HDMI_BASE_ADDRESS + 0x300) + 4 | RW |  |  |  |
+| HDMI_PCI_MASK_SET | (HDMI_BASE_ADDRESS + 0x340) + 0x28 | RW |  |  |  |
+| HDMI_TX_PHY_HDMI_TX_PHY_CTL_1 | (HDMI_BASE_ADDRESS + 0x2c0) + 8 | RW |  |  |  |
+| HDMI_HDMI_HBR_AUDIO_PACKET_HEADER | HDMI_BASE_ADDRESS + 344 | RW |  |  |  |
 | HDMI_PCI_CLEAR | (HDMI_BASE_ADDRESS + 0x340) + 0x20 | RW |  |  |  |
+| HDMI_PCI_MASK_CLEAR | (HDMI_BASE_ADDRESS + 0x340) + 0x2c | RW |  |  |  |
+| HDMI_HDMI_13_AUDIO_STATUS_1 | HDMI_BASE_ADDRESS + 340 | RW |  |  |  |
+| HDMI_PCI_MASK_STATUS | (HDMI_BASE_ADDRESS + 0x340) + 0x24 | RW |  |  |  |
+| HDMI_TX_PHY_HDMI_TX_PHY_SPARE | (HDMI_BASE_ADDRESS + 0x2c0) + 32 | RW |  |  |  |
+| HDMI_RAM_PACKET_RSVD_0 | (HDMI_BASE_ADDRESS + 0x400) + 504 | RW |  |  |  |
+| HDMI_ASYNC_RM_PHASE_INC | (HDMI_BASE_ADDRESS + 0x300) + 12 | RW |  |  |  |
+| HDMI_ASYNC_RM_INTEGRATOR | (HDMI_BASE_ADDRESS + 0x300) + 16 | RW |  |  |  |
 | HDMI_TX_PHY_HDMI_TX_PHY_RESET_CTL | (HDMI_BASE_ADDRESS + 0x2c0) + 0 | RW |  |  |  |
 | HDMI_ASYNC_RM_SAMPLE_INC | (HDMI_BASE_ADDRESS + 0x300) + 8 | RW |  |  |  |
-| HDMI_TX_PHY_HDMI_TX_PHY_CTL_0 | (HDMI_BASE_ADDRESS + 0x2c0) + 4 | RW |  |  |  |
+| HDMI_TX_PHY_HDMI_TX_PHY_PLL_CFG | (HDMI_BASE_ADDRESS + 0x2c0) + 16 | RW |  |  |  |
+| HDMI_HDMI_13_AUDIO_CFG_1 | HDMI_BASE_ADDRESS + 336 | RW |  |  |  |
+| HDMI_TX_PHY_HDMI_TX_PHY_STATUS | (HDMI_BASE_ADDRESS + 0x2c0) + 24 | RW |  |  |  |
 | HDMI_CORE_REV | 0x7e902000 | RW | 16 | 0x0000ffff | 0x00000600 |
 | HDMI_SW_RESET_CNTRL | 0x7e902004 | RW | 2 | 0x00000003 | 0000000000 |
 | HDMI_HOTPLUG_INT | 0x7e902008 | RW | 3 | 0x00000007 | 0x00000006 |
@@ -264,7 +264,7 @@
 | HDMI_RAM_PACKET_13_7 | 0x7e9025f0 | RW | 32 | 0xffffffff | 0000000000 |
 | HDMI_RAM_PACKET_13_8 | 0x7e9025f4 | RW | 32 | 0xffffffff | 0000000000 |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -275,10 +275,10 @@
 | HDMI_RBUS_REGS |  |
 | HDMI_TX_PHY_BASE | (HDMI_BASE_ADDRESS + 0x2c0) |
 
-##Register info
+## Register info
 
 
-###HDMI_FIFO_CTL
+### HDMI_FIFO_CTL
  Address: 0x7e90205c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -297,7 +297,7 @@
 | HDMI_FIFO_CTL_RECENTER_DONE | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | HDMI_FIFO_CTL_ON_VB_DONE | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 
-###HDMI_READ_POINTERS
+### HDMI_READ_POINTERS
  Address: 0x7e902060
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -317,7 +317,7 @@
 | HDMI_READ_POINTERS_DOMAIN_WR_ADDR | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 | HDMI_READ_POINTERS_DOMAIN_HALF_FULL | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 
-###HDMI_SCHEDULER_CONTROL
+### HDMI_SCHEDULER_CONTROL
  Address: 0x7e9020c0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -337,7 +337,7 @@
 | HDMI_SCHEDULER_CONTROL_VSYNC_PHYST_EN | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 | HDMI_SCHEDULER_CONTROL_VSYNC_RESET_VAL | 18 | 21 | 0x003c0000 | 0xffc3ffff | 0x3 |
 
-###HDMI_HORZA
+### HDMI_HORZA
  Address: 0x7e9020c4
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -346,7 +346,7 @@
 | HDMI_HORZA_MANUAL_HPOL | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | HDMI_HORZA_MANUAL_VPOL | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 
-###HDMI_HORZB
+### HDMI_HORZB
  Address: 0x7e9020c8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -356,7 +356,7 @@
 | HDMI_HORZB_MANUAL_HSP | 10 | 19 | 0x000ffc00 | 0xfff003ff | 0x60 |
 | HDMI_HORZB_MANUAL_HBP | 20 | 29 | 0x3ff00000 | 0xc00fffff | 0x30 |
 
-###HDMI_VERTA0
+### HDMI_VERTA0
  Address: 0x7e9020cc
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -365,7 +365,7 @@
 | HDMI_VERTA0_MANUAL_VFP0 | 13 | 19 | 0x000fe000 | 0xfff01fff | 0xa |
 | HDMI_VERTA0_MANUAL_VSP0 | 20 | 24 | 0x01f00000 | 0xfe0fffff | 0x2 |
 
-###HDMI_VERTB0
+### HDMI_VERTB0
  Address: 0x7e9020d0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -374,7 +374,7 @@
 | HDMI_VERTB0_MANUAL_VBP0 | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HDMI_VERTB0_MANUAL_VSPO0 | 9 | 21 | 0x003ffe00 | 0xffc001ff | 0x0 |
 
-###HDMI_VERTA1
+### HDMI_VERTA1
  Address: 0x7e9020d4
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -383,7 +383,7 @@
 | HDMI_VERTA1_MANUAL_VFP1 | 13 | 19 | 0x000fe000 | 0xfff01fff | 0xa |
 | HDMI_VERTA1_MANUAL_VSP1 | 20 | 24 | 0x01f00000 | 0xfe0fffff | 0x2 |
 
-###HDMI_VERTB1
+### HDMI_VERTB1
  Address: 0x7e9020d8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -392,7 +392,7 @@
 | HDMI_VERTB1_MANUAL_VBP1 | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HDMI_VERTB1_MANUAL_VSPO1 | 9 | 21 | 0x003ffe00 | 0xffc001ff | 0x0 |
 
-###HDMI_DETECTED_HORZA
+### HDMI_DETECTED_HORZA
  Address: 0x7e902138
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -401,7 +401,7 @@
 | HDMI_DETECTED_HORZA_MANUAL_HPOL | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 | HDMI_DETECTED_HORZA_MANUAL_VPOL | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 
-###HDMI_DETECTED_HORZB
+### HDMI_DETECTED_HORZB
  Address: 0x7e90213c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -411,7 +411,7 @@
 | HDMI_DETECTED_HORZB_MANUAL_HSP | 10 | 19 | 0x000ffc00 | 0xfff003ff | 0x60 |
 | HDMI_DETECTED_HORZB_MANUAL_HBP | 20 | 29 | 0x3ff00000 | 0xc00fffff | 0x30 |
 
-###HDMI_DETECTED_VERTA0
+### HDMI_DETECTED_VERTA0
  Address: 0x7e902140
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -420,7 +420,7 @@
 | HDMI_DETECTED_VERTA0_MANUAL_VFP0 | 13 | 19 | 0x000fe000 | 0xfff01fff | 0xa |
 | HDMI_DETECTED_VERTA0_MANUAL_VSP0 | 20 | 24 | 0x01f00000 | 0xfe0fffff | 0x2 |
 
-###HDMI_DETECTED_VERTB0
+### HDMI_DETECTED_VERTB0
  Address: 0x7e902144
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -429,7 +429,7 @@
 | HDMI_DETECTED_VERTB0_MANUAL_VBP0 | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HDMI_DETECTED_VERTB0_MANUAL_VSPO0 | 9 | 21 | 0x003ffe00 | 0xffc001ff | 0x0 |
 
-###HDMI_DETECTED_VERTA1
+### HDMI_DETECTED_VERTA1
  Address: 0x7e902148
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -438,7 +438,7 @@
 | HDMI_DETECTED_VERTA1_MANUAL_VFP1 | 13 | 19 | 0x000fe000 | 0xfff01fff | 0xa |
 | HDMI_DETECTED_VERTA1_MANUAL_VSP1 | 20 | 24 | 0x01f00000 | 0xfe0fffff | 0x2 |
 
-###HDMI_DETECTED_VERTB1
+### HDMI_DETECTED_VERTB1
  Address: 0x7e90214c
 
 | field_name | start_bit | end_bit | set | clear | reset |

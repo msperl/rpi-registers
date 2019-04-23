@@ -1,13 +1,13 @@
 # Register Region: I2C_SPI_SLV
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e214000 |
 | id | 0x73506783 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -28,10 +28,10 @@
 | [I2C_SPI_SLV_DEBUG1](#i2c_spi_slv_debug1) | 0x7e214038 | RW | 26 | 0x03ffffff | 0x0000000e |
 | [I2C_SPI_SLV_DEBUG2](#i2c_spi_slv_debug2) | 0x7e21403c | RW | 24 | 0x00ffffff | 0x00400000 |
 
-##Register info
+## Register info
 
 
-###I2C_SPI_SLV_DR
+### I2C_SPI_SLV_DR
  Address: 0x7e214000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -53,7 +53,7 @@
 | I2C_SPI_SLV_DR_TXFLEVEL | 22 | 26 | 0x07c00000 | 0xf83fffff | 0x0 |
 | I2C_SPI_SLV_DR_RXFLEVEL | 27 | 31 | 0xf8000000 | 0x07ffffff | 0x0 |
 
-###I2C_SPI_SLV_RSR
+### I2C_SPI_SLV_RSR
  Address: 0x7e214004
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -65,14 +65,14 @@
 | I2C_SPI_SLV_RSR_RXDMAPREQ | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | I2C_SPI_SLV_RSR_RXDMABREQ | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |
 
-###I2C_SPI_SLV_SLV
+### I2C_SPI_SLV_SLV
  Address: 0x7e214008
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | I2C_SPI_SLV_SLV_ADDR | 0 | 6 | 0x0000007f | 0xffffff80 | 0x0 |
 
-###I2C_SPI_SLV_CR
+### I2C_SPI_SLV_CR
  Address: 0x7e21400c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -92,7 +92,7 @@
 | I2C_SPI_SLV_CR_HOSTCTRLEN | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | I2C_SPI_SLV_CR_INV_TXF | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 
-###I2C_SPI_SLV_FR
+### I2C_SPI_SLV_FR
  Address: 0x7e214010
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -108,7 +108,7 @@
 | I2C_SPI_SLV_FR_TXFLEVEL | 10 | 6 | 0x00000000000 | 0xffffffff111 | 0x0 |
 | I2C_SPI_SLV_FR_RXFLEVEL | 11 | 15 | 0x0000f800 | 0xffff07ff | 0x0 |
 
-###I2C_SPI_SLV_IFLS
+### I2C_SPI_SLV_IFLS
  Address: 0x7e214014
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -118,7 +118,7 @@
 | I2C_SPI_SLV_IFLS_TXIFPSEL | 6 | 8 | 0x000001c0 | 0xfffffe3f | 0x2 |
 | I2C_SPI_SLV_IFLS_RXIFPSEL | 9 | 11 | 0x00000e00 | 0xfffff1ff | 0x2 |
 
-###I2C_SPI_SLV_IMSC
+### I2C_SPI_SLV_IMSC
  Address: 0x7e214018
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -128,7 +128,7 @@
 | I2C_SPI_SLV_IMSC_BEIM | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | I2C_SPI_SLV_IMSC_OEIM | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###I2C_SPI_SLV_RIS
+### I2C_SPI_SLV_RIS
  Address: 0x7e21401c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -138,7 +138,7 @@
 | I2C_SPI_SLV_RIS_BERIS | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | I2C_SPI_SLV_RIS_OERIS | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###I2C_SPI_SLV_MIS
+### I2C_SPI_SLV_MIS
  Address: 0x7e214020
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -148,7 +148,7 @@
 | I2C_SPI_SLV_MIS_BEMIS | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | I2C_SPI_SLV_MIS_OEMIS | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###I2C_SPI_SLV_ICR
+### I2C_SPI_SLV_ICR
  Address: 0x7e214024
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -158,7 +158,7 @@
 | I2C_SPI_SLV_ICR_BEIC | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | I2C_SPI_SLV_ICR_OEIC | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###I2C_SPI_SLV_DMACR
+### I2C_SPI_SLV_DMACR
  Address: 0x7e214028
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -167,35 +167,35 @@
 | I2C_SPI_SLV_DMACR_TXDMAE | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | I2C_SPI_SLV_DMACR_DMAONERR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 
-###I2C_SPI_SLV_TDR
+### I2C_SPI_SLV_TDR
  Address: 0x7e21402c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | I2C_SPI_SLV_TDR_DATA | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
 
-###I2C_SPI_SLV_VCSTAT
+### I2C_SPI_SLV_VCSTAT
  Address: 0x7e214030
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | I2C_SPI_SLV_VCSTAT_DATA | 0 | 3 | 0x0000000f | 0xfffffff0 | 0x0 |
 
-###I2C_SPI_SLV_HCTRL
+### I2C_SPI_SLV_HCTRL
  Address: 0x7e214034
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | I2C_SPI_SLV_HCTRL_DATA | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
 
-###I2C_SPI_SLV_DEBUG1
+### I2C_SPI_SLV_DEBUG1
  Address: 0x7e214038
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | I2C_SPI_SLV_DEBUG1_DATA | 0 | 25 | 0x03ffffff | 0xfc000000 | 0xe |
 
-###I2C_SPI_SLV_DEBUG2
+### I2C_SPI_SLV_DEBUG2
  Address: 0x7e21403c
 
 | field_name | start_bit | end_bit | set | clear | reset |

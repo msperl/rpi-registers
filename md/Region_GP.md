@@ -1,14 +1,14 @@
 # Register Region: GP
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | description | GPIO control |
 | base | 0x7e200000 |
 | id | 0x6770696f |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -61,10 +61,10 @@
 | GP_AJBTDI | 0x7e2000c8 | RW | 32 | 0xffffffff | 0000000000 |
 | GP_AJBTDO | 0x7e2000cc | RW | 32 | 0xffffffff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###GP_FSEL0
+### GP_FSEL0
  Address: 0x7e200000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -80,7 +80,7 @@
 | GP_FSEL0_FSEL08 | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
 | GP_FSEL0_FSEL09 | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 
-###GP_FSEL1
+### GP_FSEL1
  Address: 0x7e200004
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -96,7 +96,7 @@
 | GP_FSEL1_FSEL18 | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
 | GP_FSEL1_FSEL19 | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 
-###GP_FSEL2
+### GP_FSEL2
  Address: 0x7e200008
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -112,7 +112,7 @@
 | GP_FSEL2_FSEL28 | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
 | GP_FSEL2_FSEL29 | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 
-###GP_FSEL3
+### GP_FSEL3
  Address: 0x7e20000c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -128,7 +128,7 @@
 | GP_FSEL3_FSEL38 | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
 | GP_FSEL3_FSEL39 | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 
-###GP_FSEL4
+### GP_FSEL4
  Address: 0x7e200010
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -144,7 +144,7 @@
 | GP_FSEL4_FSEL48 | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
 | GP_FSEL4_FSEL49 | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 
-###GP_FSEL5
+### GP_FSEL5
  Address: 0x7e200014
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -160,7 +160,7 @@
 | GP_FSEL5_FSEL58 | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
 | GP_FSEL5_FSEL59 | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 
-###GP_FSEL6
+### GP_FSEL6
  Address: 0x7e200018
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -176,259 +176,259 @@
 | GP_FSEL6_FSEL68 | 24 | 26 | 0x07000000 | 0xf8ffffff | 0x0 |
 | GP_FSEL6_FSEL69 | 27 | 29 | 0x38000000 | 0xc7ffffff | 0x0 |
 
-###GP_SET0
+### GP_SET0
  Address: 0x7e20001c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_SET0_SETn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_SET1
+### GP_SET1
  Address: 0x7e200020
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_SET1_SETn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_SET2
+### GP_SET2
  Address: 0x7e200024
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_SET2_SETn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_CLR0
+### GP_CLR0
  Address: 0x7e200028
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_CLR0_CLRn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_CLR1
+### GP_CLR1
  Address: 0x7e20002c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_CLR1_CLRn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_CLR2
+### GP_CLR2
  Address: 0x7e200030
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_CLR2_CLRn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_LEV0
+### GP_LEV0
  Address: 0x7e200034
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_LEV0_LEVn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_LEV1
+### GP_LEV1
  Address: 0x7e200038
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_LEV1_LEVn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_LEV2
+### GP_LEV2
  Address: 0x7e20003c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_LEV2_LEVn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_EDS0
+### GP_EDS0
  Address: 0x7e200040
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_EDS0_EDSn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_EDS1
+### GP_EDS1
  Address: 0x7e200044
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_EDS1_EDSn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_EDS2
+### GP_EDS2
  Address: 0x7e200048
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_EDS2_EDSn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_REN0
+### GP_REN0
  Address: 0x7e20004c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_REN0_RENn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_REN1
+### GP_REN1
  Address: 0x7e200050
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_REN1_RENn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_REN2
+### GP_REN2
  Address: 0x7e200054
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_REN2_RENn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_FEN0
+### GP_FEN0
  Address: 0x7e200058
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_FEN0_FENn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_FEN1
+### GP_FEN1
  Address: 0x7e20005c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_FEN1_FENn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_FEN2
+### GP_FEN2
  Address: 0x7e200060
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_FEN2_FENn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_HEN0
+### GP_HEN0
  Address: 0x7e200064
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_HEN0_HENn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_HEN1
+### GP_HEN1
  Address: 0x7e200068
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_HEN1_HENn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_HEN2
+### GP_HEN2
  Address: 0x7e20006c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_HEN2_HENn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_LEN0
+### GP_LEN0
  Address: 0x7e200070
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_LEN0_LENn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_LEN1
+### GP_LEN1
  Address: 0x7e200074
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_LEN1_LENn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_LEN2
+### GP_LEN2
  Address: 0x7e200078
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_LEN2_LENn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_AREN0
+### GP_AREN0
  Address: 0x7e20007c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_AREN0_ARENn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_AREN1
+### GP_AREN1
  Address: 0x7e200080
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_AREN1_ARENn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_AREN2
+### GP_AREN2
  Address: 0x7e200084
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_AREN2_ARENn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_AFEN0
+### GP_AFEN0
  Address: 0x7e200088
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_AFEN0_AFENn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_AFEN1
+### GP_AFEN1
  Address: 0x7e20008c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_AFEN1_AFENn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_AFEN2
+### GP_AFEN2
  Address: 0x7e200090
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_AFEN2_AFENn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_PUD
+### GP_PUD
  Address: 0x7e200094
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_PUD_PUD | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
 
-###GP_PUDCLK0
+### GP_PUDCLK0
  Address: 0x7e200098
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_PUDCLK0_PUDCLKn0 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_PUDCLK1
+### GP_PUDCLK1
  Address: 0x7e20009c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_PUDCLK1_PUDCLKn32 | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###GP_PUDCLK2
+### GP_PUDCLK2
  Address: 0x7e2000a0
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_PUDCLK2_PUDCLKn64 | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###GP_SEN0
+### GP_SEN0
  Address: 0x7e2000a4
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_SEN0_SEN | 0 | 31 | 0xffffffff | 0x00000000 | 0xffffffff |
 
-###GP_SEN1
+### GP_SEN1
  Address: 0x7e2000a8
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | GP_SEN1_SEN | 0 | 21 | 0x003fffff | 0xffc00000 | 0x3fffff |
 
-###GP_GPTEST
+### GP_GPTEST
  Address: 0x7e2000b0
 
 | field_name | start_bit | end_bit | set | clear | reset |

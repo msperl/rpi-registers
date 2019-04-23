@@ -1,13 +1,13 @@
 # Register Region: PWM
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e20c000 |
 | id | 0x70776d30 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -24,17 +24,17 @@
 | PWM_RNG4 | 0x7e20c040 | RW | 0 | 0000000000 | 0x00000020 |
 | PWM_DAT4 | 0x7e20c044 | RW | 0 | 0000000000 | 0000000000 |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
 | PWM_BASE_ADDRESS | 0x7e20c000 |
 | PWM_DMA | 0x50000 |
 
-##Register info
+## Register info
 
 
-###PWM_CTL
+### PWM_CTL
  Address: 0x7e20c000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -72,7 +72,7 @@
 | missing definiton | 30 | 30 | NA | NA | NA |
 | PWM_CTL_MSEN4 | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###PWM_STA
+### PWM_STA
  Address: 0x7e20c004
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -91,7 +91,7 @@
 | PWM_STA_STA3 | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | PWM_STA_STA4 | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
-###PWM_DMAC
+### PWM_DMAC
  Address: 0x7e20c008
 
 | field_name | start_bit | end_bit | set | clear | reset |

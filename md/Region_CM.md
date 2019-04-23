@@ -1,7 +1,7 @@
 # Register Region: CM
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | description | Clock manager |
@@ -9,7 +9,7 @@
 | id | 0x0000636d |
 | password | 0x5a000000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -113,10 +113,10 @@
 | [CM_EMMCCTL](#cm_emmcctl) | 0x7e1011c0 | RW | 10 | 0x000003bf | 0000000000 |
 | [CM_EMMCDIV](#cm_emmcdiv) | 0x7e1011c4 | RW | 16 | 0x0000fff0 | 0000000000 |
 
-##Register info
+## Register info
 
 
-###CM_GNRICCTL
+### CM_GNRICCTL
  Address: 0x7e101000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -130,14 +130,14 @@
 | CM_GNRICCTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x0 |
 | CM_GNRICCTL_FLIP | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 
-###CM_GNRICDIV
+### CM_GNRICDIV
  Address: 0x7e101004
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_GNRICDIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_VPUCTL
+### CM_VPUCTL
  Address: 0x7e101008
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -149,7 +149,7 @@
 | CM_VPUCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_VPUCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_VPUDIV
+### CM_VPUDIV
  Address: 0x7e10100c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -157,7 +157,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_VPUDIV_DIV | 4 | 23 | 0x00fffff0 | 0xff00000f | 0x100 |
 
-###CM_SYSCTL
+### CM_SYSCTL
  Address: 0x7e101010
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -165,7 +165,7 @@
 | missing definiton | 0 | 5 | NA | NA | NA |
 | CM_SYSCTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x1 |
 
-###CM_SYSDIV
+### CM_SYSDIV
  Address: 0x7e101014
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -173,7 +173,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_SYSDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
-###CM_PERIACTL
+### CM_PERIACTL
  Address: 0x7e101018
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -181,7 +181,7 @@
 | missing definiton | 0 | 5 | NA | NA | NA |
 | CM_PERIACTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x1 |
 
-###CM_PERIADIV
+### CM_PERIADIV
  Address: 0x7e10101c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -189,7 +189,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_PERIADIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
-###CM_PERIICTL
+### CM_PERIICTL
  Address: 0x7e101020
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -197,7 +197,7 @@
 | missing definiton | 0 | 5 | NA | NA | NA |
 | CM_PERIICTL_GATE | 6 | 6 | 0x00000040 | 0xffffffbf | 0x0 |
 
-###CM_PERIIDIV
+### CM_PERIIDIV
  Address: 0x7e101024
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -205,7 +205,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_PERIIDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
-###CM_H264CTL
+### CM_H264CTL
  Address: 0x7e101028
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -218,7 +218,7 @@
 | CM_H264CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_H264CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_H264DIV
+### CM_H264DIV
  Address: 0x7e10102c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -226,7 +226,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_H264DIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_ISPCTL
+### CM_ISPCTL
  Address: 0x7e101030
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -239,7 +239,7 @@
 | CM_ISPCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_ISPCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_ISPDIV
+### CM_ISPDIV
  Address: 0x7e101034
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -247,7 +247,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_ISPDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_V3DCTL
+### CM_V3DCTL
  Address: 0x7e101038
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -260,7 +260,7 @@
 | CM_V3DCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_V3DCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_V3DDIV
+### CM_V3DDIV
  Address: 0x7e10103c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -268,7 +268,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_V3DDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_CAM0CTL
+### CM_CAM0CTL
  Address: 0x7e101040
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -281,7 +281,7 @@
 | CM_CAM0CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_CAM0CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_CAM0DIV
+### CM_CAM0DIV
  Address: 0x7e101044
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -289,7 +289,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_CAM0DIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_CAM1CTL
+### CM_CAM1CTL
  Address: 0x7e101048
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -302,7 +302,7 @@
 | CM_CAM1CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_CAM1CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_CAM1DIV
+### CM_CAM1DIV
  Address: 0x7e10104c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -310,7 +310,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_CAM1DIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_CCP2CTL
+### CM_CCP2CTL
  Address: 0x7e101050
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -323,7 +323,7 @@
 | CM_CCP2CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_CCP2CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_CCP2DIV
+### CM_CCP2DIV
  Address: 0x7e101054
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -331,7 +331,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_CCP2DIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
-###CM_DSI0ECTL
+### CM_DSI0ECTL
  Address: 0x7e101058
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -344,7 +344,7 @@
 | CM_DSI0ECTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI0ECTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_DSI0EDIV
+### CM_DSI0EDIV
  Address: 0x7e10105c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -352,7 +352,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_DSI0EDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_DSI0PCTL
+### CM_DSI0PCTL
  Address: 0x7e101060
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -364,7 +364,7 @@
 | CM_DSI0PCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI0PCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_DSI0PDIV
+### CM_DSI0PDIV
  Address: 0x7e101064
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -372,7 +372,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_DSI0PDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
-###CM_DPICTL
+### CM_DPICTL
  Address: 0x7e101068
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -385,7 +385,7 @@
 | CM_DPICTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DPICTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_DPIDIV
+### CM_DPIDIV
  Address: 0x7e10106c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -393,7 +393,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_DPIDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_GP0CTL
+### CM_GP0CTL
  Address: 0x7e101070
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -406,14 +406,14 @@
 | CM_GP0CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_GP0CTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
 
-###CM_GP0DIV
+### CM_GP0DIV
  Address: 0x7e101074
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_GP0DIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_GP1CTL
+### CM_GP1CTL
  Address: 0x7e101078
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -426,14 +426,14 @@
 | CM_GP1CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_GP1CTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
 
-###CM_GP1DIV
+### CM_GP1DIV
  Address: 0x7e10107c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_GP1DIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_GP2CTL
+### CM_GP2CTL
  Address: 0x7e101080
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -446,14 +446,14 @@
 | CM_GP2CTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_GP2CTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_GP2DIV
+### CM_GP2DIV
  Address: 0x7e101084
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_GP2DIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_HSMCTL
+### CM_HSMCTL
  Address: 0x7e101088
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -466,7 +466,7 @@
 | CM_HSMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_HSMCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_HSMDIV
+### CM_HSMDIV
  Address: 0x7e10108c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -474,7 +474,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_HSMDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_OTPCTL
+### CM_OTPCTL
  Address: 0x7e101090
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -488,7 +488,7 @@
 | CM_OTPCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_OTPCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_OTPDIV
+### CM_OTPDIV
  Address: 0x7e101094
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -496,7 +496,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_OTPDIV_DIV | 12 | 16 | 0x0001f000 | 0xfffe0fff | 0x4 |
 
-###CM_PCMCTL
+### CM_PCMCTL
  Address: 0x7e101098
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -509,14 +509,14 @@
 | CM_PCMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_PCMCTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
 
-###CM_PCMDIV
+### CM_PCMDIV
  Address: 0x7e10109c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PCMDIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_PWMCTL
+### CM_PWMCTL
  Address: 0x7e1010a0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -529,14 +529,14 @@
 | CM_PWMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_PWMCTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
 
-###CM_PWMDIV
+### CM_PWMDIV
  Address: 0x7e1010a4
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PWMDIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_SLIMCTL
+### CM_SLIMCTL
  Address: 0x7e1010a8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -549,14 +549,14 @@
 | CM_SLIMCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_SLIMCTL_MASH | 9 | 10 | 0x00000600 | 0xfffff9ff | 0x1 |
 
-###CM_SLIMDIV
+### CM_SLIMDIV
  Address: 0x7e1010ac
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_SLIMDIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_SMICTL
+### CM_SMICTL
  Address: 0x7e1010b0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -569,7 +569,7 @@
 | CM_SMICTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_SMICTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_SMIDIV
+### CM_SMIDIV
  Address: 0x7e1010b4
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -577,7 +577,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_SMIDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_TCNTCTL
+### CM_TCNTCTL
  Address: 0x7e1010c0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -589,14 +589,14 @@
 | missing definiton | 8 | 11 | NA | NA | NA |
 | CM_TCNTCTL_SRC1 | 12 | 13 | 0x00003000 | 0xffffcfff | 0x0 |
 
-###CM_TCNTCNT
+### CM_TCNTCNT
  Address: 0x7e1010c4
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TCNTCNT_CNT | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_TECCTL
+### CM_TECCTL
  Address: 0x7e1010c8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -610,7 +610,7 @@
 | CM_TECCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TECCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_TECDIV
+### CM_TECDIV
  Address: 0x7e1010cc
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -618,7 +618,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_TECDIV_DIV | 12 | 17 | 0x0003f000 | 0xfffc0fff | 0x0 |
 
-###CM_TD0CTL
+### CM_TD0CTL
  Address: 0x7e1010d0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -634,14 +634,14 @@
 | CM_TD0CTL_FLIP | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | CM_TD0CTL_STEP | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
-###CM_TD0DIV
+### CM_TD0DIV
  Address: 0x7e1010d4
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TD0DIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_TD1CTL
+### CM_TD1CTL
  Address: 0x7e1010d8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -657,14 +657,14 @@
 | CM_TD1CTL_FLIP | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | CM_TD1CTL_STEP | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
-###CM_TD1DIV
+### CM_TD1DIV
  Address: 0x7e1010dc
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TD1DIV_DIV | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_TSENSCTL
+### CM_TSENSCTL
  Address: 0x7e1010e0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -678,7 +678,7 @@
 | CM_TSENSCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TSENSCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_TSENSDIV
+### CM_TSENSDIV
  Address: 0x7e1010e4
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -686,7 +686,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_TSENSDIV_DIV | 12 | 16 | 0x0001f000 | 0xfffe0fff | 0x0 |
 
-###CM_TIMERCTL
+### CM_TIMERCTL
  Address: 0x7e1010e8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -700,14 +700,14 @@
 | CM_TIMERCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_TIMERCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_TIMERDIV
+### CM_TIMERDIV
  Address: 0x7e1010ec
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_TIMERDIV_DIV | 0 | 17 | 0x0003ffff | 0xfffc0000 | 0x0 |
 
-###CM_UARTCTL
+### CM_UARTCTL
  Address: 0x7e1010f0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -720,14 +720,14 @@
 | CM_UARTCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_UARTCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_UARTDIV
+### CM_UARTDIV
  Address: 0x7e1010f4
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_UARTDIV_DIV | 0 | 21 | 0x003fffff | 0xffc00000 | 0x0 |
 
-###CM_VECCTL
+### CM_VECCTL
  Address: 0x7e1010f8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -740,7 +740,7 @@
 | CM_VECCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_VECCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_VECDIV
+### CM_VECDIV
  Address: 0x7e1010fc
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -748,14 +748,14 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_VECDIV_DIV | 12 | 15 | 0x0000f000 | 0xffff0fff | 0x0 |
 
-###CM_OSCCOUNT
+### CM_OSCCOUNT
  Address: 0x7e101100
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_OSCCOUNT_NUM | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_PLLA
+### CM_PLLA
  Address: 0x7e101104
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -771,7 +771,7 @@
 | CM_PLLA_ANARST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
 | CM_PLLA_DIGRST | 9 | 9 | 0x00000200 | 0xfffffdff | 0x1 |
 
-###CM_PLLC
+### CM_PLLC
  Address: 0x7e101108
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -787,7 +787,7 @@
 | CM_PLLC_ANARST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
 | CM_PLLC_DIGRST | 9 | 9 | 0x00000200 | 0xfffffdff | 0x1 |
 
-###CM_PLLD
+### CM_PLLD
  Address: 0x7e10110c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -803,7 +803,7 @@
 | CM_PLLD_ANARST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
 | CM_PLLD_DIGRST | 9 | 9 | 0x00000200 | 0xfffffdff | 0x1 |
 
-###CM_PLLH
+### CM_PLLH
  Address: 0x7e101110
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -815,7 +815,7 @@
 | CM_PLLH_ANARST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
 | CM_PLLH_DIGRST | 9 | 9 | 0x00000200 | 0xfffffdff | 0x1 |
 
-###CM_LOCK
+### CM_LOCK
  Address: 0x7e101114
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -832,7 +832,7 @@
 | CM_LOCK_FLOCKD | 11 | 11 | 0x00000800 | 0xfffff7ff | 0x0 |
 | CM_LOCK_FLOCKH | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
-###CM_EVENT
+### CM_EVENT
  Address: 0x7e101118
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -862,7 +862,7 @@
 | CM_EVENT_RESUS | 22 | 22 | 0x00400000 | 0xffbfffff | 0x0 |
 | CM_EVENT_BURSTDONE | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
 
-###CM_INTEN
+### CM_INTEN
  Address: 0x7e10111c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -892,14 +892,14 @@
 | CM_INTEN_RESUS | 22 | 22 | 0x00400000 | 0xffbfffff | 0x0 |
 | CM_INTEN_BURSTDONE | 23 | 23 | 0x00800000 | 0xff7fffff | 0x0 |
 
-###CM_DSI0HSCK
+### CM_DSI0HSCK
  Address: 0x7e101120
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_DSI0HSCK_SELPLLD | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 
-###CM_CKSM
+### CM_CKSM
  Address: 0x7e101124
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -911,21 +911,21 @@
 | CM_CKSM_AUTO | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 | CM_CKSM_STEP | 21 | 21 | 0x00200000 | 0xffdfffff | 0x0 |
 
-###CM_OSCFREQI
+### CM_OSCFREQI
  Address: 0x7e101128
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_OSCFREQI_INT | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
 
-###CM_OSCFREQF
+### CM_OSCFREQF
  Address: 0x7e10112c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_OSCFREQF_FRAC | 0 | 19 | 0x000fffff | 0xfff00000 | 0x0 |
 
-###CM_PLLTCTL
+### CM_PLLTCTL
  Address: 0x7e101130
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -936,35 +936,35 @@
 | missing definiton | 6 | 6 | NA | NA | NA |
 | CM_PLLTCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 
-###CM_PLLTCNT0
+### CM_PLLTCNT0
  Address: 0x7e101134
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PLLTCNT0_CNT | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_PLLTCNT1
+### CM_PLLTCNT1
  Address: 0x7e101138
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PLLTCNT1_CNT | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_PLLTCNT2
+### CM_PLLTCNT2
  Address: 0x7e10113c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PLLTCNT2_CNT | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_PLLTCNT3
+### CM_PLLTCNT3
  Address: 0x7e101140
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_PLLTCNT3_CNT | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_TDCLKEN
+### CM_TDCLKEN
  Address: 0x7e101144
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -984,7 +984,7 @@
 | CM_TDCLKEN_SLIMDFT | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 | CM_TDCLKEN_IMAGETD | 13 | 13 | 0x00002000 | 0xffffdfff | 0x0 |
 
-###CM_BURSTCTL
+### CM_BURSTCTL
  Address: 0x7e101148
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -995,14 +995,14 @@
 | missing definiton | 6 | 6 | NA | NA | NA |
 | CM_BURSTCTL_BUSY | 7 | 7 | 0x00000080 | 0xffffff7f | 0x0 |
 
-###CM_BURSTCNT
+### CM_BURSTCNT
  Address: 0x7e10114c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | CM_BURSTCNT_CNT | 0 | 23 | 0x00ffffff | 0xff000000 | 0x0 |
 
-###CM_DSI1ECTL
+### CM_DSI1ECTL
  Address: 0x7e101158
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1015,7 +1015,7 @@
 | CM_DSI1ECTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI1ECTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_DSI1EDIV
+### CM_DSI1EDIV
  Address: 0x7e10115c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1023,7 +1023,7 @@
 | missing definiton | 0 | 3 | NA | NA | NA |
 | CM_DSI1EDIV_DIV | 4 | 15 | 0x0000fff0 | 0xffff000f | 0x0 |
 
-###CM_DSI1PCTL
+### CM_DSI1PCTL
  Address: 0x7e101160
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1035,7 +1035,7 @@
 | CM_DSI1PCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DSI1PCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_DSI1PDIV
+### CM_DSI1PDIV
  Address: 0x7e101164
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1043,7 +1043,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_DSI1PDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
-###CM_DFTCTL
+### CM_DFTCTL
  Address: 0x7e101168
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1056,7 +1056,7 @@
 | CM_DFTCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_DFTCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_DFTDIV
+### CM_DFTDIV
  Address: 0x7e10116c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1064,7 +1064,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_DFTDIV_DIV | 12 | 16 | 0x0001f000 | 0xfffe0fff | 0x0 |
 
-###CM_PLLB
+### CM_PLLB
  Address: 0x7e101170
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1075,7 +1075,7 @@
 | CM_PLLB_ANARST | 8 | 8 | 0x00000100 | 0xfffffeff | 0x1 |
 | CM_PLLB_DIGRST | 9 | 9 | 0x00000200 | 0xfffffdff | 0x1 |
 
-###CM_PULSECTL
+### CM_PULSECTL
  Address: 0x7e101190
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1089,7 +1089,7 @@
 | CM_PULSECTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_PULSECTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_PULSEDIV
+### CM_PULSEDIV
  Address: 0x7e101194
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1097,7 +1097,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_PULSEDIV_DIV | 12 | 23 | 0x00fff000 | 0xff000fff | 0x1b |
 
-###CM_SDCCTL
+### CM_SDCCTL
  Address: 0x7e1011a8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1114,7 +1114,7 @@
 | CM_SDCCTL_ACCPT | 16 | 16 | 0x00010000 | 0xfffeffff | 0x0 |
 | CM_SDCCTL_UPDATE | 17 | 17 | 0x00020000 | 0xfffdffff | 0x0 |
 
-###CM_SDCDIV
+### CM_SDCDIV
  Address: 0x7e1011ac
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1122,7 +1122,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_SDCDIV_DIV | 12 | 17 | 0x0003f000 | 0xfffc0fff | 0x0 |
 
-###CM_ARMCTL
+### CM_ARMCTL
  Address: 0x7e1011b0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1137,7 +1137,7 @@
 | missing definiton | 10 | 11 | NA | NA | NA |
 | CM_ARMCTL_AXIHALF | 12 | 12 | 0x00001000 | 0xffffefff | 0x0 |
 
-###CM_ARMDIV
+### CM_ARMDIV
  Address: 0x7e1011b4
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1145,7 +1145,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_ARMDIV_DIV | 12 | 12 | 0x00001000 | 0xffffefff | 0x1 |
 
-###CM_AVEOCTL
+### CM_AVEOCTL
  Address: 0x7e1011b8
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1158,7 +1158,7 @@
 | CM_AVEOCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_AVEOCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_AVEODIV
+### CM_AVEODIV
  Address: 0x7e1011bc
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1166,7 +1166,7 @@
 | missing definiton | 0 | 11 | NA | NA | NA |
 | CM_AVEODIV_DIV | 12 | 15 | 0x0000f000 | 0xffff0fff | 0x0 |
 
-###CM_EMMCCTL
+### CM_EMMCCTL
  Address: 0x7e1011c0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -1179,7 +1179,7 @@
 | CM_EMMCCTL_BUSYD | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | CM_EMMCCTL_FRAC | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###CM_EMMCDIV
+### CM_EMMCDIV
  Address: 0x7e1011c4
 
 | field_name | start_bit | end_bit | set | clear | reset |

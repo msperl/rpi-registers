@@ -1,19 +1,19 @@
 # Register Region: DMA
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e007fe0 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
 | [DMA_INT_STATUS](#dma_int_status) | 0x7e007fe0 | RO | 16 | 0x0000ffff | 0000000000 |
 | [DMA_ENABLE](#dma_enable) | 0x7e007ff0 | RW | 15 | 0x00007fff | 0x00007fff |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -71,10 +71,10 @@
 | DMA_TI_WAITS(n) | MACRO |
 | DMA_TI_WAIT_RESP | 8 |
 
-##Register info
+## Register info
 
 
-###DMA_INT_STATUS
+### DMA_INT_STATUS
  Address: 0x7e007fe0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -96,7 +96,7 @@
 | DMA_INT_STATUS_INT14 | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | DMA_INT_STATUS_INT15 | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 
-###DMA_ENABLE
+### DMA_ENABLE
  Address: 0x7e007ff0
 
 | field_name | start_bit | end_bit | set | clear | reset |

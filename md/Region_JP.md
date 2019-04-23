@@ -1,13 +1,13 @@
 # Register Region: JP
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e005000 |
 | id | 0x4a504547 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -40,5 +40,5 @@
 | JP_C1W | 0x7e005068 | RW |  |  |  |
 | JP_C2W | 0x7e00506c | RW |  |  |  |
 
-##Register info
+## Register info
 

@@ -1,12 +1,12 @@
 # Register Region: EMMC
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e300000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -42,10 +42,10 @@
 | [EMMC_SPI_INT_SPT](#emmc_spi_int_spt) | 0x7e3000f0 | RW | 8 | 0x000000ff | 0000000000 |
 | [EMMC_SLOTISR_VER](#emmc_slotisr_ver) | 0x7e3000fc | RW | 32 | 0xffff00ff | 0x99020000 |
 
-##Register info
+## Register info
 
 
-###EMMC_BLKSIZECNT
+### EMMC_BLKSIZECNT
  Address: 0x7e300004
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -55,7 +55,7 @@
 | EMMC_BLKSIZECNT_BLKSIZE_MS1 | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 | EMMC_BLKSIZECNT_BLKCNT | 16 | 31 | 0xffff0000 | 0x0000ffff | 0x0 |
 
-###EMMC_CMDTM
+### EMMC_CMDTM
  Address: 0x7e30000c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -74,7 +74,7 @@
 | EMMC_CMDTM_CMD_TYPE | 22 | 23 | 0x00c00000 | 0xff3fffff | 0x0 |
 | EMMC_CMDTM_CMD_INDEX | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x0 |
 
-###EMMC_STATUS
+### EMMC_STATUS
  Address: 0x7e300024
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -97,7 +97,7 @@
 | EMMC_STATUS_CMD_LEVEL | 24 | 24 | 0x01000000 | 0xfeffffff | 0x1 |
 | EMMC_STATUS_DAT_LEVEL1 | 25 | 28 | 0x1e000000 | 0xe1ffffff | 0xf |
 
-###EMMC_CONTROL0
+### EMMC_CONTROL0
  Address: 0x7e300028
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -125,7 +125,7 @@
 | EMMC_CONTROL0_WAKE_ONINS_EN | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_CONTROL0_WAKE_ONREM_EN | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
 
-###EMMC_CONTROL1
+### EMMC_CONTROL1
  Address: 0x7e30002c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -143,7 +143,7 @@
 | EMMC_CONTROL1_SRST_CMD | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 | EMMC_CONTROL1_SRST_DATA | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
 
-###EMMC_INTERRUPT
+### EMMC_INTERRUPT
  Address: 0x7e300030
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -180,7 +180,7 @@
 | EMMC_INTERRUPT_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_INTERRUPT_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###EMMC_IRPT_MASK
+### EMMC_IRPT_MASK
  Address: 0x7e300034
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -216,7 +216,7 @@
 | EMMC_IRPT_MASK_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_IRPT_MASK_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###EMMC_IRPT_EN
+### EMMC_IRPT_EN
  Address: 0x7e300038
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -253,7 +253,7 @@
 | EMMC_IRPT_EN_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_IRPT_EN_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###EMMC_CONTROL2
+### EMMC_CONTROL2
  Address: 0x7e30003c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -275,7 +275,7 @@
 | EMMC_CONTROL2_EN_AINT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | EMMC_CONTROL2_EN_PSV | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###EMMC_HWCAP0
+### EMMC_HWCAP0
  Address: 0x7e300040
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -299,7 +299,7 @@
 | EMMC_HWCAP0_AINT | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_HWCAP0_SLOT_TYPE | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###EMMC_HWCAP1
+### EMMC_HWCAP1
  Address: 0x7e300044
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -320,7 +320,7 @@
 | EMMC_HWCAP1_SPI_MODE | 24 | 24 | 0x01000000 | 0xfeffffff | 0x1 |
 | EMMC_HWCAP1_SPI_BLOCKMODE | 25 | 25 | 0x02000000 | 0xfdffffff | 0x1 |
 
-###EMMC_HWMAXAMP0
+### EMMC_HWMAXAMP0
  Address: 0x7e300048
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -329,7 +329,7 @@
 | EMMC_HWMAXAMP0_AMP_30V | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 | EMMC_HWMAXAMP0_AMP_18V | 16 | 23 | 0x00ff0000 | 0xff00ffff | 0x0 |
 
-###EMMC_FORCE_IRPT
+### EMMC_FORCE_IRPT
  Address: 0x7e300050
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -359,7 +359,7 @@
 | EMMC_FORCE_IRPT_ATA_ERR | 29 | 29 | 0x20000000 | 0xdfffffff | 0x0 |
 | EMMC_FORCE_IRPT_OEM_ERR | 30 | 31 | 0xc0000000 | 0x3fffffff | 0x0 |
 
-###EMMC_DMA_STATUS
+### EMMC_DMA_STATUS
  Address: 0x7e300054
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -367,56 +367,56 @@
 | EMMC_DMA_STATUS_ERR_AT | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
 | EMMC_DMA_STATUS_LEN_NOMATCH | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 
-###EMMC_BOOT_TIMEOUT
+### EMMC_BOOT_TIMEOUT
  Address: 0x7e300070
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_BOOT_TIMEOUT_TIMEOUT | 0 | 31 | 0xffffffff | 0x00000000 | 0x0 |
 
-###EMMC_DBG_SEL
+### EMMC_DBG_SEL
  Address: 0x7e300074
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_DBG_SEL_SELECT | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 
-###EMMC_EXRDFIFO_CFG
+### EMMC_EXRDFIFO_CFG
  Address: 0x7e300080
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_EXRDFIFO_CFG_RD_THRSH | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
 
-###EMMC_EXRDFIFO_EN
+### EMMC_EXRDFIFO_EN
  Address: 0x7e300084
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_EXRDFIFO_EN_ENABLE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 
-###EMMC_TUNE_STEP
+### EMMC_TUNE_STEP
  Address: 0x7e300088
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_TUNE_STEP_DELAY | 0 | 2 | 0x00000007 | 0xfffffff8 | 0x0 |
 
-###EMMC_TUNE_STEPS_STD
+### EMMC_TUNE_STEPS_STD
  Address: 0x7e30008c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_TUNE_STEPS_STD_STEPS | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###EMMC_TUNE_STEPS_DDR
+### EMMC_TUNE_STEPS_DDR
  Address: 0x7e300090
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_TUNE_STEPS_DDR_STEPS | 0 | 5 | 0x0000003f | 0xffffffc0 | 0x0 |
 
-###EMMC_BUS_CTRL
+### EMMC_BUS_CTRL
  Address: 0x7e3000e0
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -430,14 +430,14 @@
 | missing definiton | 23 | 23 | NA | NA | NA |
 | EMMC_BUS_CTRL_BE_PWR | 24 | 30 | 0x7f000000 | 0x80ffffff | 0x0 |
 
-###EMMC_SPI_INT_SPT
+### EMMC_SPI_INT_SPT
  Address: 0x7e3000f0
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | EMMC_SPI_INT_SPT_SELECT | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
 
-###EMMC_SLOTISR_VER
+### EMMC_SLOTISR_VER
  Address: 0x7e3000fc
 
 | field_name | start_bit | end_bit | set | clear | reset |

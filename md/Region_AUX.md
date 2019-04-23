@@ -1,12 +1,12 @@
 # Register Region: AUX
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7E215000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -36,7 +36,7 @@
 | AUX_SPI1_IO | 0x7e2150e0 | SPI1_IO |  |  |  |
 | AUX_SPI1_TXHOLD | 0x7e2150f0 | SPI1_TXHOLD |  |  |  |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -128,5 +128,5 @@
 | AUX_SPI_STAT_TXFILL | 0x0F000000 |
 | AUX_SPI_STAT_TXFULL | 0x00000400 |
 
-##Register info
+## Register info
 

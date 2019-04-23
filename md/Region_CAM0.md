@@ -1,13 +1,13 @@
 # Register Region: CAM0
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e800000 |
 | id | 0x7563616d |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -61,5 +61,5 @@
 | CAM0_CAMDBEA1 | 0x7e800314 | RW | 32 | 0xffffffff | 0000000000 |
 | CAM0_CAMMISC | 0x7e800400 | RW | 32 | 0xffffffff | 0000000000 |
 
-##Register info
+## Register info
 

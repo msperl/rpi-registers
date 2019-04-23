@@ -1,12 +1,12 @@
 # Register Region: DSI
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e209000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -40,11 +40,11 @@
 | DSI_TST_SEL | 0x7e20906c | RW |  |  |  |
 | DSI_TST_MON | 0x7e209070 | RW |  |  |  |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
 | DSI_DMA | 0x10000 |
 
-##Register info
+## Register info
 

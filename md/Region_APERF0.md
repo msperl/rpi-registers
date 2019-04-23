@@ -1,13 +1,13 @@
 # Register Region: APERF0
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e009800 |
 | id | 0x41584950 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -22,8 +22,8 @@
 | APERF0_BW0_RTRANS | 0x7e00985c | RO | 32 | 0xffffffff | 0000000000 |
 | APERF0_BW0_RTWAIT | 0x7e009860 | RO | 32 | 0xffffffff | 0000000000 |
 | APERF0_BW0_RMAX | 0x7e009864 | RO | 24 | 0x00ffffff | 0000000000 |
-| APERF0_BW2_RPEND | 0x7e009868 | RO | 8 | 0x000000ff | 0000000000 |
 | APERF0_BW0_RPEND | 0x7e009868 | RO | 8 | 0x000000ff | 0000000000 |
+| APERF0_BW2_RPEND | 0x7e009868 | RO | 8 | 0x000000ff | 0000000000 |
 | APERF0_BW1_RPEND | 0x7e009868 | RO | 8 | 0x000000ff | 0000000000 |
 | [APERF0_BW1_CTRL](#aperf0_bw1_ctrl) | 0x7e009880 | RW | 32 | 0xf0001f1f | 0000000000 |
 | APERF0_BW1_ATRANS | 0x7e009884 | RO | 32 | 0xffffffff | 0000000000 |
@@ -46,10 +46,10 @@
 | APERF0_BW2_RTWAIT | 0x7e0098e0 | RO | 32 | 0xffffffff | 0000000000 |
 | APERF0_BW2_RMAX | 0x7e0098e4 | RO | 24 | 0x00ffffff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###APERF0_GEN_CTRL
+### APERF0_GEN_CTRL
  Address: 0x7e009800
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -57,7 +57,7 @@
 | APERF0_GEN_CTRL_ENABLE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | APERF0_GEN_CTRL_RESET | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 
-###APERF0_BW0_CTRL
+### APERF0_BW0_CTRL
  Address: 0x7e009840
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -71,7 +71,7 @@
 | APERF0_BW0_CTRL_EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | APERF0_BW0_CTRL_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###APERF0_BW1_CTRL
+### APERF0_BW1_CTRL
  Address: 0x7e009880
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -85,7 +85,7 @@
 | APERF0_BW1_CTRL_EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | APERF0_BW1_CTRL_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###APERF0_BW2_CTRL
+### APERF0_BW2_CTRL
  Address: 0x7e0098c0
 
 | field_name | start_bit | end_bit | set | clear | reset |

@@ -1,13 +1,13 @@
 # Register Region: APHY_CSR
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | description | SDRAM Adress (pin) control |
 | base | 0x7ee06000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -49,5 +49,5 @@
 | APHY_CSR_ADDR_SPR1_RO | 0x7ee0608c | RW |  |  |  |
 | APHY_CSR_ADDR_SPR_RO | 0x7ee06090 | RW |  |  |  |
 
-##Register info
+## Register info
 

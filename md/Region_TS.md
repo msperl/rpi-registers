@@ -1,23 +1,23 @@
 # Register Region: TS
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e212000 |
 | id | 0x7473656e |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
 | [TS_TSENSCTL](#ts_tsensctl) | 0x7e212000 | RW | 27 | 0x07ffffff | 0000000000 |
 | [TS_TSENSSTAT](#ts_tsensstat) | 0x7e212004 | RW | 12 | 0x00000fff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###TS_TSENSCTL
+### TS_TSENSCTL
  Address: 0x7e212000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -32,7 +32,7 @@
 | TS_TSENSCTL_RSTDELAY | 18 | 25 | 0x03fc0000 | 0xfc03ffff | 0x0 |
 | TS_TSENSCTL_REGULEN | 26 | 26 | 0x04000000 | 0xfbffffff | 0x0 |
 
-###TS_TSENSSTAT
+### TS_TSENSSTAT
  Address: 0x7e212004
 
 | field_name | start_bit | end_bit | set | clear | reset |

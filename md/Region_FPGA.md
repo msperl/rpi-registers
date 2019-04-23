@@ -1,13 +1,13 @@
 # Register Region: FPGA
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e20b600 |
 | id | 0x66706761 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -33,7 +33,7 @@
 | FPGA_MB_SDC_V3D_FREQ | 0x7e20b730 | RO | 32 | 0xffffffff |  |
 | FPGA_MB_SDC_ISP_FREQ | 0x7e20b734 | RO | 32 | 0xffffffff |  |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -43,22 +43,22 @@
 | FPGA_MB_BASE | 0x7e20b700 |
 | FPGA_STATUS0_OFFSET | 0x0C |
 
-##Register info
+## Register info
 
 
-###FPGA_CTRL0
+### FPGA_CTRL0
  Address: 0x7e20b608
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
-| FPGA_CTRL0_DIS_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
 | FPGA_CTRL0_CAM_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
+| FPGA_CTRL0_DIS_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
+| FPGA_CTRL0_DIS_BL | 1 | 1 | 0x00000002 | 0xfffffffd |  |
 | missing definiton | 1 | -1 | NA | NA | NA |
 | FPGA_CTRL0_CAM_CTL1 | 1 | 1 | 0x00000002 | 0xfffffffd |  |
-| FPGA_CTRL0_DIS_BL | 1 | 1 | 0x00000002 | 0xfffffffd |  |
-| missing definiton | 2 | 0 | NA | NA | NA |
-| FPGA_CTRL0_CAM_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
 | FPGA_CTRL0_DIS_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
+| FPGA_CTRL0_CAM_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
+| missing definiton | 2 | 0 | NA | NA | NA |
 | FPGA_CTRL0_DIS_RST | 3 | 3 | 0x00000008 | 0xfffffff7 |  |
 | missing definiton | 3 | 1 | NA | NA | NA |
 | FPGA_CTRL0_SD_PSU_EN | 4 | 4 | 0x00000010 | 0xffffffef |  |
@@ -77,7 +77,7 @@
 | FPGA_CTRL0_LV_SPARE_OUT | 18 | 19 | 0x000c0000 | 0xfff3ffff |  |
 | FPGA_CTRL0_SPARE_OUT | 20 | 31 | 0xfff00000 | 0x000fffff |  |
 
-###FPGA_STATUS0
+### FPGA_STATUS0
  Address: 0x7e20b60c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -90,7 +90,7 @@
 | missing definiton | 8 | 18 | NA | NA | NA |
 | FPGA_STATUS0_SPARE_IN | 19 | 31 | 0xfff80000 | 0x0007ffff |  |
 
-###FPGA_DCM_WR_DATA
+### FPGA_DCM_WR_DATA
  Address: 0x7e20b610
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -98,7 +98,7 @@
 | FPGA_DCM_WR_DATA_DATA | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | FPGA_DCM_WR_DATA_ADDRESS | 16 | 23 | 0x00ff0000 | 0xff00ffff |  |
 
-###FPGA_DCM_CTRL
+### FPGA_DCM_CTRL
  Address: 0x7e20b614
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -112,7 +112,7 @@
 | FPGA_DCM_CTRL_PERI_EN | 24 | 27 | 0x0f000000 | 0xf0ffffff |  |
 | FPGA_DCM_CTRL_PERI_WR_EN | 28 | 31 | 0xf0000000 | 0x0fffffff |  |
 
-###FPGA_DCM_RD_DATA
+### FPGA_DCM_RD_DATA
  Address: 0x7e20b618
 
 | field_name | start_bit | end_bit | set | clear | reset |

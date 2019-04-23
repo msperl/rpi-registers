@@ -1,12 +1,12 @@
 # Register Region: PCM
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e203000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -20,7 +20,7 @@
 | [PCM_INTSTC_A](#pcm_intstc_a) | 0x7e20301c | RW | 4 | 0x0000000f | 0000000000 |
 | [PCM_GRAY](#pcm_gray) | 0x7e203020 | RW | 22 | 0x003ffff7 | 0000000000 |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -42,10 +42,10 @@
 | PCM_WIDTH1(x) | MACRO |
 | PCM_WIDTH2(x) | MACRO |
 
-##Register info
+## Register info
 
 
-###PCM_CS_A
+### PCM_CS_A
  Address: 0x7e203000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -73,7 +73,7 @@
 | PCM_CS_A_SYNC | 24 | 24 | 0x01000000 | 0xfeffffff | 0x0 |
 | PCM_CS_A_STBY | 25 | 25 | 0x02000000 | 0xfdffffff | 0x0 |
 
-###PCM_MODE_A
+### PCM_MODE_A
  Address: 0x7e203008
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -90,7 +90,7 @@
 | PCM_MODE_A_PDMN | 27 | 27 | 0x08000000 | 0xf7ffffff | 0x0 |
 | PCM_MODE_A_CLK_DIS | 28 | 28 | 0x10000000 | 0xefffffff | 0x0 |
 
-###PCM_RXC_A
+### PCM_RXC_A
  Address: 0x7e20300c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -104,7 +104,7 @@
 | PCM_RXC_A_CH1EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | PCM_RXC_A_CH1WEX | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###PCM_TXC_A
+### PCM_TXC_A
  Address: 0x7e203010
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -118,7 +118,7 @@
 | PCM_TXC_A_CH1EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | PCM_TXC_A_CH1WEX | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###PCM_DREQ_A
+### PCM_DREQ_A
  Address: 0x7e203014
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -131,7 +131,7 @@
 | missing definiton | 23 | 23 | NA | NA | NA |
 | PCM_DREQ_A_TX_PANIC | 24 | 30 | 0x7f000000 | 0x80ffffff | 0x10 |
 
-###PCM_INTEN_A
+### PCM_INTEN_A
  Address: 0x7e203018
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -141,7 +141,7 @@
 | PCM_INTEN_A_TXERR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | PCM_INTEN_A_RXERR | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###PCM_INTSTC_A
+### PCM_INTSTC_A
  Address: 0x7e20301c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -151,7 +151,7 @@
 | PCM_INTSTC_A_TXERR | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | PCM_INTSTC_A_RXERR | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###PCM_GRAY
+### PCM_GRAY
  Address: 0x7e203020
 
 | field_name | start_bit | end_bit | set | clear | reset |

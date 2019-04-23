@@ -1,13 +1,13 @@
 # Register Region: IC0
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e002000 |
 | id | 0x494e5445 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -33,5 +33,5 @@
 | IC0_FORCE0_CLR | 0x7e002050 | RW | 32 | 0xffffffff | 0000000000 |
 | IC0_FORCE1_CLR | 0x7e002054 | RW | 32 | 0xffffffff | 0000000000 |
 
-##Register info
+## Register info
 

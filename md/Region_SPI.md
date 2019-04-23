@@ -1,12 +1,12 @@
 # Register Region: SPI
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e204000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -16,17 +16,17 @@
 | [SPI_DLEN](#spi_dlen) | 0x7e20400c | RW | 16 | 0x0000ffff | 0000000000 |
 | [SPI_LTOH](#spi_ltoh) | 0x7e204010 | RW | 4 | 0x0000000f | 0x00000001 |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
 | SPI_RX_DMA | 0x70000 |
 | SPI_TX_DMA | 0x60000 |
 
-##Register info
+## Register info
 
 
-###SPI_CS
+### SPI_CS
  Address: 0x7e204000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -47,28 +47,28 @@
 | SPI_CS_RXR | 19 | 19 | 0x00080000 | 0xfff7ffff | 0x0 |
 | SPI_CS_RXF | 20 | 20 | 0x00100000 | 0xffefffff | 0x0 |
 
-###SPI_FIFO
+### SPI_FIFO
  Address: 0x7e204004
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SPI_FIFO_DATA | 0 | 7 | 0x000000ff | 0xffffff00 | 0x0 |
 
-###SPI_CLK
+### SPI_CLK
  Address: 0x7e204008
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SPI_CLK_CDIV | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
 
-###SPI_DLEN
+### SPI_DLEN
  Address: 0x7e20400c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | SPI_DLEN_LEN | 0 | 15 | 0x0000ffff | 0xffff0000 | 0x0 |
 
-###SPI_LTOH
+### SPI_LTOH
  Address: 0x7e204010
 
 | field_name | start_bit | end_bit | set | clear | reset |

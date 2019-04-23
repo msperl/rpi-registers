@@ -1,14 +1,14 @@
 # Register Region: L1
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | description | VC4-L1 control |
 | base | 0x7ee02000 |
 | id | 0x4c314343 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -74,10 +74,10 @@
 | L1_L1_SANDBOX_END7 | 0x7ee0283c | RW | 30 | 0x3fffffe0 | 0000000000 |
 | [L1_L1_SANDBOX_PERI_BR](#l1_l1_sandbox_peri_br) | 0x7ee02840 | RW | 13 | 0x00001f1f | 0x00000707 |
 
-##Register info
+## Register info
 
 
-###L1_IC0_CONTROL
+### L1_IC0_CONTROL
  Address: 0x7ee02000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -89,7 +89,7 @@
 | L1_IC0_CONTROL_RAS_DISABLE | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | L1_IC0_CONTROL_DISABLE_VLINE | 5 | 6 | 0x00000060 | 0xffffff9f | 0x0 |
 
-###L1_IC0_PRIORITY
+### L1_IC0_PRIORITY
  Address: 0x7ee02004
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -99,7 +99,7 @@
 | L1_IC0_PRIORITY_IC0_APRIORITY2 | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x4 |
 | L1_IC0_PRIORITY_IC0_APRIORITY3 | 12 | 15 | 0x0000f000 | 0xffff0fff | 0x3 |
 
-###L1_IC1_CONTROL
+### L1_IC1_CONTROL
  Address: 0x7ee02080
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -111,7 +111,7 @@
 | L1_IC1_CONTROL_RAS_DISABLE | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | L1_IC1_CONTROL_DISABLE_VLINE | 5 | 6 | 0x00000060 | 0xffffff9f | 0x0 |
 
-###L1_IC1_PRIORITY
+### L1_IC1_PRIORITY
  Address: 0x7ee02084
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -121,7 +121,7 @@
 | L1_IC1_PRIORITY_IC1_APRIORITY2 | 8 | 11 | 0x00000f00 | 0xfffff0ff | 0x4 |
 | L1_IC1_PRIORITY_IC1_APRIORITY3 | 12 | 15 | 0x0000f000 | 0xffff0fff | 0x3 |
 
-###L1_D_CONTROL
+### L1_D_CONTROL
  Address: 0x7ee02100
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -131,7 +131,7 @@
 | L1_D_CONTROL_DC1_FLUSH | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | L1_D_CONTROL_DC_EN_STATS | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 
-###L1_D_PRIORITY
+### L1_D_PRIORITY
  Address: 0x7ee0210c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -144,7 +144,7 @@
 | L1_D_PRIORITY_c1_uc_priority | 20 | 23 | 0x00f00000 | 0xff0fffff | 0x0 |
 | L1_D_PRIORITY_c1_per_priority | 24 | 27 | 0x0f000000 | 0xf0ffffff | 0x0 |
 
-###L1_L1_SANDBOX_START0
+### L1_L1_SANDBOX_START0
  Address: 0x7ee02800
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -153,7 +153,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START0_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_START1
+### L1_L1_SANDBOX_START1
  Address: 0x7ee02808
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -162,7 +162,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START1_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_START2
+### L1_L1_SANDBOX_START2
  Address: 0x7ee02810
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -171,7 +171,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START2_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_START3
+### L1_L1_SANDBOX_START3
  Address: 0x7ee02818
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -180,7 +180,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START3_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_START4
+### L1_L1_SANDBOX_START4
  Address: 0x7ee02820
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -189,7 +189,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START4_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_START5
+### L1_L1_SANDBOX_START5
  Address: 0x7ee02828
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -198,7 +198,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START5_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_START6
+### L1_L1_SANDBOX_START6
  Address: 0x7ee02830
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -207,7 +207,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START6_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_START7
+### L1_L1_SANDBOX_START7
  Address: 0x7ee02838
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -216,7 +216,7 @@
 | missing definiton | 1 | 4 | NA | NA | NA |
 | L1_L1_SANDBOX_START7_START_ADDR | 5 | 29 | 0x3fffffe0 | 0xc000001f | 0x0 |
 
-###L1_L1_SANDBOX_PERI_BR
+### L1_L1_SANDBOX_PERI_BR
  Address: 0x7ee02840
 
 | field_name | start_bit | end_bit | set | clear | reset |

@@ -1,13 +1,13 @@
 # Register Region: HD
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e808000 |
 | id | 0x48444d49 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -28,10 +28,10 @@
 | HD_CSC_34_33 | 0x7e808058 | RW | 32 | 0xffffffff | 0000000000 |
 | HD_FRAME_CNT | 0x7e808068 | RW | 32 | 0xffffffff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###HD_HDM_CTL
+### HD_HDM_CTL
  Address: 0x7e80800c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -45,7 +45,7 @@
 | HD_HDM_CTL_CECOVR | 8 | 8 | 0x00000100 | 0xfffffeff | 0x0 |
 | HD_HDM_CTL_CECRXD | 9 | 9 | 0x00000200 | 0xfffffdff | 0x0 |
 
-###HD_MAI_CTL
+### HD_MAI_CTL
  Address: 0x7e808014
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -64,7 +64,7 @@
 | HD_MAI_CTL_BUSY | 14 | 14 | 0x00004000 | 0xffffbfff | 0x0 |
 | HD_MAI_CTL_DLATE | 15 | 15 | 0x00008000 | 0xffff7fff | 0x0 |
 
-###HD_MAI_THR
+### HD_MAI_THR
  Address: 0x7e808018
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -77,7 +77,7 @@
 | missing definiton | 22 | 23 | NA | NA | NA |
 | HD_MAI_THR_PANICHIGH | 24 | 29 | 0x3f000000 | 0xc0ffffff | 0x1 |
 
-###HD_VID_CTL
+### HD_VID_CTL
  Address: 0x7e808038
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -97,7 +97,7 @@
 | HD_VID_CTL_UFEN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | HD_VID_CTL_ENABLE | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###HD_CSC_CTL
+### HD_CSC_CTL
  Address: 0x7e808040
 
 | field_name | start_bit | end_bit | set | clear | reset |

@@ -1,14 +1,14 @@
 # Register Region: OTP
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | description | One Time programmable |
 | base | 0x7e20f000 |
 | id | 0x206f7470 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -23,7 +23,7 @@
 | OTP_WRITE_DATA_READ_REG | 0x7e20f020 | RW | 32 | 0xffffffff |  |
 | OTP_INIT_STATUS_REG | 0x7e20f024 | RW | 32 | 0xffffffff |  |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -86,5 +86,5 @@
 | OTP_VPU_CACHE_KEY_SIZE_IN_ROWS | 4 |
 | OTP_VPU_CACHE_PARITY_MASK | 0xFF |
 
-##Register info
+## Register info
 

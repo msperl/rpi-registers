@@ -1,12 +1,12 @@
 # Register Region: I2C0
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e205000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -19,5 +19,5 @@
 | I2C0_DEL | 0x7e205018 | RW | 32 | 0xffffffff | 0x00300030 |
 | I2C0_CLKT | 0x7e20501c | RW | 16 | 0x0000ffff | 0x00000040 |
 
-##Register info
+## Register info
 

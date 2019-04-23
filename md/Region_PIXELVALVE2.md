@@ -1,13 +1,13 @@
 # Register Region: PIXELVALVE2
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e807000 |
 | id | 0x70697876 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -25,5 +25,5 @@
 | PIXELVALVE2_STAT | 0x7e80702c | RW | 10 | 0x000003ff |  |
 | PIXELVALVE2_DSI_HACT_ACT | 0x7e807030 | RW | 16 | 0x0000ffff |  |
 
-##Register info
+## Register info
 

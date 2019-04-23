@@ -1,12 +1,12 @@
 # Register Region: ARM
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7E00B000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -49,8 +49,8 @@
 | ARM_0_BELL1 | 0x7e00b844 | RW |  |  |  |
 | ARM_0_BELL2 | 0x7e00b848 | RW |  |  |  |
 | ARM_0_BELL3 | 0x7e00b84c | RW |  |  |  |
-| ARM_0_MAIL0_WRT | 0x7e00b880 | RW |  |  |  |
 | ARM_0_MAIL0_RD | 0x7e00b880 | RW |  |  |  |
+| ARM_0_MAIL0_WRT | 0x7e00b880 | RW |  |  |  |
 | ARM_0_MAIL0_POL | 0x7e00b890 | RW |  |  |  |
 | ARM_0_MAIL0_SND | 0x7e00b894 | RW |  |  |  |
 | ARM_0_MAIL0_STA | 0x7e00b898 | RW |  |  |  |
@@ -61,8 +61,8 @@
 | ARM_0_BELLCLRDBG | 0x7e00b8e4 | RW |  |  |  |
 | ARM_0_ALL_IRQS | 0x7e00b8f8 | RW |  |  |  |
 | ARM_0_MY_IRQS | 0x7e00b8fc | RW |  |  |  |
-| ARM_1_SEM0 | 0x7e00b900 | RW |  |  |  |
 | ARM_1_SEMS | 0x7e00b900 | RW |  |  |  |
+| ARM_1_SEM0 | 0x7e00b900 | RW |  |  |  |
 | ARM_1_SEM1 | 0x7e00b904 | RW |  |  |  |
 | ARM_1_SEM2 | 0x7e00b908 | RW |  |  |  |
 | ARM_1_SEM3 | 0x7e00b90c | RW |  |  |  |
@@ -76,8 +76,8 @@
 | ARM_1_BELL3 | 0x7e00b94c | RW |  |  |  |
 | ARM_1_MAIL0_WRT | 0x7e00b980 | RW |  |  |  |
 | ARM_1_MAIL0_STA | 0x7e00b998 | RW |  |  |  |
-| ARM_1_MAIL1_RD | 0x7e00b9a0 | RW |  |  |  |
 | ARM_1_MAIL1_WRT | 0x7e00b9a0 | RW |  |  |  |
+| ARM_1_MAIL1_RD | 0x7e00b9a0 | RW |  |  |  |
 | ARM_1_MAIL1_POL | 0x7e00b9b0 | RW |  |  |  |
 | ARM_1_MAIL1_SND | 0x7e00b9b4 | RW |  |  |  |
 | ARM_1_MAIL1_STA | 0x7e00b9b8 | RW |  |  |  |
@@ -86,8 +86,8 @@
 | ARM_1_BELLCLRDBG | 0x7e00b9e4 | RW |  |  |  |
 | ARM_1_ALL_IRQS | 0x7e00b9f8 | RW |  |  |  |
 | ARM_1_MY_IRQS | 0x7e00b9fc | RW |  |  |  |
-| ARM_2_SEM0 | 0x7e00ba00 | RW |  |  |  |
 | ARM_2_SEMS | 0x7e00ba00 | RW |  |  |  |
+| ARM_2_SEM0 | 0x7e00ba00 | RW |  |  |  |
 | ARM_2_SEM1 | 0x7e00ba04 | RW |  |  |  |
 | ARM_2_SEM2 | 0x7e00ba08 | RW |  |  |  |
 | ARM_2_SEM3 | 0x7e00ba0c | RW |  |  |  |
@@ -129,7 +129,7 @@
 | ARM_3_ALL_IRQS | 0x7e00bbf8 | RW |  |  |  |
 | ARM_3_MY_IRQS | 0x7e00bbfc | RW |  |  |  |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -254,5 +254,5 @@
 | ARM_S_READPEND | 0x000003FF |
 | ARM_S_WRITPEND | 0x000FFC00 |
 
-##Register info
+## Register info
 

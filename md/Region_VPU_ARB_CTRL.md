@@ -1,22 +1,22 @@
 # Register Region: VPU_ARB_CTRL
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7ee04000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
 | [VPU_ARB_CTRL_UC](#vpu_arb_ctrl_uc) | 0x7ee04000 | RW | 16 | 0x0000ffff | 0000000000 |
 | [VPU_ARB_CTRL_L2](#vpu_arb_ctrl_l2) | 0x7ee04004 | RW | 16 | 0x0000ffff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###VPU_ARB_CTRL_UC
+### VPU_ARB_CTRL_UC
  Address: 0x7ee04000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -27,7 +27,7 @@
 | VPU_ARB_CTRL_UC_ALGORITHM | 6 | 7 | 0x000000c0 | 0xffffff3f | 0x0 |
 | VPU_ARB_CTRL_UC_CHANNEL_INIBIT | 8 | 15 | 0x0000ff00 | 0xffff00ff | 0x0 |
 
-###VPU_ARB_CTRL_L2
+### VPU_ARB_CTRL_L2
  Address: 0x7ee04004
 
 | field_name | start_bit | end_bit | set | clear | reset |

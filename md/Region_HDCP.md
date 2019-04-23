@@ -1,13 +1,13 @@
 # Register Region: HDCP
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e809000 |
 | id | 0x48444350 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -16,10 +16,10 @@
 | HDCP_KEY_KY0 | 0x7e809008 | RW | 32 | 0xffffffff | 0000000000 |
 | HDCP_KEY_KY1 | 0x7e80900c | RW | 24 | 0x00ffffff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###HDCP_KEY_CTL
+### HDCP_KEY_CTL
  Address: 0x7e809000
 
 | field_name | start_bit | end_bit | set | clear | reset |

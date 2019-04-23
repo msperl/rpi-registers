@@ -1,13 +1,13 @@
 # Register Region: IC1
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e002800 |
 | id | 0x494e5445 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -33,5 +33,5 @@
 | IC1_FORCE0_CLR | 0x7e002850 | RW | 32 | 0xffffffff | 0000000000 |
 | IC1_FORCE1_CLR | 0x7e002854 | RW | 32 | 0xffffffff | 0000000000 |
 
-##Register info
+## Register info
 

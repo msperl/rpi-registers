@@ -1,12 +1,12 @@
 # Register Region: DMA7
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e007700 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -19,10 +19,10 @@
 | [DMA7_NEXTCONBK](#dma7_nextconbk) | 0x7e00771c | RO | 32 | 0xffffffe0 |  |
 | [DMA7_DEBUG](#dma7_debug) | 0x7e007720 | RW | 29 | 0x1ffffff7 | 0000000000 |
 
-##Register info
+## Register info
 
 
-###DMA7_CS
+### DMA7_CS
  Address: 0x7e007700
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -45,7 +45,7 @@
 | DMA7_CS_ABORT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | DMA7_CS_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###DMA7_CONBLK_AD
+### DMA7_CONBLK_AD
  Address: 0x7e007704
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -53,7 +53,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA7_CONBLK_AD_SCB_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f | 0x0 |
 
-###DMA7_TI
+### DMA7_TI
  Address: 0x7e007708
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -73,28 +73,28 @@
 | DMA7_TI_PERMAP | 16 | 20 | 0x001f0000 | 0xffe0ffff |  |
 | DMA7_TI_WAITS | 21 | 25 | 0x03e00000 | 0xfc1fffff |  |
 
-###DMA7_SOURCE_AD
+### DMA7_SOURCE_AD
  Address: 0x7e00770c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA7_SOURCE_AD_S_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA7_DEST_AD
+### DMA7_DEST_AD
  Address: 0x7e007710
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA7_DEST_AD_D_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA7_TXFR_LEN
+### DMA7_TXFR_LEN
  Address: 0x7e007714
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA7_TXFR_LEN_XLENGTH | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 
-###DMA7_NEXTCONBK
+### DMA7_NEXTCONBK
  Address: 0x7e00771c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -102,7 +102,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA7_NEXTCONBK_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f |  |
 
-###DMA7_DEBUG
+### DMA7_DEBUG
  Address: 0x7e007720
 
 | field_name | start_bit | end_bit | set | clear | reset |

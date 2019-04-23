@@ -1,13 +1,13 @@
 # Register Region: DSI0
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e209000 |
 | id | 0x00647369 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -41,10 +41,10 @@
 | DSI0_TST_SEL | 0x7e20906c | RW | 8 | 0x000000ff | 0000000000 |
 | DSI0_TST_MON | 0x7e209070 | RW | 8 | 0x000000ff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###DSI0_CTRL
+### DSI0_CTRL
  Address: 0x7e209000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -53,7 +53,7 @@
 | DSI0_CTRL_CTRL1 | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | DSI0_CTRL_CTRL2 | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 
-###DSI0_PHYC
+### DSI0_PHYC
  Address: 0x7e209040
 
 | field_name | start_bit | end_bit | set | clear | reset |

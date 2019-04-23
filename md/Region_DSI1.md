@@ -1,13 +1,13 @@
 # Register Region: DSI1
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e700000 |
 | id | 0x64736934 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -44,5 +44,5 @@
 | DSI1_TST_SEL | 0x7e700078 | RW | 32 | 0xffffffff | 0000000000 |
 | DSI1_TST_MON | 0x7e70007c | RW | 32 | 0xffffffff | 0000000000 |
 
-##Register info
+## Register info
 

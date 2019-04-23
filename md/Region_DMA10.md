@@ -1,12 +1,12 @@
 # Register Region: DMA10
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e007a00 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -19,10 +19,10 @@
 | [DMA10_NEXTCONBK](#dma10_nextconbk) | 0x7e007a1c | RO | 32 | 0xffffffe0 |  |
 | [DMA10_DEBUG](#dma10_debug) | 0x7e007a20 | RW | 29 | 0x1ffffff7 | 0000000000 |
 
-##Register info
+## Register info
 
 
-###DMA10_CS
+### DMA10_CS
  Address: 0x7e007a00
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -45,7 +45,7 @@
 | DMA10_CS_ABORT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | DMA10_CS_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###DMA10_CONBLK_AD
+### DMA10_CONBLK_AD
  Address: 0x7e007a04
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -53,7 +53,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA10_CONBLK_AD_SCB_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f | 0x0 |
 
-###DMA10_TI
+### DMA10_TI
  Address: 0x7e007a08
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -73,28 +73,28 @@
 | DMA10_TI_PERMAP | 16 | 20 | 0x001f0000 | 0xffe0ffff |  |
 | DMA10_TI_WAITS | 21 | 25 | 0x03e00000 | 0xfc1fffff |  |
 
-###DMA10_SOURCE_AD
+### DMA10_SOURCE_AD
  Address: 0x7e007a0c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA10_SOURCE_AD_S_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA10_DEST_AD
+### DMA10_DEST_AD
  Address: 0x7e007a10
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA10_DEST_AD_D_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA10_TXFR_LEN
+### DMA10_TXFR_LEN
  Address: 0x7e007a14
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA10_TXFR_LEN_XLENGTH | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 
-###DMA10_NEXTCONBK
+### DMA10_NEXTCONBK
  Address: 0x7e007a1c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -102,7 +102,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA10_NEXTCONBK_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f |  |
 
-###DMA10_DEBUG
+### DMA10_DEBUG
  Address: 0x7e007a20
 
 | field_name | start_bit | end_bit | set | clear | reset |

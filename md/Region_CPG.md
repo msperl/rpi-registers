@@ -1,13 +1,13 @@
 # Register Region: CPG
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e211000 |
 | id | 0x67706320 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -23,5 +23,5 @@
 | CPG_Debug2 | 0x7e211048 | RW | 32 | 0xffffffff |  |
 | CPG_Debug3 | 0x7e21104c | RW | 32 | 0xffffffff |  |
 
-##Register info
+## Register info
 

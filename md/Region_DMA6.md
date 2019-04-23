@@ -1,12 +1,12 @@
 # Register Region: DMA6
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e007600 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -20,10 +20,10 @@
 | [DMA6_NEXTCONBK](#dma6_nextconbk) | 0x7e00761c | RO | 32 | 0xffffffe0 |  |
 | [DMA6_DEBUG](#dma6_debug) | 0x7e007620 | RW | 29 | 0x1ffffff7 | 0000000000 |
 
-##Register info
+## Register info
 
 
-###DMA6_CS
+### DMA6_CS
  Address: 0x7e007600
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -46,7 +46,7 @@
 | DMA6_CS_ABORT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | DMA6_CS_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###DMA6_CONBLK_AD
+### DMA6_CONBLK_AD
  Address: 0x7e007604
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -54,7 +54,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA6_CONBLK_AD_SCB_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f | 0x0 |
 
-###DMA6_TI
+### DMA6_TI
  Address: 0x7e007608
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -76,21 +76,21 @@
 | DMA6_TI_WAITS | 21 | 25 | 0x03e00000 | 0xfc1fffff |  |
 | DMA6_TI_NO_WIDE_BURSTS | 26 | 26 | 0x04000000 | 0xfbffffff |  |
 
-###DMA6_SOURCE_AD
+### DMA6_SOURCE_AD
  Address: 0x7e00760c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA6_SOURCE_AD_S_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA6_DEST_AD
+### DMA6_DEST_AD
  Address: 0x7e007610
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA6_DEST_AD_D_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA6_TXFR_LEN
+### DMA6_TXFR_LEN
  Address: 0x7e007614
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -98,7 +98,7 @@
 | DMA6_TXFR_LEN_XLENGTH | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | DMA6_TXFR_LEN_YLENGTH | 16 | 29 | 0x3fff0000 | 0xc000ffff |  |
 
-###DMA6_STRIDE
+### DMA6_STRIDE
  Address: 0x7e007618
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -106,7 +106,7 @@
 | DMA6_STRIDE_S_STRIDE | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | DMA6_STRIDE_D_STRIDE | 16 | 31 | 0xffff0000 | 0x0000ffff |  |
 
-###DMA6_NEXTCONBK
+### DMA6_NEXTCONBK
  Address: 0x7e00761c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -114,7 +114,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA6_NEXTCONBK_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f |  |
 
-###DMA6_DEBUG
+### DMA6_DEBUG
  Address: 0x7e007620
 
 | field_name | start_bit | end_bit | set | clear | reset |

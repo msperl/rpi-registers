@@ -1,13 +1,13 @@
 # Register Region: APERF1
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7ee08000 |
 | id | 0x41584950 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +22,9 @@
 | APERF1_BW0_RTRANS | 0x7ee0805c | RO | 32 | 0xffffffff | 0000000000 |
 | APERF1_BW0_RTWAIT | 0x7ee08060 | RO | 32 | 0xffffffff | 0000000000 |
 | APERF1_BW0_RMAX | 0x7ee08064 | RO | 24 | 0x00ffffff | 0000000000 |
-| APERF1_BW2_RPEND | 0x7ee08068 | RO | 8 | 0x000000ff | 0000000000 |
 | APERF1_BW1_RPEND | 0x7ee08068 | RO | 8 | 0x000000ff | 0000000000 |
 | APERF1_BW0_RPEND | 0x7ee08068 | RO | 8 | 0x000000ff | 0000000000 |
+| APERF1_BW2_RPEND | 0x7ee08068 | RO | 8 | 0x000000ff | 0000000000 |
 | [APERF1_BW1_CTRL](#aperf1_bw1_ctrl) | 0x7ee08080 | RW | 32 | 0xf0001f1f | 0000000000 |
 | APERF1_BW1_ATRANS | 0x7ee08084 | RO | 32 | 0xffffffff | 0000000000 |
 | APERF1_BW1_ATWAIT | 0x7ee08088 | RO | 32 | 0xffffffff | 0000000000 |
@@ -46,10 +46,10 @@
 | APERF1_BW2_RTWAIT | 0x7ee080e0 | RO | 32 | 0xffffffff | 0000000000 |
 | APERF1_BW2_RMAX | 0x7ee080e4 | RO | 24 | 0x00ffffff | 0000000000 |
 
-##Register info
+## Register info
 
 
-###APERF1_GEN_CTRL
+### APERF1_GEN_CTRL
  Address: 0x7ee08000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -57,7 +57,7 @@
 | APERF1_GEN_CTRL_ENABLE | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
 | APERF1_GEN_CTRL_RESET | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 
-###APERF1_BW0_CTRL
+### APERF1_BW0_CTRL
  Address: 0x7ee08040
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -71,7 +71,7 @@
 | APERF1_BW0_CTRL_EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | APERF1_BW0_CTRL_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###APERF1_BW1_CTRL
+### APERF1_BW1_CTRL
  Address: 0x7ee08080
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -85,7 +85,7 @@
 | APERF1_BW1_CTRL_EN | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | APERF1_BW1_CTRL_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###APERF1_BW2_CTRL
+### APERF1_BW2_CTRL
  Address: 0x7ee080c0
 
 | field_name | start_bit | end_bit | set | clear | reset |

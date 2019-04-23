@@ -1,13 +1,13 @@
 # Register Region: TXP
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e004000 |
 | id | 0x20763374 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -18,10 +18,10 @@
 | [TXP_PROGRESS](#txp_progress) | 0x7e004010 | RO | 12 | 0x00000fff |  |
 | [TXP_XTRA](#txp_xtra) | 0x7e004018 | RW | 1 | 0x00000001 |  |
 
-##Register info
+## Register info
 
 
-###TXP_DIM
+### TXP_DIM
  Address: 0x7e004008
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -30,7 +30,7 @@
 | missing definiton | 12 | 15 | NA | NA | NA |
 | TXP_DIM_HEIGHT | 16 | 27 | 0x0fff0000 | 0xf000ffff | 0x0 |
 
-###TXP_CTRL
+### TXP_CTRL
  Address: 0x7e00400c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -54,14 +54,14 @@
 | TXP_CTRL_VERSION | 22 | 23 | 0x00c00000 | 0xff3fffff | 0x1 |
 | TXP_CTRL_PILOT | 24 | 31 | 0xff000000 | 0x00ffffff | 0x54 |
 
-###TXP_PROGRESS
+### TXP_PROGRESS
  Address: 0x7e004010
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | TXP_PROGRESS_LINES | 0 | 11 | 0x00000fff | 0xfffff000 |  |
 
-###TXP_XTRA
+### TXP_XTRA
  Address: 0x7e004018
 
 | field_name | start_bit | end_bit | set | clear | reset |

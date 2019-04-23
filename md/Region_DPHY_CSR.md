@@ -1,13 +1,13 @@
 # Register Region: DPHY_CSR
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | description | SDRAM Data (pin) control |
 | base | 0x7ee07000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -44,5 +44,5 @@
 | DPHY_CSR_CRC_CTRL | 0x7ee07800 | RW | 9 | 0x00000111 | 0000000000 |
 | DPHY_CSR_CRC_DATA | 0x7ee07804 | RW | 28 | 0x0fffffff | 0000000000 |
 
-##Register info
+## Register info
 

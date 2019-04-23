@@ -1,13 +1,13 @@
 # Register Region: SLIM
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e210000 |
 | id | 0x736c696d |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -89,7 +89,7 @@
 | SLIM_DCC9_STAT | 0x7e21032c | RW | 32 | 0xc0ff00c7 | 0000000000 |
 | SLIM_DCC9_PROT | 0x7e210330 | RW | 32 | 0xc001ffff | 0x000093a0 |
 
-##Unsupported defines
+## Unsupported defines
 
 | define | value |
 | --- | --- |
@@ -104,5 +104,5 @@
 | SLIM_DTX_DMA | 0x80000 |
 | SLIM_NUM_DCC | 10 |
 
-##Register info
+## Register info
 

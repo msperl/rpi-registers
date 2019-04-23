@@ -1,12 +1,12 @@
 # Register Region: DMA1
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e007100 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
@@ -20,10 +20,10 @@
 | [DMA1_NEXTCONBK](#dma1_nextconbk) | 0x7e00711c | RO | 32 | 0xffffffe0 |  |
 | [DMA1_DEBUG](#dma1_debug) | 0x7e007120 | RW | 29 | 0x1ffffff7 | 0000000000 |
 
-##Register info
+## Register info
 
 
-###DMA1_CS
+### DMA1_CS
  Address: 0x7e007100
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -46,7 +46,7 @@
 | DMA1_CS_ABORT | 30 | 30 | 0x40000000 | 0xbfffffff | 0x0 |
 | DMA1_CS_RESET | 31 | 31 | 0x80000000 | 0x7fffffff | 0x0 |
 
-###DMA1_CONBLK_AD
+### DMA1_CONBLK_AD
  Address: 0x7e007104
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -54,7 +54,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA1_CONBLK_AD_SCB_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f | 0x0 |
 
-###DMA1_TI
+### DMA1_TI
  Address: 0x7e007108
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -76,21 +76,21 @@
 | DMA1_TI_WAITS | 21 | 25 | 0x03e00000 | 0xfc1fffff |  |
 | DMA1_TI_NO_WIDE_BURSTS | 26 | 26 | 0x04000000 | 0xfbffffff |  |
 
-###DMA1_SOURCE_AD
+### DMA1_SOURCE_AD
  Address: 0x7e00710c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA1_SOURCE_AD_S_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA1_DEST_AD
+### DMA1_DEST_AD
  Address: 0x7e007110
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | DMA1_DEST_AD_D_ADDR | 0 | 31 | 0xffffffff | 0x00000000 |  |
 
-###DMA1_TXFR_LEN
+### DMA1_TXFR_LEN
  Address: 0x7e007114
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -98,7 +98,7 @@
 | DMA1_TXFR_LEN_XLENGTH | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | DMA1_TXFR_LEN_YLENGTH | 16 | 29 | 0x3fff0000 | 0xc000ffff |  |
 
-###DMA1_STRIDE
+### DMA1_STRIDE
  Address: 0x7e007118
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -106,7 +106,7 @@
 | DMA1_STRIDE_S_STRIDE | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | DMA1_STRIDE_D_STRIDE | 16 | 31 | 0xffff0000 | 0x0000ffff |  |
 
-###DMA1_NEXTCONBK
+### DMA1_NEXTCONBK
  Address: 0x7e00711c
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -114,7 +114,7 @@
 | missing definiton | 0 | 4 | NA | NA | NA |
 | DMA1_NEXTCONBK_ADDR | 5 | 31 | 0xffffffe0 | 0x0000001f |  |
 
-###DMA1_DEBUG
+### DMA1_DEBUG
  Address: 0x7e007120
 
 | field_name | start_bit | end_bit | set | clear | reset |

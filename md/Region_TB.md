@@ -1,17 +1,17 @@
 # Register Region: TB
 
 
-##Info
+## Info
 | Name | value |
 | --- | --- |
 | base | 0x7e20b000 |
 
-##Registers
+## Registers
 
 | register name | address | type | width | mask | reset |
 | --- | --- | --- | --- | --- | --- |
-| [TB_TASK](#tb_task) | 0x7e20b000 | RW | 17 | 0x0001ffff |  |
 | TB_ADDR | 0x7e20b000 | RW | 32 | 0xffffffff |  |
+| [TB_TASK](#tb_task) | 0x7e20b000 | RW | 17 | 0x0001ffff |  |
 | TB_TASK_PARAM1 | 0x7e20b004 | RW | 32 | 0xffffffff |  |
 | TB_TASK_PARAM2 | 0x7e20b008 | RW | 32 | 0xffffffff |  |
 | TB_TASK_PARAM3 | 0x7e20b00c | RW | 32 | 0xffffffff |  |
@@ -35,10 +35,10 @@
 | TB_JTB_BITCNT | 0x7e20b810 | RW | 6 | 0x0000003f |  |
 | TB_JTB_PORTEN | 0x7e20b814 | RW | 8 | 0x000000ff |  |
 
-##Register info
+## Register info
 
 
-###TB_TASK
+### TB_TASK
  Address: 0x7e20b000
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -46,7 +46,7 @@
 | TB_TASK_NUM | 0 | 15 | 0x0000ffff | 0xffff0000 |  |
 | TB_TASK_TEXT_FLAG | 16 | 16 | 0x00010000 | 0xfffeffff |  |
 
-###TB_PRINTER_CTRL
+### TB_PRINTER_CTRL
  Address: 0x7e20b400
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -55,7 +55,7 @@
 | missing definiton | 2 | 3 | NA | NA | NA |
 | TB_PRINTER_CTRL_TASKNO | 4 | 15 | 0x0000fff0 | 0xffff000f |  |
 
-###TB_BOOT_OPT
+### TB_BOOT_OPT
  Address: 0x7e20b504
 
 | field_name | start_bit | end_bit | set | clear | reset |
@@ -73,21 +73,21 @@
 | missing definiton | 11 | 30 | NA | NA | NA |
 | TB_BOOT_OPT_TB_PRESENT | 31 | 31 | 0x80000000 | 0x7fffffff |  |
 
-###TB_BOOT_SECURE_MODE
+### TB_BOOT_SECURE_MODE
  Address: 0x7e20b508
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | TB_BOOT_SECURE_MODE_JTAG_SECURE | 0 | 1 | 0x00000003 | 0xfffffffc |  |
 
-###TB_BOOT_STATUS
+### TB_BOOT_STATUS
  Address: 0x7e20b50c
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
 | TB_BOOT_STATUS_CPRMAN_PROGRAMMED | 0 | 0 | 0x00000001 | 0xfffffffe |  |
 
-###TB_JTB_CONFIG
+### TB_JTB_CONFIG
  Address: 0x7e20b800
 
 | field_name | start_bit | end_bit | set | clear | reset |
